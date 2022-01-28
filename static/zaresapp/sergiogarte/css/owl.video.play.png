@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Rush</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="robots" content="all"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta property="og:image" content="http://placehold.it/100x100" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css">
+<link rel="stylesheet" href="css/ico/pixedenico/Pe-icon-7-stroke.css" type="text/css"  />
+<link rel="stylesheet" href="css/ico/font-awesome/css/font-awesome.min.css" type="text/css"  />
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="js/arcticmodal/jquery.arcticmodal-0.3.css"> 
+<link rel="stylesheet" href="css/main/animate.css" type="text/css" />
+<link rel="stylesheet" href="css/main/style.css" type="text/css" />
+<link rel="stylesheet" href="css/typography/OpenSans.css" type="text/css" />
+<link rel="stylesheet" href="css/main/theme-main.css" type="text/css" />
+<link rel="stylesheet" href="css/user.css" type="text/css" />
+<link rel="stylesheet" href="js/picker/themes/classic.css" type="text/css" />
+<link rel="stylesheet" href="js/picker/themes/classic.date.css" type="text/css" />
+<link rel="stylesheet" href="js/prismjs/prism.css"  data-noprefix />
+
+</head>  
+<body id="body">
+	<nav class="nav--absolute nav--light nav--gray">
+		<div class="container">
+			<div class="row row--nav row--nav--baseline">
+				<div class="nav-mod logo left">
+					<a href="index.html"><img alt="" src="images/logo--white.png" height="22"></a>
+				</div>
+				<div class="nav-mod nav-toggle right visible-xs visible-sm">
+					<i class="material-icons pointer">&#xE5D2;</i>
+				</div>
+				<div class="nav-mod nav hidden-xs hidden-sm left">
+					<ul class="menu text--uppercase">
+						<div data-include="navigation"></div>
+					</ul>
+				</div>
+				<div class="nav-mod-group right left-xs left-sm hidden-xs">
+					<div class="search__content boxed--shadow hr">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12 col-sm-12 col-xs-12">
+									<form class="form--radius-xs">
+										<div class="form-inline form-inline-xs">
+											<input type="search" placeholder="Type and hit enter to search">
+											<i class="material-icons search__content__close">&#xE14C;</i>
+										</div>
+									</form>
+								</div>		
+							</div>
+						</div>
+					</div>
+					<div class="nav-mod search hidden-xs">
+						<i class="material-icons">&#xE8B6;</i>
+					</div>
+					<div class="nav-mod  dropdown dropdown--right dropdown--toggle-on-click dropdown--left-sm">
+						<i class="material-icons dropdown__toggle">&#xE8CC;</i>
+						<div class="dropdown__content dropdown__content--2 bg-color--white">
+								<div class="row hr">
+									<div class="col-md-3 col-sm-3 col-xs-3 text-center">
+										<img alt="" src="images/items/thumb-item%234.png" height="40">
+									</div>
+									<div class="col-md-8 col-sm-8 col-xs-8">
+										<b class="text--uppercase">Bag<span class="right">4</span></b>
+										<p class="p-xs marg-null">Gray, Orange</p>
+									</div>
+									<div class="col-md-1 col-sm-1 col-xs-1 text-right">
+										<i class="material-icons ico-xs">&#xE14C;</i>
+									</div>
+								</div>
+								<div class="row hr">
+									<div class="col-md-3 col-sm-3 col-xs-3 text-center">
+										<img alt="" src="images/items/thumb-item%237.png" height="40">
+									</div>
+									<div class="col-md-8 col-sm-8 col-xs-8">
+										<b class="text--uppercase">Sport bag<span class="right">1</span></b>
+										<p class="p-xs marg-null">Black, Orange</p>
+									</div>
+									<div class="col-md-1 col-sm-1 col-xs-1 text-right">
+										<i class="material-icons ico-xs">&#xE14C;</i>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<a href="#" class="btn btn-md btn--line">Cart</a>
+									</div>
+									<div class="col-md-6 col-sm-6 col-xs-6">
+										<b class="price__label">CART TOTAL</b><br>
+										<span class="price price-xs">2.000$</span>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div data-include="mod-buttons"></div>
+				</div>
+			</div>
+		</div>
+	</nav>	
+	
+	<section class="vh-100 bg-color--gray flex flex-align-center">
+		<div class="container">
+			<div class="row marg-b-60">
+				<div class="col-md-12 col-sm-12 col-xs-12 text-center marg-t-60">
+					<h1>404</h1>
+					<p>Sorry! The page you are looking for does not exist or has been removed.</p>
+					<a href="#" class="p-xs">Go to Home page</a>
+				</div>		
+			</div>
+		</div>
+	</section>
+	
+
+
+<script type="text/javascript" src="js/jquery-git.min.js"></script>
+<script type="text/javascript" src="js/instafeed.js"></script>
+<script type="text/javascript" src="js/countdown-master/dest/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="js/picker/picker.js"></script>
+<script type="text/javascript" src="js/picker/picker.date.js"></script>
+<script type="text/javascript" src="js/prismjs/prism.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/animate.js"></script>
+<script type="text/javascript" src="js/waypoints.js"></script>
+<script type="text/javascript" src="js/FlexSlider-release-2-2-0/jquery.flexslider.js"></script>
+<script type="text/javascript" src="js/jquery.mb.YTPlayer.min.js"></script>
+<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="js/typed.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/user.js"></script>
+<script type="text/javascript" src="js/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+<script type="text/javascript" src="js/placeholder/placeholder.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-git.min.js"></script>
+
+</body>
+
+</html>
+

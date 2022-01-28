@@ -1,0 +1,2972 @@
+{% load staticfiles i18n %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Empresa líder en abastecimiento de válvulas">
+    <meta name="keywords" content="valvulas industriales,">
+    <meta name="author" content="zaresdelweb">
+    <title>VAMICO</title>
+    <!-- Bootstrap -->
+    <link href="{%static 'zaresapp/vamico/assets/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:300,500" rel="stylesheet">
+    <link href="{%static 'zaresapp/vamico/assets/css/font-awesome.min.css'%}" rel="stylesheet">
+    <link href="{%static 'zaresapp/vamico/assets/css/Pe-icon-7-stroke.css'%}" rel="stylesheet">
+    <link href="{%static 'zaresapp/vamico/assets/css/owl.carousel.css'%}" rel="stylesheet">
+    <link href="{%static 'zaresapp/vamico/assets/css/owl.theme.css'%}" rel="stylesheet">
+    <link href="{%static 'zaresapp/vamico/assets/css/magnific-popup.css'%}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{%static 'zaresapp/vamico/assets/css/style.min.css'%}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{%static 'zaresapp/vamico/assets/img/img-logo.png'%}"/>
+    
+    <meta property="og:image" content="{%static 'zaresapp/vamico/assets/img/header.png'%}"/>
+    <meta property="og:url" content="vamicomx.com" />
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="VAMICO" />
+    <meta property="og:description" content="Empresa líder en abastecimiento de válvulas" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/plugins/html5shiv.min.js"></script>
+      <script src="assets/plugins/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      .block-section.bg-theme, .content-section.bg-theme {
+          color: #fff;
+          background-color: #ffc24b;
+      }
+      .site-branding .site-title.title-image img {
+          max-height: 100px;
+          width: auto;
+          margin-bottom: 5px;
+      }
+      .modal-content {
+          border-radius: 0px;
+      }
+      @media (min-width: 768px){
+        .modal-dialog {
+            width: 90%;
+            margin: 30px auto;
+        }
+      }
+      hr {
+          margin-top: 5px;
+          margin-bottom: 5px;
+      }
+      .header-caption .header-action-button .btn {
+          margin-right: 20px;
+          padding: 10px 18px;
+          border: 2px solid #fff;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+          border-radius: 25px;
+          text-transform: uppercase;
+          font-size: 13px;
+      }
+      .dropdown-menu > li > a:hover {
+          background-color: #202020;
+          background-image: none;
+      }
+
+      .main-navigation .current-menu-ancestor>a, .main-navigation .current-menu-item>a, .main-navigation .current_page_ancestor>a, .main-navigation .current_page_item>a {
+          color: #fff;
+          text-decoration: none;
+      }
+      .btn-warning {
+          color: #fff;
+          background-color: #c7882e;
+          border-color: #c7882e;
+      }
+      .site-header.header-dark .site-branding .site-title.title-image img {
+          max-height: 40px;
+          margin-top: -7px;
+          width: auto;
+          margin-bottom: 0;
+      }
+      .header-caption .header-action-button .btn.btn-warning {
+          border-color: #c7882e;
+      }
+    </style>
+  </head>
+  <body id="home">
+    <!-- begin:header -->
+    <div class="header" data-parallax="scroll" data-image-src="{%static 'zaresapp/vamico/assets/img/img-header.jpg'%}">
+      <!-- begin:topbar -->
+      <div id="topbar" class="topbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="nav-utility">
+                <span class="nav-item">Empresa líder en abastecimiento de válvulas</span>
+              </div><!-- .nav-utility -->
+            </div><!-- .col-sm-8 -->
+            <div class="col-sm-4 hidden-xs">
+              <div class="nav-utility nav-right">
+                <a href="" class="nav-item">SIGUENOS EN:</a>
+                <a href="https://www.facebook.com/Vamico-SA-de-CV-461453963992144/" class="nav-item">FACEBOOK <i class="fa fa-facebook-square" style="font-size:15px;"></i></a>
+                <a href="https://www.instagram.com/vamicomx/" class="nav-item"> INSTAGRAM <i class="fa fa-instagram" style="font-size:15px;"></i></a>
+              </div><!-- .nav-utility -->
+            </div><!-- .col-sm-4 -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </div><!-- .topbar -->
+      <!-- end:topbar -->
+
+      <!-- begin:site-navigation -->
+      <div class="site-header-affix-wrapper">
+        <header id="masthead" class="site-header" role="banner">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="site-branding">
+                  <h1 class="site-title title-image"><a href="#home" rel="home"><img src="{%static 'zaresapp/vamico/assets/img/img-logo.png'%}" alt="construction business" class="img-responsive"></a></h1>
+                </div><!-- .site-branding -->
+              </div><!-- .col-sm-3 -->
+
+              <div class="col-sm-9">
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                  <button type="button" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                    <span class="fa fa-bars"></span>
+                    <span class="sr-only">Primary Menu</span>
+                  </button>
+                  <div class="menu-testing-menu-container">
+                    <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
+                        <li class="menu-item"><a href="#marcas">Marcas</a></li>
+                        <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown">PRODUCTOS <b class="caret"></b></a>
+                         <ul class="dropdown-menu">
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#bolas" style="font-size:10px;">VÁLVULAS DE BOLAS API 6D</a></li>
+                            <li><a href="#commodity" style="font-size:10px;">VÁLVULAS COMMODITY</a></li>
+                            <li><a href="#compuertas" style="font-size:9px;">VÁLVULAS DE COMPUERTA API 6D</a></li>
+                            <li><a href="#mariposas" style="font-size:10px;">VÁLVULAS DE MARIPOSA</a></li>
+                            <li><a href="#submarinas" style="font-size:9px;">VÁLVULAS SUBMARINAS API 6DSS</a></li>
+                            <li><a href="#automaticas" style="font-size:10px;">VÁLVULAS AUTOMÁTICAS</a></li>
+                            <li><a href="#valvulas_control" style="font-size:10px;">VÁLVULAS DE CONTROL</a></li>
+                            <li><a href="#tornilleria" style="font-size:10px;">TORNILLERIA</a></li>
+                            <li><a href="#bridas" style="font-size:10px;">BRIDAS Y CONEXIONES</a></li>
+                            <li><a href="#tuberia" style="font-size:10px;">TUBERÍA ESPECIAL</a></li>
+                            
+                         </ul>
+                      </li>
+                      <li class="menu-item"><a href="#nosotros">Nosotros</a></li>
+                      <li class="menu-item"><a href="#contact">Contacto</a></li>
+                    </ul>
+                  </div>
+                </nav><!-- #site-navigation -->
+              </div><!-- .col-sm-9 -->
+            </div><!-- .row -->
+          </div><!-- .container -->
+        </header><!-- #masthead -->
+      </div><!-- .site-header-affix-wrapper -->
+      <!-- end:site-navigation -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="header-caption">
+              <h2 class="caption-title">SERVICIO SUPERIOR EN EL ABASTECIMIENTO, DE VÁLVULAS, BRIDAS, CONEXIONES, TORNILLERÍA Y TUBERÍA ESPECIAL.</h2>
+              <p>Somos una empresa formada en 1990 por un grupo de ingenieros de alto nivel y experiencia en las industrias del petróleo, gas, agua, eléctrica, con presencia principalmente en la industria Off-Shore, la Petroquímica y Refinación en general.</p>
+              <div class="header-action-button">
+                <a class="btn btn-warning btn-md" href="#contacto" style="margin-top:20px;">Contactanos <i class="fa fa-envelope"></i></a>
+              </div><!-- header-action-button -->
+            </div><!-- .header-caption -->
+          </div><!-- .col-sm-5 -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #header -->
+    <!-- end:header -->
+
+    <!-- begin:cta -->
+    <div id="cta" class="cta block-section padd-40-top padd-40-btm bg-dark" style="padding: 20px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12s">
+            <h4>Por qué <strong>VAMICO</strong> es la mejor solución para mis proyectos?</h4>
+            <p>Contámos con representaciones y alianzas estratégicas con compañías de alto prestigio a nivel mundial dentro de la indústria; así como acuerdos con empresas que cuentan con un stock disponible de 80 millones de dólares, lo que nos convierte en la mejor opción para ofrecer válvulas con tiempos de entrega muy cortos y urgentes.</p>
+            
+            <h3 style="margin-bottom:20px;">Te gustaría saber más de nosotros?</h3>
+            <a style="margin-bottom:20px;background-color: #c7882e;border-color: #c7882e;" class="btn btn-warning btn-md btn-outline" href="#contacto">Descargar Catálogo</a>
+          </div><!-- .col-sm-6 -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #cta -->
+    <!-- end:cta -->
+
+    <div id="marcas" class="content-section bg-grey" style="padding: 60px 0px 25px 0px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-title">
+              <h1 style="font-size:35px;">NUESTRAS MARCAS</h1>
+              <img src="{%static 'zaresapp/vamico/assets/img/furnace.jpg'%}" style="width:100%;max-width:500px;">
+            </div>
+            <p style="margin-top:30px;">VAMICO S.A. DE C.V., es el distribuidor y vendedor de distintas marcas para el territorio mexicano lo que nos permite seleccionar la mejor opción para su proyecto, manejando principalmente origen italiano, japonés y americano de alto nivel, los cuales son reconocidos a nivel internacional y a su vez bien aceptado por nuestros clientes locales</p>
+          </div><!-- .col-md-12 -->
+        </div><!-- .row -->
+
+        
+        <div class="row">
+          {%comment%}<div class="col-md-2 col-sm-4">
+            <div class="process-item highlight text-center">
+              <img src="{%static 'zaresapp/vamico/assets/img/img-work-06.jpg'%}" class="img-responsive">
+            </div><!-- .process-item -->
+          </div><!-- .col-## -->{%endcomment%}
+          <div class="col-md-2 col-sm-4">
+            <div class="process-item highlight text-center">
+              <img src="{%static 'zaresapp/vamico/assets/img/img-work-01.jpg'%}" class="img-responsive">
+            </div><!-- .process-item -->
+          </div><!-- .col-## -->
+          {%comment%}<div class="col-md-2 col-sm-4">
+            <div class="process-item highlight text-center">
+              <img src="{%static 'zaresapp/vamico/assets/img/img-work-02.jpg'%}" class="img-responsive">
+            </div><!-- .process-item -->
+          </div><!-- .col-## -->{%endcomment%}
+          <div class="col-md-2 col-sm-4">
+            <div class="process-item highlight text-center">
+              <img src="{%static 'zaresapp/vamico/assets/img/img-work-03.jpg'%}" class="img-responsive">
+            </div><!-- .process-item -->
+          </div><!-- .col-## -->
+          <div class="col-md-2 col-sm-4">
+            <div class="process-item highlight text-center">
+              <img src="{%static 'zaresapp/vamico/assets/img/img-work-04.jpg'%}" class="img-responsive">
+            </div><!-- .process-item -->
+          </div><!-- .col-## -->
+          {%comment%}
+          <div class="col-md-2 col-sm-4">
+            <div class="process-item highlight text-center">
+              <img src="{%static 'zaresapp/vamico/assets/img/img-work-05.jpg'%}" class="img-responsive">
+            </div><!-- .process-item -->
+          </div><!-- .col-## -->
+          {%endcomment%}
+          <div class="col-md-2 col-sm-4">
+            <div class="process-item highlight text-center">
+              <img src="{%static 'zaresapp/vamico/assets/img/img-work-07.jpg'%}" class="img-responsive">
+            </div><!-- .process-item -->
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+
+        <div class="row" style="margin-top:80px;">
+          <div class="col-md-12">
+            <hr style="margin-top:50px;border-top-color: #777777;" />
+            <h1 class="text-center">NUESTROS PRODUCTOS</h1>
+          </div><!-- .col-md-12 -->
+        </div><!-- .row -->
+
+
+      </div><!-- .container -->
+    </div><!-- #why -->
+    <!-- end:why -->
+
+    <!-- begin:about -->
+    <div id="products" class="block-section image-block">
+      <div class="container-fluid" id="bolas">
+        <div class="row">
+          <div class="image-block-item col-md-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-01.jpg'%}');"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
+            <h2 class="marg-20-btm" style="font-size:25px;">VÁLVULAS DE BOLA</h2>
+            <p>
+              La gama de válvulas de bola con la que contamos va desde servicios generales hasta aplicaciones críticas como altas temperaturas, servicio corrosivo, servicio abrasivo, entre otros.<br/>Nuestras válvulas de bola están disponibles en una gran variedad de materiales, tal como; Acero al Carbón, Duplex, Super Duplex, Hastelloy y Titanio.
+            </p>
+            <small style="color: #acacac;">Tipos de válvulas</small>
+            <hr />
+            <ul class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#bola1">Trunnion API 6D Y API 6A</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#why" role="tab" id="why-tab" data-toggle="modal" data-target="#bola2">Flotantes</a>
+              </li>
+              <br />
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#bola3">Servicio Criogénico</a>
+              </li>
+            </ul>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #about -->
+    <!-- end:about -->
+
+    <!-- begin:testimonial -->
+    <div id="commodity" class="block-section image-block bg-white">
+      <div class="container-fluid container-no-padding">
+        <div class="row row-no-margin">
+          <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-03.jpg'%}');"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-60-btm">
+            <h2 class="marg-20-btm" style="font-size:25px;">VÁLVULAS DE COMPUERTA, GLOBO Y RETENCIÓN</h2>
+            <p>
+              Nuestras válvulas de compuerta, globo y retención son son ampliamente utilizadas en muchas industrias incluyendo:<br />
+              Industrias de proceso: petróleo, química, petroquímica, refinación, papelera, farmacéutica y procesamiento de alimentos.<br />
+              Industrias energéticas: nuclear, combustibles fósiles, ciclo combinado, cogeneración y calefacción urbana.<br />
+            </p>
+            <small style="color: #acacac;">Tipos de válvulas</small>
+            <hr />
+            <ul class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#compuerta1">Acero al carbón API 600</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#compuerta2">Acero forjado API 602</a>
+              </li>
+              <br />
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#compuerta3">Tipo Disco Dual</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#compuerta4">Servicio Criogénico</a>
+              </li>
+              <br />
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#compuerta5">Bonete a Presión (Pressure seal) de acero al carbón y forjado</a>
+              </li>
+            </ul>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #testimonial -->
+    <!-- end:testimonial -->
+
+    <!-- begin:about -->
+    <div id="compuertas" class="block-section image-block">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="image-block-item col-md-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-02.jpg'%}');"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
+            <h2 class="marg-20-btm" style="font-size:25px;">VÁLVULAS DE COMPUERTA API 6D</h2>
+            <p>
+              La válvula de compuerta de Doble Expansión API 6D es una válvula cuyo elemento obturador se compone de dos piezas llamadas compuerta y segmento de caras paralelas, dichos elementos se mueven en el plano perpendicular al flujo.<br />
+              El diseño de los asientos de este tipo de válvulas son estáticos,  por lo que su sellado no depende de la presión del fluido proporcionando un sello hermético activado mecánicamente. 
+            </p>
+            <small style="color: #acacac;">Tipos de válvulas</small>
+            <hr />
+            <ul class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#api1">Paso completo (Thru Conduit Slab)</a>
+              </li>
+              <br />
+              <li role="presentation" class="">
+                <a href="#why" role="tab" id="why-tab" data-toggle="modal" data-target="#api2">Doble Expansión (Thru Conduit Expanding)</a>
+              </li>
+            </ul>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #about -->
+    <!-- end:about -->
+
+    <!-- begin:testimonial -->
+    <div id="mariposas" class="block-section image-block bg-white">
+      <div class="container-fluid container-no-padding">
+        <div class="row row-no-margin">
+          <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-04.jpg'%}');"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-60-btm">
+            <h2 class="marg-20-btm" style="font-size:25px;">VÁLVULAS DE MARIPOSA</h2>
+            <p>
+              El diseño de la válvula de triple excentricidad cuenta con una geometría única para evitar los típicos problemas asociados con el diseño de válvulas de mariposa de alto rendimiento.<br /> La geometría del conjunto triple elimina totalmente el rozamiento entre el anillo de sello montado en el disco de la válvula y el asiento del cuerpo durante la carrera completa de cierre o apertura de la válvula.
+            </p>
+            <small style="color: #acacac;">Tipos de válvulas</small>
+            <hr />
+            <ul class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#mariposa1">Triple excentricidad</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#mariposa2">Doble excentricidad</a>
+              </li>
+              <br />
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#mariposa3">Servicio Criogénico</a>
+              </li>
+            </ul>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #testimonial -->
+    <!-- end:testimonial -->
+
+    <!-- begin:about -->
+    <div id="submarinas" class="block-section image-block">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="image-block-item col-md-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-05.jpg'%}');"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
+            <h2 class="marg-20-btm" style="font-size:25px;">VÁLVULAS SUBMARINAS API 6DSS</h2>
+            <p>
+              El diseño de la válvula submarina, como cualquier componente crítico, debe cumplir con los estándares más estrictos de la industria incluyendo API 6A, API 6DSS y API 17D (ISO 10423, ISO 13628, ISO 14723). <br/>
+              El diseño del cuerpo debe superar la presión hidrostática de aguas profundas e interna y externamente el diseño debe ser resistente a la corrosión. Combinando estos aspectos de diseño con la variabilidad en las presiones, el fluido de proceso / composición del gas y los diámetros de los orificios, muy rápidamente se puede ver que el diseño de la válvula submarina requiere una gran experiencia en ingeniería.
+            </p>
+            <small style="color: #acacac;">Tipos de válvulas</small>
+            <hr />
+            <ul class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#submarina1">Válvula de Bola</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#submarina2">Válvula de Retención</a>
+              </li>
+              <br />
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#submarina3">Válvula de Compuerta Paso completo</a>
+              </li>
+              <br />
+              <li role="presentation" class="">
+                <a href="#why" role="tab" id="why-tab" data-toggle="modal" data-target="#submarina4">Válvula de Compuerta Doble Expansión </a>
+              </li>
+            </ul>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #about -->
+    <!-- end:about -->
+
+    <!-- begin:testimonial -->
+    <div id="automaticas" class="block-section image-block bg-white">
+      <div class="container-fluid container-no-padding">
+        <div class="row row-no-margin">
+          <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-06.jpg'%}');"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-60-btm">
+            <h2 class="marg-20-btm" style="font-size:25px;">VÁLVULAS AUTOMÁTICAS</h2>
+            <p>
+              Al combinar nuestra amplia experiencia en  la ingeniería y  en el campo VAMICO es capaz de producir sistemas completos para el servicio de automatización y control.
+            </p>
+            <small style="color: #acacac;">Tipos de válvulas</small>
+            <hr />
+            <ul class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#automatica1">Válvulas de aislamiento de activación remota (VAAR)</a>
+              </li>
+              <br />
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#automatica2">Válvulas On-Off, Válvulas de corte de emergencia </a>
+              </li>
+              <br />
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#automatica3">Válvulas operadas con motor</a>
+              </li>
+            </ul>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #testimonial -->
+    <!-- end:testimonial -->
+
+
+    <!-- begin:about -->
+    <div id="valvulas_control" class="block-section image-block">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="image-block-item col-md-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-09.jpg'%}');"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
+            <h2 class="marg-20-btm" style="font-size:25px;">VÁLVULAS DE CONTROL</h2>
+            <p>
+              Las válvulas de control manipulan  fluidos  como gas, vapor, agua o compuestos químicos, controlando el flujo del fluido variando el tamaño del paso según lo indicado por una señal procedente de un controlador. Nuestras válvulas de control cumplen con la norma de referencia IEC-60534.
+            </p>
+            <p>
+             Contamos con válvulas de control tipo globo o rotatorias (bola, mariposa o tapón excéntrico), las cuales pueden ser suministradas con las características: igual porcentaje, lineal o de apertura rápida. Nuestras válvulas cuentan internos intercambiables, de cambio rápido.
+            </p>
+            <p>
+             Las válvulas son calculadas y diseñadas para que el nivel de ruido no exceda de 85 dB, sin embargo si el cliente requiere un nivel por debajo de los 85 dB los cálculos son ajustados 
+            <p>
+            <hr />
+            <ul class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+              <li role="presentation" class="">
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#control1">Válvulas de Control</a>
+              </li>
+            </ul>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #about -->
+    <!-- end:about -->
+
+
+    <!-- begin:testimonial -->
+    <div id="tornilleria" class="block-section image-block bg-white">
+      <div class="container-fluid container-no-padding">
+        <div class="row row-no-margin">
+          <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-10.jpg'%}');"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-60-btm">
+            <h2 class="marg-20-btm" style="font-size:25px;">TORNILLERIA</h2>
+            <p>
+              Contamos con espárragos ofreciendo prácticamente todos los materiales, tamaños y acabados, la mayoría de nuestro negocio involucra acero de aleación, acero inoxidable y los accesorios complementarios (tuercas hexagonales, arandelas planas, arandelas de seguridad).
+            </p>
+            <p>
+              Así mismo contamos con  pernos hexagonales pesados ​​y tornillos de cabeza, incluyendo: ASTM A193 B7, A193 B8, A193 B8M, A193 B16, A320 L7, A193 B8 Clase 2, A193 B8M Clase 2, A307B, A325, A490, A354BD (Grado 8), Hasteloy y Aleación 20, entre otros.
+            </p>
+            <p>
+              También contamos con  forjado en caliente de tuercas hexagonales pesadas para cumplir con ASTM A563, ASTM A194 2H, A194 Grado 7, A194 Grado 4, A194 Grado 8, A194 Grado 8M, más tuercas cuadradas y pernos hexagonales pesados ​​en una variedad de materiales incluyendo: ASTM A193 B7, A193 B16, A320 L7, A193 B8, A193 B8M más A193 B8 Clase 2 y A193 B8M Clase 2.
+            </p>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #testimonial -->
+    <!-- end:testimonial -->
+
+    
+
+
+    <!-- begin:about -->
+    <div id="bridas" class="block-section image-block">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="image-block-item col-md-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-07.jpg'%}');"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
+            <h2 class="marg-20-btm" style="font-size:25px;">BRIDAS Y CONEXIONES ESPECIALES</h2>
+            <p>
+              Nuestro inventario consiste en todos los tipos de bridas, conexiones soldables y conexiones roscadas. Manejamos una amplia gama de tamaños, materiales, y grados. El origen de los productos que manejamos principalmente es Americano, sin embargo cualquier origen está disponible a solicitud del cliente.
+            </p>
+            <h5>Conexiones soldables</h5>
+            <p>
+              Codos radio largo y corto, reducciones excéntricas y concéntricas, tee’s rectas y reducidas.
+            </p>
+            <h5>Conexiones soldables</h5>
+            <p>
+              Conexiones soldables y roscadas: en clase 3000 y 6000 libras. <br />
+              Codos, tee’s, tee´s reducidas, tuercas unión. <hr />
+
+              <strong>Manejamos materiales estándar y nos especializamos  en materiales de aleación tal como:</strong>
+              <br />A/SA234 WP1, WP5, WP9, WP11, WP22, WP91
+              <br />A/SA182 F1, F5, F9, F11, F22, F9
+            </p>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #about -->
+    <!-- end:about -->
+
+    <!-- begin:testimonial -->
+    <div id="tuberia" class="block-section image-block bg-white">
+      <div class="container-fluid container-no-padding">
+        <div class="row row-no-margin">
+          <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-08.jpg'%}');"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear" id="">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-60-btm">
+            <h2 class="marg-20-btm" style="font-size:25px;">TUBERÍA ESPECIAL</h2>
+            <hr />
+            <ul class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+              <li role="presentation" class=""  >
+                <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#tuberia1">Tuberia especial</a>
+              </li>
+            </ul>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #testimonial -->
+    <!-- end:testimonial -->
+
+    
+
+    <div id="contacto">
+    </div>
+
+    {%comment%}
+    <!-- begin:client -->
+    <div id="client" class="client block-section bg-white padd-20-top padd-20-btm">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="slider-thumbnail" class="owl-carousel owl-theme client-slider slider-carousel navigation-hide">
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand1.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand2.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand3.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand4.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand5.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand6.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand1.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand2.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand3.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand4.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand5.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+              <div class="item">
+                <a href="#">
+                  <img src="{%static 'zaresapp/vamico/assets/img/brand6.jpg'%}" style="max-width: 100px;" alt="client">
+                </a>
+              </div><!-- .item -->
+
+            </div><!-- #slider-thumbnail -->
+          </div><!-- .col-md-12 -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #client -->
+    <!-- end:client -->
+    {%endcomment%}
+
+    
+
+      
+
+    <!-- begin:additional-info -->
+    <div id="contact" class="additional-info block-section bg-white padd-20-top padd-40-btm">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fa fa-phone"></i>
+              </div><!-- .contact-item-icon -->
+              <h4 class="contact-item-title">Número de teléfono:</h4>
+              <div class="contact-item-info">+52-55-5445-1880</div>
+              <div class="contact-item-info">+52-55-5697-9711</div>
+            </div><!-- .contact-item -->
+          </div><!-- .col-# -->
+
+          <div class="col-md-3 col-sm-6">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fa fa-envelope-o"></i>
+              </div><!-- .contact-item-icon -->
+              <h4 class="contact-item-title">Correo electrónico:</h4>
+              <div class="contact-item-info">info@vamicomx.com</div>
+            </div><!-- .contact-item -->
+          </div><!-- .col-# -->
+          
+          <div class="col-md-3 col-sm-6">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fa fa-map-marker"></i>
+              </div><!-- .contact-item-icon -->
+              <h4 class="contact-item-title">Dirección:</h4>
+              <div class="contact-item-info">Cuicacalli Mzna 23 Lote 1</div>
+              <div class="contact-item-info">Estrella del Sur, Iztapalapa</div>
+              <div class="contact-item-info">CP 09820, CDMX, MÉXICO</div>
+            </div><!-- .contact-item -->
+          </div><!-- .col-# -->
+
+          <div class="col-md-3 col-sm-6">
+            <div class="contact-item">
+              <div class="contact-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </div><!-- .contact-item-icon -->
+              <h4 class="contact-item-title">Horarios:</h4>
+              <div class="contact-item-info">Lun - Vie: 9:00 am - 6:00 pm </div>
+            </div><!-- .contact-item -->
+          </div><!-- .col-# -->
+        </div><!-- .row -->
+      </div><!-- container -->
+    </div><!-- #additional-info -->
+    <!-- end:additional-info -->
+
+    <!-- begin:contact -->
+    <div id="" class="image-block">
+      <div class="container-fluid container-no-padding">
+        <div class="row row-no-margin">
+          <div class="image-block-item col-md-6 col-sm-5 col-xs-12">
+            <div class="image-block-item-background image-block-item-map" data-lat="19.3487072" data-lng="-99.1032705"></div>
+          </div><!-- .image-block-item -->
+        </div><!-- .row -->
+      </div><!-- .container-fluid -->
+      <div class="container clear">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
+            <h2>CONTACTO</h2>
+            {%if mensaje%}
+              <p>{{mensaje}}</p>
+            {%else%}
+            <p>Ingresa tus datos y solicita información o una cotización, nos pondremos en contacto contigo a la brevedad</p>
+            <form id="form" method="post" enctype="multipart/form-data" class="m-t">{% csrf_token %}
+              <div class="form-group">
+                <label for="contact_name">Empresa</label>
+                <input type="text" class="form-control form-bordered" name="empresa" required>
+              </div>
+              <div class="form-group">
+                <label for="contact_name">Nombre</label>
+                <input type="text" class="form-control form-bordered" name="nombre" required>
+              </div>
+              <div class="form-group" id="oculto">
+                <label for="contact_name">Oculto</label>
+                <input type="text" class="form-control form-bordered" name="oculto">
+              </div>
+              <div class="form-group">
+                <label for="contact_email" class="form-label">Email</label>
+                <input type="email" class="form-control form-bordered" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="contact_message" class="form-label">Mensaje</label>
+                <textarea class="form-control form-bordered" rows="6" name="mensaje" required></textarea>
+              </div>
+              <button type="submit" class="button btn-squar btn-roundede">Enviar Mensaje</button>
+            </form><!-- .contact-form -->
+            {%endif%}
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- #contact -->
+    <!-- end:contact -->
+
+    
+
+    <div id="facts" class="facts content-section bg-theme">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="fact-item">
+                <span class="fact-item-number">
+                  <span class="number number-alt">+26</span>
+                </span>
+                <h5 class="fact-item-info">AÑOS DE EXPERIENCIA</h5>
+              </div><!-- .fact-item -->
+            </div><!-- .col-## -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="fact-item">
+                <span class="fact-item-number">
+                  <span class="number">+40</span>
+                </span>
+                <h5 class="fact-item-info">CONTRATISTAS SATISFECHOS</h5>
+              </div><!-- .fact-item -->
+            </div><!-- .col-## -->
+
+            <div class="col-md-4 col-sm-6">
+              <div class="fact-item">
+                <span class="fact-item-number">
+                  <span class="number">+70</span>
+                </span>
+                <h5 class="fact-item-info">PROYECTOS SUMINISTRADOS</h5>
+              </div><!-- .fact-item -->
+            </div><!-- .col-## -->
+          </div><!-- .row -->
+        </div><!-- container -->
+      </div>
+
+    <!-- begin:footer -->
+    <footer id="nosotros" class="site-footer bg-black" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <h2 class="text-center">SOBRE NOSOTROS</h2>
+          <div class="col-md-7 col-sm-6">
+            <section class="widget">
+              <img src="{%static 'zaresapp/vamico/assets/img/img-logo.png'%}" style="max-width:140px" alt="bootstrap theme for construction companies" class="img-responsive marg-20-btm marg-20-top">
+              <p>Vamico S.A. de C.V. siempre ha buscado combinar una infraestructura de alta calidad y experiencia en su equipo de ingenieros y ejecutivos con el fin de poner a disposición del cliente un servicio de calidad superior para ofrecer productos de acuerdo a las especificaciones local / mexicana que las empresas gubernamentales han emitido. 
+
+              <br />Todas las marcas representadas por Vamico S.A. de C.V. cuentan con ISO 9001.</p>
+              <hr />
+
+              <h3 style="margin-bottom:20px;">Te gustaría saber más de nosotros?</h3>
+              <a style="margin-bottom:20px;background-color: #c7882e;border-color: #c7882e;color:#fff" class="btn btn-warning btn-md btn-outline" href="#contacto">Descargar Catálogo</a>
+              
+            </section><!-- .widget -->
+          </div><!-- .col-## -->
+
+          <div class="col-md-5 col-sm-6">
+            <section class="widget">
+              <h3 class="widget-title">Misión</h3>
+              <p>Nuestra Visión es situarnos entre los proveedores líderes en la industria, con una organización centrada en la calidad, basada en la participación de nuestros proveedores, todos nuestros miembros, y el éxito orientado a través de una total satisfacción del cliente.</p>
+               <h3 class="widget-title">Visión</h3>
+              <p>Buscamos satisfacer las necesidades y expectativas de alto valor de la exploración Mexicana Off-Shore, la producción en el mercado del petróleo y gas, la petroquímica mexicana, el mercado de la refinería y la industria en general.</p>
+            </section><!-- .widget -->
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </footer><!-- #colophon -->
+    <!-- end:footer -->
+    
+    <div class="modal fade" id="control1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">VALVULAS DE CONTROL</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-23.jpg'%}');background-size: contain;"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Tipo</th>
+                              <td> Globo <br /> Bola <br /> Mariposa </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Tipo de actuador</th>
+                              <td> Neumático principalmente tipo diafragma <br /> Eléctrico  <br /> Hidráulico</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> RF, RTJ, WE, THD, SW </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                IEC-60534<br/>
+                                ISO 15848-1:2006  <br/>
+                                NRF-163-PEMEX-2011 <br/>
+                                PED, CUTR, ATEX, CRN<br/>
+                                SIL<br/>
+                                NACE<br/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Carbon Steel, Stainless, Duplex, Alloy<br/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Características</th>
+                              <td> 
+                                Igual porcentaje,<br/>
+                                Lineal<br/>
+                                Apertura rápida<br/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Protocolos de Comunicación</th>
+                              <td> 
+                                HART<br/>
+                                Fieldbus Foundation<br/>
+                                Profibus <br/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Servicios</th>
+                              <td> 
+                                Cavitation <br />
+                                Vapor <br />
+                                Erosivo <br />
+                                Bajo Flujo <br />
+                                Corrosivo <br />
+                                General <br />
+                                Flasheo <br />
+                                Outgassing <br />
+                                Criogenico <br />
+                                Temperatura estándar <br />
+                                Alta temperatura <br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="bola1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Trunnion API 6D Y API 6A</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-1.jpg'%}');background-size: contain;"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 150 a 2500 (API 6D) <br /> API 2000 a 15000 (API 6A) </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 1" a 42" (API 6D) <br /> 2" a 34" (API 6A) </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> RF, RTJ, WE, BW, HUB</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 6D<br/>
+                                API 6A<br/>
+                                NRF-211-PEMEX-2008<br/>
+                                NRF-204-PEMEX-2012<br/>
+                                API 607<br/>
+                                API 6FA<br/>
+                                BS 6755<br/>
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br/>
+                                ISO 5208 (Rangos de Fuga A)<br/>
+                                Rango de temperatura desde – 196 °C hasta + 450 °C<br/>
+                                SIL 1-3<br/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Tipo de Cuerpo</th>
+                              <td> 
+                                Side Entry<br/>
+                                Top Entry<br/>
+                                Fully Welded<br/>
+                                Modular DBB<br/>
+                                3 Vías<br/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Acero al Carbón Forjado<br/>
+                                Acero Inoxidable y Duplex<br/>
+                                Aleaciones<br/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Recubrimientos</th>
+                              <td> 
+                                Alloy 625<br/>
+                                Tungsten Carbide<br/>
+                                Stainless Steel<br/>
+                                Chromium Carbide<br/>
+                                Stellite<br/>
+                                ENP<br/>
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Asiento Suave <br />
+                                Asiento Metálico<br />
+                                Asiento Doble Efecto Pisto<br />
+                                Recubrimientos en componentes de sellado<br />
+                                Recubrimientos en cuerpo<br />
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="bola2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Flotantes</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-2.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 150-600 <br /> 800-2500 </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> ½”-8”</td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> RF, RTJ, WE, BW, HUB, THD, SW </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                ASME B16.34 <br />
+                                API 608 <br />
+                                API 607<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                API 6D <br />
+                                BS EN ISO 17292.<br />
+                                API 598<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Tipo de Cuerpo</th>
+                              <td> 
+                                Puerto Completo<br />
+                                Puerto Reducido<br />
+                                Uni-Body<br />
+                                2 piezas<br />
+                                3 piezas<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Acero al Carbón Fundido y Forjado<br />
+                                Acero Inoxidable <br />
+                                Bronce<br />
+                                Hierro Dúctil<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Recubrimientos</th>
+                              <td> 
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="bola3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Servício Criogénico</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-3.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500 (API 6D)<br />
+                                API 2000 a 15000 (API 6FA)<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> ½"-36" </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> RF, RTJ, WE </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 6D <br />
+                                API 6A <br />
+                                ASME B16.34 <br />
+                                PED <br />
+                                EN 12567 <br />
+                                Shell MESC SPE 77/306 <br />
+                                BS 6364:1984 <br />
+                                BS EN 1626:2008 <br />
+                                BS EN 13648-1:2008 <br />
+                                Hasta menos 196°C <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Tipo de Cuerpo</th>
+                              <td> 
+                                Side Entry <br />
+                                Top Entry <br />
+                                Fully Welded <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Acero Inoxidable y Duplex <br />
+                                Aleaciones <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Recubrimientos</th>
+                              <td> 
+                                Alloy 625 <br />
+                                Tungsten Carbide <br />
+                                Chromium Carbide <br />
+                                Stellite <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Asiento Suave  <br />
+                                Asiento Metálico <br />
+                                NACE MR-0175 <br />
+                                NACE MR-0103 <br />
+                                Bonete Extendido de acuerdo a especificaciones de cliente. <br />
+                                Configuración de relevo de cavidad  <br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="compuerta1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Acero al Carbón API 600</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-12.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 1500
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 2" a 64" </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> RF, RTJ, WE  </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 600<br />
+                                ISO 10434<br />
+                                ASME B16.34<br />
+                                ASME B16.10<br />
+                                ASME B16.5/B16.10/B16.47 A&B<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                API 598<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Características</th>
+                              <td> 
+                               Compuerta solida o Flexible<br />
+                                Asientos soldados o atornillados<br />
+                                Bonete Atornillado o Soldado<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Acero al Carbón Fundido<br />
+                                WCB. WC6, WC9, C5, C12, LCB, LCC, LC2, CF8M, CF3M, entre otros<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Internos</th>
+                              <td> 
+                                API 600 TRIM CHART<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Carga Viva en Compuerta y Globo<br />
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                                Extensión de Vástago de acuerdo a necesidades del cliente.<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="compuerta2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Acero Forjado API 602</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-13.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500<br />
+                                800,1500<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                ¼” a 4” <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                RF, RTJ, WE, SW, THD, BW<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 602<br />
+                                API 603<br />
+                                ASME B16.34<br />
+                                ASME B16.10<br />
+                                ASME B16.5/B16.10<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                API 598<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Características</th>
+                              <td> 
+                                Puerto convencional<br />
+                                Puerto completo<br />
+                                Bonete Atornillado o Soldado<br />
+                                Bonete Vertical/ Inclinado / Y<br />
+                                Válvulas de Retención tipo Pistón, Bola, Columpio<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Acero al carbón forjado<br />
+                                A 105, A182 F5, F11, F22, F9, F316, F304, F304L, Monel, Inconel, F51, entre otros<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Internos</th>
+                              <td> 
+                                13% Cr, 316, Monel, Hastelloy,<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="compuerta3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Tipo disco dual</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-14.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                2” a 84”<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                RF, RTJ, Plain Face, WE, HUB<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 594<br />
+                                ASME B16.10<br />
+                                ASME B16.5<br />
+                                API 598<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Tipo de cuerpo</th>
+                              <td> 
+                                Dual Plate<br />
+                                Single Plate<br />
+                                Wafer<br />
+                                Lug<br />
+                                Flanged<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                A216 WCB, WC6, WC9, A350 LCB, A351 CF8, CF8M, CF3, CF3M, A995 4A, A995 5A, A995 6A, Alloy 20, Monel, Inconel, Hastelloy<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                                Recubrimientos Especiales<br />
+                                Certificación ABS<br />
+                                Registro CRN<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="compuerta4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Servicio criogénico</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-15.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 1500 (API 600)<br />
+                                150-2500 (API 602)<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                2" a 48" (API 600)<br />
+                                ¼” a 2” (API 602)<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                RF, RTJ, WE, SW<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                BS 1873<br />
+                                API 600<br />
+                                API 602<br />
+                                ASME B16.34<br />
+                                ASME B16.10<br />
+                                ASME B16.5/B16.10/B16.47 A&B/B16.25<br />
+                                API 598<br />
+                                BS 6364<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Caracteristicas</th>
+                              <td> 
+                                Hasta menos 196°C<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                SS 316, CF8M, 316L, CF8C, CF3, CF3M,<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Internos</th>
+                              <td> 
+                                NSS 316, Stellite, CF8M<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="compuerta5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Bonete a presión de acero</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-16.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                600-4500
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                2” a 24” 
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                SW, BW  
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 600<br />
+                                ASME B16.34<br />
+                                ASME B16.10<br />
+                                ASME B16.5/B16.10/B16.47 A&B<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                API 598<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Tipo de Cuerpo</th>
+                              <td> 
+                                Compuerta Flexible o Discos Paralelos<br />
+                                  Globo Estándar  Tipo Y<br />
+                                  Retención Tipo Columpio, Tilting disc, Pistón, Y-Pistón<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Acero al carbón fundido y Forjado<br />
+                                WCB, A105,F11, WC6,F22,WC9,F91,F316, CF8M<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Internos</th>
+                              <td> 
+                                13% Cr, 316, Monel, Hastelloy,<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                                By-pass <br />
+                                Carga Viva en Compuerta y Globo<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="api1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">PASO COMPLETO (THRU CONDUIT SLAB)</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-4.jpg'%}');background-size: contain;"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <p>
+                      Válvulas de Compuerta tipo Thru Conduit Slab, es una válvula cuyo elemento obturador
+                      es de una sola pieza de caras paralelas el cual se mueve en el plano perpendicular al flujo. El diseño de los asientos de este tipo de válvulas es dinámico (flotantes),  por lo que su sellado depende exclusivamente de la presión del fluido. </p>
+                    <p>Este tipo de válvula usa la fuerza natural de la presión de la línea para obtener dinámicamente un sello hermético aguas abajo en aplicaciones alta presión diferencial. El sellado a baja presión es realizado mediante  resortes helicoidales que energizan el asiento empujándolo contra el obturador.
+                    </p>
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                2" thru 64" <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                RF, RTJ, WE, BW, HUB<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 6D<br />
+                                NRF-211-PEMEX-2008<br />
+                                API 607<br />
+                                API 6FA<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                ISO 5208 <br />
+                                ANSI B16.10<br />
+                                ANSI B16.5 / ANSI B16.47 / MSS SP-44<br />
+                                ANSI B16.25<br />
+                                ASME VIII Div.1<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Caracteristicas</th>
+                              <td> 
+                                Paso completo y continuado para paso de diablos<br />
+                                Doble Bloqueo y Purga<br />
+                                Asiento Suave<br />
+                                Asiento Metálico<br />
+                                Fácil Mantenimiento<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Acero al Carbón <br />
+                                Acero Inoxidable, Duplex, SuperDuplex<br />
+                                Aleaciones<br />
+                                Recubrimientos<br />
+                                Tungsten Carbide<br />
+                                Chromium Carbide<br />
+                                Stellite<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Sistema de By-Pass<br />
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="api2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">DOBLE EXPANSION (THRU CONDUIT EXPANDING GATE)</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-5.jpg'%}');background-size: contain;"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <p>
+                      La válvula de compuerta de Doble Expansión API 6D es una válvula cuyo elemento obturador se compone de dos piezas llamadas compuerta y segmento de caras paralelas, dichos elementos se mueven en el plano perpendicular al flujo.
+                    </p>
+                    <p>
+                      El diseño de los asientos de este tipo de válvulas son estáticos,  por lo que su sellado no depende de la presión del fluido proporcionando un sello hermético activado mecánicamente. 
+                    </p>
+                    <p>
+                      Tiene doble sellado, sellado bidireccional y función de sellado mecánico dinámico, puerto completo, y es totalmente compatible para la limpieza de ductos por medio de diablos.
+                    </p>
+                    <p>
+                      Las principales aplicaciones son la perforación y producción, transporte de petróleo y gas, aislamiento de compresión de gas aguas arriba, vapor caliente y almacenamiento de tanques de petróleo. También puede usarse para aplicaciones de bloqueo y purga.
+                    </p>
+                    </p>
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                2" thru 36" <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                RF, RTJ, WE, BW, HUB<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 6D<br />
+                                NRF-211-PEMEX-2008<br />
+                                API 607<br />
+                                API 6FA<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                ISO 5208 (Rangos de Fuga A)<br />
+                                ANSI B16.10<br />
+                                ANSI B16.5 / ANSI B16.47 / MSS SP-44<br />
+                                ANSI B16.25<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Caracteristicas</th>
+                              <td> 
+                                Paso completo y continuado para paso de diablos<br />
+                                Doble Bloqueo y Purga<br />
+                                Asiento Metálico<br />
+                                Fácil Mantenimiento<br />
+                                Sello Hermético aguas arriba y aguas abajo<br />
+                                Bi-Direccional <br />
+                                La cavidad de la válvula se aísla del flujo tanto en posición totalmente abierta como completamente cerrada. <br />
+
+                                El empaque del vástago se puede reemplazar en línea en posición completamente abierta y completamente cerrada.<br />
+
+                                Sistema de relevo automático de Presión<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Acero al Carbón <br />
+                                Acero Inoxidable, Duplex, SuperDuplex<br />
+                                Aleaciones<br />
+                                Recubrimientos<br />
+                                Tungsten Carbide<br />
+                                Chromium Carbide<br />
+                                Stellite<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Sistema de By-Pass<br />
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mariposa1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">VÁLVULA DE MARIPOSA DE TRIPLE EXCENTRICIDAD</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-17.jpg'%}');background-size: contain;"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <p>
+                      El diseño de la válvula de triple excentricidad cuenta con una geometría única para evitar los típicos problemas asociados con el diseño de válvulas de mariposa de alto rendimiento. La geometría del conjunto triple elimina totalmente el rozamiento entre el anillo de sello montado en el disco de la válvula y el asiento del cuerpo durante la carrera completa de cierre o apertura de la válvula.
+                    </p>
+                    <p>
+                      El mecanismo de sellado de la válvula de triple excentricidad está asegurado por el torque. Esto significa que el sello del disco se detiene en su operación de cierre por el asiento del cuerpo solamente. Al hacerlo, se elimina automáticamente cualquier desgaste imprevisto en cualquier parte del elemento de sellado de la válvula.
+                    </p>
+                    <p>
+                      ¿Cuándo es necesario utilizar la válvula de mariposa de triple excentricidad en lugar de una válvula de doble excentricidad? 
+                    </p>
+                    <p>
+                      Se deben usar válvulas de triple excentricidad cuando la aplicación requiere sello hermético, pero no permite el uso de una válvula de mariposa con sellos suaves debido a temperaturas bajas / altas, y alta presión
+                    </p>
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                2” a 160”<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                RF, RTJ, WE, BW, <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 609<br />
+                                ISO 5752<br />
+                                NRF-204-PEMEX-2012<br />
+                                API 607<br />
+                                ISO 10497<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                API 598<br />
+                                API 6D (tiempos y presiones de prueba)<br />
+                                ISO 5208 (Rangos de Fuga A)<br />
+                                Rango de temperatura desde – 196 °C hasta + 450 °C<br />
+                                SIL 1-3<br />
+                                ANSI B16.10<br />
+                                ANSI B16.5 / ANSI B16.47 / MSS SP-44<br />
+                                ANSI B16.25<br />
+                                Bidireccional <br />
+                                Temperaturas desde -196°C (-320°F) hasta +818°C (+1600°F)<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Tipo de cuerpo</th>
+                              <td> 
+                                Bridado Patron Corto ISO 5752<br />
+                                Bridado Patron Largo ANSI B 16-10<br />
+                                Wafer & Lugged API 609<br />
+                                Butt-Weld<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Acero al Carbon,LC3, Duplex, Superduplex, Monel, Hastelloy, 254 SMO, Alloy steel WC6, WC9, Inconel, Alloy 20, Bronce al Aluminio, Titanio<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Recubrimientos</th>
+                              <td> 
+                                Stellite<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Asiento Laminado <br />
+                                Asiento Metálico<br />
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mariposa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">VÁLVULA DE MARIPOSA DOBLE EXCENTRICIDAD</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-6.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <p>
+                      Las válvulas de doble excentricidad su utilizadas ampliamente por la combinación de sus funciones de cierre, control y confiabilidad, junto con diseño compacto y aptitud para su uso en servicios en donde un sellado hermético es necesario junto con aplicaciones de aislamiento/no-retorno.
+                    </p>
+                    <p>
+                      Las aplicaciones usuales son: transportación de agua, agua de mar, agua geotérmica, servicio contra incendio, salmuera, desalinizadoras, entre otras.
+                    </p>
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                2” a 160”<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                RF, RTJ, WE, BW, <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                ISO 5752<br />
+                                API 609<br />
+                                API 607<br />
+                                ISO 10497<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                API 598<br />
+                                API 6D (tiempos y presiones de prueba)<br />
+                                ISO 5208 (Rangos de Fuga A)<br />
+                                Rango de temperatura desde – 196 °C hasta + 450 °C<br />
+                                Bridas de acuerdo a UNI/DIN/ISO/ANSI/AWWAM<br />
+                                Bidireccional<br />
+                                Temperaturas desde  -20°C (-4°F) hasta +150°C (+302°F)<br />
+                                Temperaturas desde -196°C (-320°F) hasta +818°C (+1600°F)<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Tipo de cuerpo</th>
+                              <td> 
+                                Bridado Patron Corto ISO 5752<br />
+                                Bridado Patron Largo ANSI B 16-10<br />
+                                Wafer & Lugged API 609<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Acero Ductil, Acero al Carbon, Acero Inoxidable, <br />
+                                Alloy , Bronce al Aluminio, Titanio<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Recubrimientos</th>
+                              <td> 
+                                
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Asiento Metalico disponible para Valvulas de Alto rendimienti (Highoerformance)<br />
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="mariposa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"> VÁLVULA DE MARIPOSA CRIOGÉNICA</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-5 col-md-offset-7 col-sm-5 col-md-offset-7 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-7.jpg'%}');background-size: contain;"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-0 col-sm-7 col-sm-offset-0 padd-20-top padd-100-btm">
+                    <p>
+                      Sus principales aplicaciones son: Plantas de licuefacción LNG, Sistemas de carga  de LNG, terminales de recepción de LNG, Procesos Petroquímicos
+                    </p>
+                    <p>
+                      La válvula de Mariposa de triple excentricidad criogénica cuenta con las mismas características que una valvula para servicio estándar con la diferencia que cuenta con un bonete extendido con una columna de gas suficiente para mantener el empaque del vástago lejos de las bajas temperaturas. La longitud extendida del vástago está diseñada para su uso en la aplicación de LNG.
+                    </p>
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 900<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                               2” a 120”<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                RF, RTJ, WE, BW, <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 609<br />
+                                ISO 5752<br />
+                                NRF-204-PEMEX-2012<br />
+                                API 607<br />
+                                ISO 10497<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                API 598<br />
+                                API 6D (tiempos y presiones de prueba)<br />
+                                ISO 5208 (Rangos de Fuga A)<br />
+                                SIL 1-3<br />
+                                ANSI B16.10<br />
+                                ANSI B16.5 / ANSI B16.47 / MSS SP-44<br />
+                                ANSI B16.25<br />
+                                Bidireccional <br />
+                                Temperaturas desde -196°C (-320°F) hasta +818°C (+1600°F)<br />
+                                BS 6364<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Tipo de cuerpo</th>
+                              <td> 
+                                Bridado Patrón Corto ISO 5752<br />
+                                Bridado Patrón Largo ANSI B 16-10<br />
+                                Wafer & Lugged API 609<br />
+                                Butt-weld<br />
+                                Butt-weld “Top entry” para mantenimiento en línea.<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                CF8M, 1.4408, CF8, CF3M , CF3, CF8C, High Alloy, 6Mo, Incoloy, Hastelloy, Inconnel.<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Recubrimientos</th>
+                              <td> 
+                                Stellite<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                NACE MR-0175<br />
+                                NACE MR-0103<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="submarina1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">VÁLVULAS DE BOLA SUBMARINA</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+               <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-19.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500 (API 6DSS)<br />
+                                API 2000 a 15000 (API 6A / 17D)<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                1 1/2" a 48" (API 6DSS)<br />
+                                2" a 34" (API 6A / 17D)<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                RF, RTJ, WE,BW, HUB<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 6DSS<br />
+                                API 17D<br />
+                                API 6D<br />
+                                API 6A<br />
+                                API 607<br />
+                                API 6FA<br />
+                                ISO 5208 (Rangos de Fuga A, otros disponibles a solicitud)<br />
+                                Adecuadas para instalación a 3.000 m de profundidad en agua (10.000 feet)<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Tipo de cuerpo</th>
+                              <td> 
+                                Puerto Completo o Reducido<br />
+                                Asiento Metálico<br />
+                                Bidireccional<br />
+                                Side Entry<br />
+                                Top Entry<br />
+                                Fully Welded<br />
+                                Modular Double Block & Bleed, bolted and all welded construction<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td> 
+                                Cuerpo: Acero al carbón de Baja Temperatura; Revestimiento de Inconel<br />
+                                Interiores: Acero al carbón de Baja Temperatura; Revestimiento Inconel , Duplex, Super Duplex, Ni Alloy<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Recubrimientos</th>
+                              <td> 
+                                Tungsten Carbide<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Gran variedad de opciones para vástago<br />
+                                Asientos relevantes<br />
+                                Asientos Doble Efecto Piston<br />
+                                Doble Aislamiento<br />
+                                Doble Bloqueo y Purga<br />
+                                ROV para operacion vertical o horizontal<br />
+                                NACE MR-0175<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="submarina2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel"> VÁLVULA DE RETENCIÓN SUBMARINA</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+               <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-20.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500<br />
+                              </td>
+                          </tr>
+                          <tr>  
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                2" a 48"<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                  RF, RTJ, WE, HUB<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 6DSS<br />
+                                API 6A / 17D<br />                                
+                                ASME B16.34<br />
+                                ASME B16.10<br />
+                                ASME B16.5/B16. 10/B16.47 A&B<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Características</th>
+                              <td> 
+                                Guía de diablos integral con mecanismo de bloqueo de disco.<br /> 
+                                Asiento metal a metal<br />
+                                Puerto completo o Reducido<br />
+                                Materiales de Construcción<br />
+                                Cuerpo: Acero al carbón de Baja Temperatura; Revestimiento de Inconel <br />
+                                Interiores: Acero al carbón de Baja Temperatura; Revestimiento de Inconel , Duplex, Super Duplex, Ni Alloy <br />
+                                Internos<br />
+                                Carburo de Tungsteno <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Gran variedad de opciones para vástago<br />
+                                Diferentes mode los de mecanismos que permiten operaciones de paso de diablos “inversas”  <br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="submarina3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">PASO COMPLETO (THRU CONDUIT SLAB) SUBMARINA</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+             <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-21.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500 (API 6DSS)<br />
+                                2000 A 15000 (API 6A  / 17D)<br />
+                              </td>
+                          </tr>
+                          <tr>  
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                2" thru 42" <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                  RF, RTJ, WE, BW, HUB<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                AAPI 6DSS<br />
+                                API 17D<br />
+                                API 6D<br />
+                                API 607<br />
+                                API 6FA<br />
+                                ISO 5208 (Rangos de Fuga A, otros disponibles a solicitud)<br />
+                                ANSI B16.10<br />
+                                ANSI B16.5 / ANSI B16.47 / MSS SP-44<br />
+                                ANSI B16.25<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Características</th>
+                              <td> 
+                                Paso completo y continuado para paso de diablos<br />
+                                Asiento Metálico<br />
+                                Materiales de Construcción<br />
+                                Cuerpo: Acero al carbón de Baja Temperatura; Revestimiento de Inconel <br />
+                                Interiores: Acero al carbón de Baja Temperatura; Revestimiento de Inconel, Duplex, Super Duplex, Ni Alloy<br />
+                                Recubrimientos<br />
+                                Tungsten Carbide<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Gran variedad de opciones para vástago<br />
+                                Sellos aguas arriba / aguas abajo disponibles.<br />
+                                Doble Aislamiento<br />
+                                Asientos tipo twin seats.<br />
+                                NACE MR-0175<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="submarina4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">VÁLVULA DE COMPUERTA DOBLE EXPANSIÓN (Thru Conduit Expanding)</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-22.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Clase</th>
+                              <td> 
+                                150 a 2500 (API 6DSS)<br />
+                                2000 A 15000 (API 6A  / 17D)<br />
+                              </td>
+                          </tr>
+                          <tr>  
+                              <th scope="row">Diámetro</th>
+                              <td> 
+                                2" thru 42" <br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td> 
+                                  RF, RTJ, WE, BW, HUB<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 6DSS<br />
+                                API 17D<br />
+                                API 6D<br />
+                                API 607<br />
+                                API 6FA<br />
+                                ISO 5208 (Rangos de Fuga A, otros disponibles a solicitud)<br />
+                                ANSI B16.10<br />
+                                ANSI B16.5 / ANSI B16.47 / MSS SP-44<br />
+                                ANSI B16.25<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Características</th>
+                              <td> 
+                                Paso completo y continuado para paso de diablos<br />
+                                Asiento Metálico<br />
+                                Materiales de Construcción<br />
+                                Cuerpo: Acero al carbón de Baja Temperatura; Revestimiento de Inconel <br />
+                                Interiores: Acero al carbón de Baja Temperatura; Revestimiento de Inconel, Duplex, Super Duplex, Ni Alloy<br />
+                                Recubrimientos<br />
+                                Tungsten Carbide<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Opciones</th>
+                              <td> 
+                                Gran variedad de opciones para vástago<br />
+                                Sellos aguas arriba / aguas abajo disponibles.<br />
+                                Doble Aislamiento<br />
+                                Asientos tipo twin seats.<br />
+                                NACE MR-0175<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="automatica1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">VÁLVULAS DE AISLAMIENTO DE ACTIVACIÓN REMOTA (VAAR)</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-5 col-md-offset-7 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-8.jpg'%}');background-size: contain;"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-6 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Tipo</th>
+                              <td> 
+                                Válvulas de Bola tipo Trunnion<br />
+                              </td>
+                              <td> 
+                                Válvulas de Mariposa de Triple Excentricidad<br />
+                              </td>
+                              <td> 
+                                Valvulas de Compuerta<br />
+                              </td>
+                          </tr>
+                          <tr>  
+                              <th scope="row" >Tipo de actuador</th>
+                              <td colspan="3"> 
+                                Neumático simple o doble acción
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Conexiones</th>
+                              <td colspan="3"> 
+                                  RF, RTJ, WE<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diseño</th>
+                              <td> 
+                                API 6D<br />
+                                ISO-14313:2007<br />
+                                ISO 5208 (Rangos de Fuga A “CERO FUGA”)<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                ASME B16.34<br />
+                                ASME B16.10<br />
+                                ASME B16.5/B16.10/B16.47 A&B<br />
+                                API 607<br />
+                                API 6FA<br />
+                                ISO10497:2010<br />
+                              </td>
+                              <td> 
+                                API 609 <br />
+                                API 598 <br />
+                                ISO 5752 patrón corto<br />
+                                ANSI B16.10 patrón largo<br />
+                                ISO 5208 (Rangos de Fuga A “CERO FUGA”)<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                ASME B16.34<br />
+                                ASME B16.10<br />
+                                ASME B16.5/B16.10/B16.47 A&B<br />
+                                API 607<br />
+                                API 6FA<br />
+                                ISO10497:2010<br />
+                              </td>
+                              <td> 
+                                API 6D<br />
+                                ISO-14313:2007<br />
+                                ISO 5208 (Rangos de Fuga A “CERO FUGA”)<br />
+                                ISO 15548-1, ISO 15548-2 (Emisiones Fugitivas)<br />
+                                ASME B16.34<br />
+                                ASME B16.10<br />
+                                ASME B16.5/B16.10/B16.47 A&B<br />
+                                API 607<br />
+                                API 6FA<br />
+                                ISO10497:2010<br />
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Características</th>
+                              <td  colspan="3"> 
+                                El conjunto de la válvula VAAR consiste principalmente de:<br />
+                                Válvula, actuador neumático, dispositivo de prueba, indicador de posición, sistema de control, estaciones control (botoneras), cilindros de respaldo, actuador manual, protección ignifuga, entre otras
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Materiales de Construcción</th>
+                              <td colspan="3"> 
+                                De Acuerdo a la NRF-204-PEMEX-2012
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="automatica2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">VÁLVULAS ON-OFF, CORTE DE EMERGANCIA (SDV/VBE) Y MODULANTES</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-9.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <p>
+                      Válvulas de bloqueo abierto/cerrado (ON / OFF) de fluidos para controlar un suceso peligroso; estas válvulas son para el aislamiento de emergencias y son diseñadas para detener la descarga descontrolada de sustancias inflamables o tóxicas, deben estar integradas con los dispositivos requeridos para su correcta operación y pruebas. Estas válvulas deben ser a prueba de fuego sí ellas se ubican en la zona de fuego.
+                    </p>
+                    <p>
+                      Válvulas de Corte de Emergencia (SDV/VBE) Válvula con actuador operado por una señal desde un sistema de seguridad de proceso. La posición de la válvula normalmente es definida para dos posiciones, abierta o cerrada.
+                    </p>
+                    <p>
+                      Válvulas de Modulantes, consisten de una válvula conectada a un actuador el cual cambia la posición del elemento de cierre en la válvula en respuesta a una señal desde el sistema de control de proceso
+                    </p>
+                    <p>
+                      Cualquier tipo de válvula dentro de nuestra gama, puede ser suministrada con un actuador para los servicios ON-OFF, SDV/VBE y MODULANTE
+                    </p>
+                    <p>
+                       Neumático tipo pistón de  simple acción o  doble acción<br />
+                       Actuador hidráulico<br />
+                       Actuador hidroneumático<br />
+                       Actuador electrohidráulico<br />
+                       Tipo paletas rotatorias<br />
+                       Diafragma<br />
+                    </p>
+                    <p>
+                      Los actuadores suministrados cumplen con las normas internacionales, así como, con la NRF-152-PEMEX-2013.
+                    </p>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="automatica3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">VÁLVULAS OPERADAS CON MOTOR (MOV)</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-10.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <p>
+                      Las válvulas operadas por motor eléctrico, conocidas también como MOV, incluyendo los accesorios son  suministradas en forma integral
+                    </p>
+                    <p>
+                      Los actuadores eléctricos cumplen con:
+                    </p>
+                    <p>
+                      NOM-001-SEDE-2005<br />
+                      NRF-048-PEMEX-2007<br />
+                      NRF-152-PEMEX-2013<br />
+                      NRF-244-PEMEX-2010<br />
+                    </p>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="tuberia1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">TUBERÍA ESPECIAL</h4>
+          </div>
+          <div class="modal-body">
+           <!-- begin:testimonial -->
+            <div id="testimonial" class="block-section image-block bg-white">
+              <div class="container-fluid container-no-padding">
+                <div class="row row-no-margin">
+                  <div class="image-block-item col-md-6 col-md-offset-6 col-sm-5 col-xs-12">
+                    <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-service-01-11.jpg'%}');"></div>
+                  </div><!-- .image-block-item -->
+                </div><!-- .row -->
+              </div><!-- .container-fluid -->
+              <div class="container clear">
+                <div class="row">
+                  <div class="col-md-5 col-md-offset-0 col-sm-7 col-sm-offset-5 padd-20-top padd-100-btm">
+                    <h2 class="marg-40-btm text-center">TABLA TÉCNICA</h2>
+                    <table class="table table-hover">
+                      <tbody>
+                          <tr>
+                              <th scope="row">Tipo</th>
+                              <td> 
+                                Sin costura (SMLS) y con costura  (ERW, SAW , HFI y DSAW)
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Diametros</th>
+                              <td> 
+                                1/8” a 24″ sin costura. ½” a 60″ con costura. 
+                              </td>
+                          </tr>
+                          <tr>  
+                              <th scope="row" >Materiales</th>
+                              <td> 
+                                Acero al Carbon y Acero Aleado<br />
+                                ASTM A 53, ASTM A 671, ASTM A 672, ASTM A 691, API 5L, A 671, A 672, A 691
+                              </td>
+                          </tr>
+                          <tr> 
+                               <th scope="row" ></th>
+                              <td> 
+                                Acero de baja temperatura<br />
+                                ASTM A 333, ASTM A 334
+                              </td>
+                          </tr>
+                          <tr> 
+                               <th scope="row" ></th>
+                              <td> 
+                                Acero al Carbon<br />
+                                ASTM A 312, ASTM A 358, ASTM A409, ASTM B 673, ASTM B 674, ASTM A 73
+                              </td>
+                          </tr>
+                          <tr> 
+                               <th scope="row" ></th>
+                              <td> 
+                                Aceros Duplex / Super Duplex <br />
+                                ASTM A789, ASTM A790
+                              </td>
+                          </tr>
+                          <tr> 
+                               <th scope="row" ></th>
+                              <td> 
+                                Aleaciones de Niquel<br />
+                                ASTM B 464, ASTM B 468, ASTM B 514, ASTM B 515, ASTM B 516, ASTM B 517, ASTM B 619, ASTM B 626, ASTM B 704, ASTM B 705, ASTM B 725, ASTM B 730, ASTM B 775
+                              </td>
+                          </tr>
+                          <tr>
+                              <th scope="row">Dimensiones</th>
+                              <td> 
+                                ANSI B36.19 <br />
+                                ANSI B36.10<br />
+                              </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div><!-- .col-## -->
+                </div><!-- .row -->
+              </div><!-- .container -->
+            </div><!-- #testimonial -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- begin:copyright -->
+    <section id="copyright" class="copyright bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 copy-left">
+            <p>Powered by &copy; 2017 <a href="http://templateninja.net"><strong>ZARESDELWEB</strong></a>.</p>
+          </div><!-- .col-sm-6 -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </section><!-- #copyright -->
+    <!-- begin:copyright -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{%static 'zaresapp/vamico/assets/plugins/jquery.min.js'%}"></script>
+    <script src="{%static 'zaresapp/vamico/assets/bootstrap/js/bootstrap.min.js'%}"></script>
+    <script src="{%static 'zaresapp/vamico/assets/plugins/parallax.min.js'%}"></script>
+    <script src="{%static 'zaresapp/vamico/assets/js/navigation.js'%}"></script>
+    <script src="{%static 'zaresapp/vamico/assets/plugins/jquery.easing.js'%}"></script>
+    <script src="{%static 'zaresapp/vamico/assets/plugins/jquery.magnific-popup.min.js'%}"></script>
+    <script src="{%static 'zaresapp/vamico/assets/plugins/imagesloaded.pkgd.min.js'%}"></script>
+    <script src="{%static 'zaresapp/vamico/assets/plugins/isotope.pkgd.min.js'%}"></script>
+    <script src="{%static 'zaresapp/vamico/assets/plugins/owl.carousel.min.js'%}"></script>
+    <script src="{%static 'zaresapp/vamico/assets/plugins/gmap3.min.js'%}"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtR223ih2ZwVJX2SGBixD3p87Aa8RV2Is"></script>
+    <script src="{%static 'zaresapp/vamico/assets/js/script.min.js'%}"></script>
+
+    <script type="text/javascript" charset="utf-8" async defer>
+
+    
+
+    function init_map() {
+    var a = $(".map, .image-block-item-map"),
+        b = a.attr("data-lat"),
+        c = a.attr("data-lng"); "" == b && null == b && (b = 33.7955454), "" == c && null == b && (c = -117.8282586);
+    var d = { lat: +b, lng: +c };
+    $(".map, .image-block-item-map").gmap3({ center: d, zoom: 12, zoomControl: !0, zoomControlOptions: { style: google.maps.ZoomControlStyle.SMALL }, zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_CENTER }, scrollwheel: !1, mapTypeControl: !1, streetViewControl: !1, draggable: !0, styles: [{ elementType: "geometry", stylers: [{ color: "#f5f5f5" }] }, { elementType: "labels.icon", stylers: [{ visibility: "off" }] }, { elementType: "labels.text.fill", stylers: [{ color: "#616161" }] }, { elementType: "labels.text.stroke", stylers: [{ color: "#f5f5f5" }] }, { featureType: "administrative.land_parcel", elementType: "labels.text.fill", stylers: [{ color: "#bdbdbd" }] }, { featureType: "poi", elementType: "geometry", stylers: [{ color: "#eeeeee" }] }, { featureType: "poi", elementType: "labels.text.fill", stylers: [{ color: "#757575" }] }, { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#e5e5e5" }] }, { featureType: "poi.park", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] }, { featureType: "road", elementType: "geometry", stylers: [{ color: "#ffffff" }] }, { featureType: "road.arterial", elementType: "labels.text.fill", stylers: [{ color: "#757575" }] }, { featureType: "road.highway", elementType: "geometry", stylers: [{ color: "#dadada" }] }, { featureType: "road.highway", elementType: "labels.text.fill", stylers: [{ color: "#616161" }] }, { featureType: "road.local", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] }, { featureType: "transit.line", elementType: "geometry", stylers: [{ color: "#e5e5e5" }] }, { featureType: "transit.station", elementType: "geometry", stylers: [{ color: "#eeeeee" }] }, { featureType: "water", elementType: "geometry", stylers: [{ color: "#c9c9c9" }] }, { featureType: "water", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] }] }).marker({ position: d, options: { icon: "{%static 'zaresapp/vamico/assets/img/map-marker.png'%}" } }) }
+    $("#oculto").hide()
+
+
+
+
+    </script>
+  </body>
+</html>

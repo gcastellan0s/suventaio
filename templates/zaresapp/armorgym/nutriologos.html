@@ -1,0 +1,113 @@
+{% extends "zaresapp/armorgym/base.html" %}
+
+{% load staticfiles i18n %}
+{% load humanize %}
+
+{% block title %}NUTRIOLOGOS | ARMOR-GYM{% endblock title %}
+
+{% block content %}  
+<style>
+	.hps-title4, .man-girl, .box-left .icon .fa, .box-right .icon .fa, .about-bottom-title h4, .news-date, .parallax-background-overlay, .month, .our-pricing, .content-our-team.our-team-tabs .our-team-pane, .content-our-team.our-team-tabs .our-team-nav > span.our-team-current, .background-overlay, .classes-content .filter.is-checked, .price-table-content, .btn-submit, .shop .price-table-content a, .arrows .fa, .actions, .img-box-right, .event-month, .gallery .title-gallery, .icon-block .fa, .tab-history .our-team-nav span.our-team-current:before, .categories .filter.is-checked, .class-trainer-title, .class-info-title, .comments-title, .btn-submit, .img-trainers, .profile-title, .experience-spoiler-opened .experience-details-title, .progress-indicator .bg-red, .skill-percent, .parallax-col .parallax-row .thumb:after, .page-product .product-image-wrapper .new-label, .page-product .product-filter, .page-product .product-categories, .page-product .pages ol li.current a, .product-detail .product-collateral > ul li.ui-state-active a, .product-cart .cart .cart-collaterals .title, .product-check-out .checkout .checkout-row .title, .calendar-title, .mini-cart .check, .calendar-day > div, .menu-sidebar, .menu-wrap, #open-button, .quickview-box .quickview-close, .headding-content .icon-headding .fa, .ms-skin-default .ms-bullet-selected, .header-option .header-container-3 .shopping-cart i, .header-option .search i, .product-essential .add-to-box .link-wishlist, .ch-info .ch-info-back, .shopping-cart:hover i, .search:hover i, .timetable-top .timetable-cont:hover .table:before, .sevices-wapper:hover .content-our-team.our-team-tabs .our-team-nav > span:hover, .classes-content .filter:hover, .price-tb:hover .plan, .shop .price-table-content:hover, .product-content .info-products:hover, .our-trainers .info-products:hover, #copyright:hover, .menu-about ul li a:hover, .tab-history .our-team-nav span:hover:before, .banner-details .carousel-control span:hover, .course:hover, .product-content .info-products:hover, .our-trainers .info-products:hover, .load-more:focus, .page-product .pages ol li a:hover .product-detail .product-collateral > ul li a:hover, .calendar-date ul li:hover, .event-listing-grid .info-products:hover, .event-listing .news-item-inner:hover, .tags-blog a:hover, .icon-blog .icon a:hover, .social_icon a:hover, .product-list-row .actions-box ul li a:hover, .content-our-team.our-team-tabs .our-team-nav > span:hover, .content-our-team.our-team-tabs .our-team-nav > span.our-team-current, .pages .current a, .related-post-list a:before, .headding-content .icon-headding, .calendar-details .info-products, .page-product .pages ol li.current a, .page-product .pages ol li a:hover, .product-essential .add-to-box .link-wishlist:hover, .product-essential .tags-list ul li a:hover, .product-essential .social-icon ul a:hover, .product-detail .product-collateral > ul li a:hover, .product-detail .product-collateral > ul li.ui-state-active a, .categories .filter:hover, .categories .filter.is-checked, .class-trainer-content .profile:hover, .header-option .shopping-cart i, .header-option .search i, .sevices-wapper:hover, .boxing-page .header-container .logo, .panel-tools .panel-button, .panel-tools .layout-setting button.active, .reset-button button, .masonry-small, .icon-sport, .footer-store, #copyright.copyright-store, .btn-store a, .sub-title:hover, .icon-cart, .icon-wishlist, .product-image-wrapper:hover .product-content .info-products, .product-image-wrapper:hover .our-trainers .info-products, .my-cart, .my-wishlist, .bag-cart .check, .ms-thumb-frame-selected .sub-title, .title-match > h3, .league-top .number, .btn-store.shop-now a, .sport-club .logo a {
+	    background: none repeat scroll 0 0 rgba(36, 75, 212, 1);
+	}
+	.page-heading {
+	    background: url('{%static 'zaresapp/armorgym/images/bg-our-class2.jpg'%}') no-repeat center rgba(0, 0, 0, 0);
+	    background-size: 100% 100%;
+	}
+</style>
+<!--Banner-->
+	<section class="page-heading">
+		<div class="title-slide">
+			<div class="container">
+					<div class="banner-content slide-container">									
+						<div class="page-title">
+							<h3 style="color:rgba(255, 229, 22, 1)">NUTRIOLOGOS ARMOR GYM</h3>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+	<!--End Banner-->
+	<section id="our-trainers" class="our-trainers">
+		<div class="our-trainer-box col-md-4 col-sm-6 col-xs-12">
+			<div class="product-image-wrapper">
+				<div class="product-content">
+					<div class="product-image product-trainer">
+						<a href="trainer-profile.html"><img src="{%static 'zaresapp/armorgym/images/nut1.png'%}" alt=""/></a>
+					</div>
+					<div class="info-products">
+						<div class="product-name" >
+							<a href="trainer-profile.html">JAVIER MUÑOZ</a>
+							<div class="product-bottom"></div>
+						</div>
+						<div class="product-info">	
+							<p>SUCURSAL PENSIONES</p>
+							<p>7:00 a 14:00</p>																									
+							<p>Nutriólogo encargado de dar consulta a los socios del gimnasio y llevar a cabo seguimientos quincenales y/o mensuales. Elaboración de dietas basadas en objetivos personales, interpretación de registros antropométricos, orientación alimentaria enfocada al entrenamiento.</p>
+						</div>												
+						<div class="actions">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>												
+				</div>								
+			</div>						
+		</div>
+		<div class="our-trainer-box col-md-4 col-sm-6 col-xs-12">
+			<div class="product-image-wrapper">
+				<div class="product-content">
+					<div class="product-image product-trainer">
+						<a href="trainer-profile.html"><img src="{%static 'zaresapp/armorgym/images/nut1.png'%}" alt=""/></a>
+					</div>
+					<div class="info-products">
+						<div class="product-name" >
+							<a href="trainer-profile.html">RICARDO GONZÁLEZ</a>
+							<div class="product-bottom"></div>
+						</div>
+						<div class="product-info">	
+							<p>SUCURSAL NORTE</p>
+							<p>9:00 a 14:00</p>																									
+							<p>Diplomado en medicina estética corporal. Preparador físico  men / woman (CONADE) 2do lugar. En la copa fisicoconstructivismo y fitness , Merida 2016. Maestría en nutrición clínica.</p>
+						</div>												
+						<div class="actions">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>												
+				</div>								
+			</div>						
+		</div>
+		<div class="our-trainer-box col-md-4 col-sm-6 col-xs-12">
+			<div class="product-image-wrapper">
+				<div class="product-content">
+					<div class="product-image product-trainer">
+						<a href="trainer-profile.html"><img src="{%static 'zaresapp/armorgym/images/nut1.png'%}" alt=""/></a>
+					</div>
+					<div class="info-products">
+						<div class="product-name" >
+							<a href="trainer-profile.html">ADOLFO SÁNCHEZ</a>
+							<div class="product-bottom"></div>
+						</div>
+						<div class="product-info">	
+							<p>SUCURSAL CENTRO</p>
+							<p>7:00 a 12:00</p>																									
+							<p>Adolfo Rene Sánchez Rodríguez. Lic. En nutrición. UADY. La consulta consiste en una entrevista de hábitos de alimentación y valoración del estado de nutrición a través de la báscula de bioimpedancia y método de antropometría (plicometria) para personas ejercitadas y/o deportistas. Posteriormente se envía el plan de alimentación al correo otorgado..</p>
+						</div>												
+						<div class="actions">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							</ul>
+						</div>
+					</div>												
+				</div>								
+			</div>						
+		</div>
+	</section>
+{% endblock %}
+
+				

@@ -1,0 +1,220 @@
+{% extends "zaresapp/finezipo/base.html" %}
+
+{% load i18n %} 
+{% load staticfiles i18n %}
+
+{%block title%}FZ | {{artista|upper}}{%endblock%}
+
+{%block styles%}
+{%endblock%}
+
+{%block css%}
+.navbar .navbar-nav > li > a {
+    color: #000;
+}
+@media (max-width: 768px){
+  .cbp-af-header {
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    background: rgba(255, 255, 255, .6);
+}
+navbar h1 a{
+    color: #000!important;
+}
+.navbar h1 small{
+    color: #000;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar h1 a {
+    color: #000;
+}
+{%endblock%}
+
+{%block content%}
+  <section id="port-item-details">
+    <div class="container-fluid padding-side-60">
+
+       <div class="e-divider-8"></div>
+       <div class="post-header">
+          <h2 class="e-uppercase" style="margin-top: 35px;">LOS SHULOS CALDERON</h2>
+          
+          <div class="e-divider-2"></div>
+       </div>
+       <div class="e-divider-4"></div>
+       <div class="row">
+          <div class="col-md-4">
+             <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/1.jpg'%}" class="img-responsive">
+             <div class="e-divider-2"></div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+             <h3 class="font-accident-two-normal e-uppercase">QUIENES SON?</h3>
+             <div class="e-divider-2"></div>
+             <h3>Carlos Calderon Ceballos</h3>
+             <p>
+                Comenzó a sus 18 años como profesional cantando en los eventos de licenciado TONNY, presiente municipal de Naucalpan, presentándose en lugares como el centro convenciones rodeo Santa Fe y el DIF.<br />
+                Carlos Calderón debutó en la televisión mexicana presentando el primer sencillo la (bomba) con un género llamado, ranchero tropical urbano, presentado en el exitoso programa llamado “Naucalpan son Machine”, conducido por Albertano.<br />
+                Tema que fue  dirigido y producido por Brando (armando Gómez), director artístico de universal music México <br />
+                Aprendiz de la señora Dulce Canseco, ella la ayudó mucho con su evolución como artista.<br />
+                En el 2017 se integra en una banda sinaloense y debuta con el tema de agradecido, con más de 10 millones de reproducciones en YouTube<br />
+                Ese mismo año se integra al elenco del programa más exitoso en la televisión mexicana, “enamorando” lo cual lo lleva al gusto de toda la gente en México y Latinoamérica.<br />
+                Temas como el bueno y el malo con más de 5 millones de reproducciones, esclavo y amo 1 millón 600,000 y  los lentes carrera 1 millón 400,000 reproducción lo han colocado en el gusto de la gente.<br />
+                Colaboró en la discografía de los gigantes de la cumbia, producida Por Universal music compartiendo Escenario Con Pancho Barraza, Ninel conde, Sonora Tropicana, Germán Montero, Emir Pavón, André Escalona, los Flamers entre otros.<br />
+                En el 2018 se lanzará el sencillo titulado como “Cruz de estrellas” cantado a lado de su hermano el (shulito), dirigido y producido por la disquera fábrica de éxitos Carlos Abara y Alex Abara con un ritmo al estilo de los Mariachi norteño banda.<br />
+                En febrero del 2018 se  presentan cantando en el TEATRO METROPOLITAN a acompañando a los panchos también con una gran presentación en la ARENA CIUDAD DE MEXICO teniendo un concierto con más de 25 mil personas.<br />
+                Se integra como conductor del programa (HOY) en marzo del 2018 teniendo una sección llamada LOS SHULOS CON LAS SHULAS.<br />
+                También sacarán sencillo del reconocido compositor Horacio Palencia con norteño Banda <br />
+             </p>
+             <h3>Brian Calderon Ceballos</h3>
+             <p>
+                Cantautor mexicano <br />
+                Cantando en escenarios como teatro metropolitan arena Ciudad de México <br />
+                Ex amoroso del programa Enamorandos <br />
+                Actualmente como conductor presentando cápsulas en el programa hoy todos los días. <br />
+                En espera del primer sencillo próximo a salir con los shulos Calderón<br />
+             </p>
+              
+             <div class="e-divider-6"></div>
+
+             <div class="row">
+                <h3 class="font-accident-two-normal e-uppercase">SERVICIOS</h3>
+                 <div class="row">
+                    <div class="col-md-12 padding-side-50 bg-color01">
+
+                       <div class="e-divider-4"></div>
+                       <div class="col-md-4">
+                          <h4 class="font-accident-two-normal e-uppercase">SHOW CASE</h4>
+                          <div class="e-divider-4"></div>
+                       </div>
+                       <div class="col-md-4">
+                          <h4 class="font-accident-two-normal e-uppercase">PRESENCIA</h4>
+                          <div class="e-divider-4"></div>
+                       </div>
+                       <div class="col-md-4">
+                          <h4 class="font-accident-two-normal e-uppercase">CARNAVALES</h4>
+                          <div class="e-divider-4"></div>
+                       </div>
+
+                    </div>
+                 </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <section id="portfolio" class="e-block e-block-skin pt-section" style="margin-top:45px;">
+    <div class="light">
+       <div class="grid container-fluid ">
+          <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/1.jpg'%}" download>
+             <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/1.jpg'%}" class="img-responsive" alt="shuloscalderon"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/2.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/2.jpg'%}" class="img-responsive" alt="shuloscalderon"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/3.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/3.jpg'%}" class="img-responsive" alt="shuloscalderon"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/4.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/4.jpg'%}" class="img-responsive" alt="shuloscalderon"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/5.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/5.jpg'%}" class="img-responsive" alt="shuloscalderon"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/6.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/6.jpg'%}" class="img-responsive" alt="shuloscalderon"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/7.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/7.jpg'%}" class="img-responsive" alt="shuloscalderon"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/8.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/8.jpg'%}" class="img-responsive" alt="shuloscalderon"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/9.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/9.jpg'%}" class="img-responsive" alt="shuloscalderon"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/10.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/shuloscalderon/10.jpg'%}" class="img-responsive" alt="shuloscalderon"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+          </div>
+       </div>
+       <div class="e-divider-6"></div>
+    </div>
+ </section>
+ <!-- /Portfolio Block  -->
+{%endblock%}
+
+{%block js%}
+{%endblock%}
+
+{%block script%}
+{%endblock%}
+

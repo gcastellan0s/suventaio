@@ -1,0 +1,191 @@
+{% extends "zaresapp/sergiogarte/base.html" %}
+{% load i18n %} 
+{% load staticfiles i18n %}
+{% load suventatags %}
+
+{%block title%}SERGIO GARTE | HECHURA A MEDIDA{%endblock title%}
+
+{%block style%}
+	<style>
+		.bg-dark {
+		    background-color: #1c2a1a;
+		    height: 100%;
+		    width: 100%;
+		}
+        .mfp-container {
+            background: rgba(28, 42, 26, 0.52);
+        }
+        .product-gallery li {
+            display: inline-block;
+            width: 28%!important;
+            margin: 0 5px;
+        }
+        .product-gallery li {
+            padding-bottom: 10px;
+        }
+        .shop-item:hover .shop-item-image:after {
+            background: rgba(22, 50, 30, 0.71);
+        }
+        .parallax-bg {
+            overflow: hidden;
+            background-image: url('{%static 'zaresapp/sergiogarte/images/hero2.jpg'%}');
+            background-attachment: fixed;
+            position: relative;
+            background-size: contain;
+        }
+        .parallax, .parallax-item {
+            background: #fff;
+        }
+	</style>
+{%endblock%}
+
+{%block meta%}
+    {%for object in mode%}
+        {%if object.index == c%}
+            <meta property="og:type" content="article" />
+            <meta property="og:title" content="{{object.name}} ::: SERGIO GARTE" />
+            <meta property="og:description" content="{{object.description|striptags}}" />
+            <meta property="og:image" content="{%static 'zaresapp/sergiogarte/images/shop/'%}{{object.picture}}" />
+        {%endif%}
+    {%endfor%}
+{%endblock%}
+
+{%block description%}
+    {%for object in mode%}
+        {%if object.index == c%}
+            {{object.description|striptags}}
+        {%endif%}
+    {%endfor%}
+{%endblock%}
+
+{%block content%}
+	<section class="brick brick-md brick-parallax bg-dark" data-background="assets/images/about.jpg">
+			<div class="container">
+                <div class="row mt-50">
+                    <div class="col-md-8">
+                        <h1 class="bread-text text-white gold2" style="font-family: gartefont!important;" >
+                        		<img class="" src="{%static 'zaresapp/sergiogarte/images/deco7.png'%}" alt="" style="max-width:40px;padding-bottom:10px;">
+                        		PRÊT-À-PORTER
+                        </h1>
+                        <div class="text-white">
+                            DISEÑADOR MEXICANO
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-30">
+                        <div class="mod-breadcrumbs text-right">
+                            <a href="/">INICIO</a>&nbsp;/&nbsp; <a href="/?p=alta-moda">ALTA MODA</a>&nbsp;/&nbsp;<span class="gold2">LISTO PARA USAR</span><br />
+                            <img class="" src="{%static 'zaresapp/sergiogarte/images/deco6.png'%}" alt="" style="max-width:50px;padding-top:0px;">
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+	</section>
+    <section class="brick" style="padding-bottom: 10px;">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-8 col-md-offset-2 col-xs-12">
+                    <img class="mb-20" src="{%static 'zaresapp/sergiogarte/images/deco2.png'%}" alt="" style="max-width:300px;">
+                    <h2 class="brick-title mb-10"><span style="font-weight: 100;font-family: gartefont!important;" class=""> SERGIO GARTE </span></h2>
+                    <div class="divider title-divider"></div>
+                </div>
+            </div>
+        </div>  
+    </section >
+
+
+    {%for object in mode%}
+        {%if object.index == c%}
+            <section class="brick mb-0" style="padding-top: 40px;padding-bottom: 40px;">  
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5 mb-sm-40">
+                            <div class="text-center" style="background-position: 50% 50px;background-color: #9d913f;padding: 8px;">
+                                <div class="parallax-item light-bg">
+                                    <a href="{%static 'zaresapp/sergiogarte/images/shop/'%}{{object.picture}}" class="gallery">
+                                        <img src="{%static 'zaresapp/sergiogarte/images/shop/'%}{{object.picture}}" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-push-1 mb-sm-40">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h2 class="product-title">{{object.name}}</h2>
+                                </div>
+                            </div>
+                            {%if object.price%}
+                                <div class="row mb-50">
+                                    <div class="col-sm-12">
+                                        <div class="price">
+                                            <span class="amount">{{object.price}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            {%endif%}
+                            <div class="row mb-20">
+                                <div class="col-sm-12">
+                                    <div class="description">
+                                        <p>{{object.description|striptags}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-20">
+                                <div class="col-sm-12">
+                                    <ul class="product-detail">
+                                        {%if object.sizes%}<li><strong>TAMAÑOS:</strong> {{object.sizes}}</li>{%endif%}
+                                        {%if object.colors%}<li><strong>COLOR:</strong> {{object.colors}}</li>{%endif%}
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mb-40">
+                                <div class="col-sm-8">
+                                    <a href="?p=contacto" class="action-btn btn-g block-btn">LO NECESITO</a>
+                                </div>
+                            </div>
+                            <ul class="product-gallery">
+                                {%for pic in object.pictures%}
+                                    <li>
+                                        <a href="{%static 'zaresapp/sergiogarte/images/shop/'%}{{pic}}" class="gallery">
+                                            <img src="{%static 'zaresapp/sergiogarte/images/shop/'%}{{pic}}" alt="">
+                                        </a>
+                                    </li>
+                                {%endfor%}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {%endif%}
+    {%endfor%}
+    <section class="brick-xs">
+        <div class="container">
+            <!-- brick TITLE -->
+            <div class="row text-center">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h2 class="brick-title mb-10"><span style="font-weight: 100;font-family: gartefont!important;" class=""> MÁS DISEÑOS </span></h2>
+                    <div class="divider title-divider"></div>
+                </div>
+            </div>
+            <!-- /brick TITLE -->
+            <div class="row multi-columns-row mt-50">
+                <!-- SHOP ITEM -->
+                {%for object in mode%}
+                    {%if object.section == section%}
+                        <div class="col-sm-6 col-md-3 col-lg-3">
+                            <div class="shop-item">
+                                <div class="shop-item-image">
+                                    <img src="{%static 'zaresapp/sergiogarte/images/shop/'%}{{object.picture}}" alt="">
+                                    <div class="shop-item-detail">
+                                        <a class="action-btn btn-g" href="?p=product&c={{object.index}}&section={{section}}">LO NECESITO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {%endif%}
+                {%endfor%}
+                <!-- /SHOP ITEM -->
+            </div>
+        </div>
+    </section>
+{%endblock content%}

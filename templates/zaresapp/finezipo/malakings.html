@@ -1,0 +1,226 @@
+{% extends "zaresapp/finezipo/base.html" %}
+
+{% load i18n %} 
+{% load staticfiles i18n %}
+
+{%block title%}FZ | {{artista|upper}}{%endblock%}
+
+{%block styles%}
+{%endblock%}
+
+{%block css%}
+.navbar .navbar-nav > li > a {
+    color: #000;
+}
+@media (max-width: 768px){
+  .cbp-af-header {
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    background: rgba(255, 255, 255, .6);
+}
+navbar h1 a{
+    color: #000!important;
+}
+.navbar h1 small{
+    color: #000;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar h1 a {
+    color: #000;
+}
+{%endblock%}
+
+{%block content%}
+  <section id="port-item-details">
+    <div class="container-fluid padding-side-60">
+
+       <div class="e-divider-8"></div>
+       <div class="post-header">
+          <h2 class="e-uppercase" style="margin-top: 35px;">MALAKINGS</h2>
+          
+          <div class="e-divider-2"></div>
+       </div>
+       <div class="e-divider-4"></div>
+       <div class="row">
+          <div class="col-md-4">
+             <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/1.jpg'%}" class="img-responsive">
+             <div class="e-divider-2"></div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+             <h3 class="font-accident-two-normal e-uppercase">QUIENES SON?</h3>
+             <div class="e-divider-2"></div>
+             <p>
+              Malakings es un grupo de música urbana formado en la ciudad de México, los miembros son originarios de México y Colombia,<br /> son destacados en diferentes ámbitos como actuación, baile, fitness y canto, siendo un experimento social – musical crean sensualidad con su música y que la gente pueda cantar, bailar y darles un escaparate de rebeldía para salir de las limitaciones humanas y lo convencional.
+             </p>
+            <p>
+                <h4>RICARDO PADILLA VARGAS</h4>
+                (Querétaro 22 AÑOS) Se desempeño como futbolista profesional en clubes como queretaro FC club Puebla FC y seleccionado nacional sub 15 y sub 16, en 2018 participo en Mr model México, es amante del futbol, deportes extremos , carreras, bailar y también le gusta asisitir a seminarios de desarollo personal.
+            </p>
+            <p>
+                <h4>SERGIO HERRERA</h4>
+                (Hermosillo sonora 28 AÑOS) Inicia en el mundo del modelaje en el año 2017, en 2018 representa a México en el concurso MEN UNIVERSE, ha participado en comerciales y campañas para marcas de ropa, le gusta mucho hacer ejercicio, meditar y combina su carrera de técnico odontólogo y dar asesorías fitness.
+            </p>
+            <p>
+                <h4>JAVIER BARRERA CASTRO</h4>
+                (Merida Yucatan 23 AÑOS) Estudio teatro desde los 6 años y ha participado en obras de teatro musical entre las mas destacadas CATS, LA BELLA Y LA BESTIA Y QUE PLANTON, en 2018 represento al estado de Yucatán en el concurso Mr model México en donde fue nombrado uno de los mejor cuerpos , le gusta practicar box y pasar tiempo con su familia.
+            </p>
+            <p>
+                <h4>LUIS ESTRADA</h4>
+                (Hermosillo Sonora 19 AÑOS) Nombrado el mejor físico en mister model Jr México en el año 2018, actualmente se desempeña como entrenador personal, modelo fitness, entre sus pasatiempos favoritos están : correr, viajar , conocer lugarer nuevos y crear contenido en youtube en donde actualmente comparte todas sus experiencias del día a día como fitness motivation y lifestyle.
+            </p>
+            <p>
+                <h4>GIRADOT</h4>
+                (27 AÑOS) Este sexy colombiano es amante de viajar para conocer lugares nuevos y emocionantes, bailar es una de sus grandes pasiones al igual que comer sano y entrenar para mantenerse siempre en forma.
+            </p>
+            <p>
+                <h4>ISBO</h4>
+                (26 AÑOS) Cantante, compositor, productor y músico, la guitarra es su compañera de composición y bailar una de sus grandes pasiones, concursante del reality show mas exitoso de México LA ACADEMIA tv azteca, fue el alumno mas polémico y querido de su generación.
+            </p>
+             <div class="e-divider-6"></div>
+             <div class="row">
+                <div class="col-md-12 padding-side-50 bg-color01">
+                    <h3 class="font-accident-two-normal e-uppercase">SERVICIOS</h3>
+                    <div class="col-md-4">
+                        <h4 class="font-accident-two-normal e-uppercase">FESTIVALES</h4>
+                        <div class="e-divider-4"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="font-accident-two-normal e-uppercase">PRESENTACIONES</h4>
+                        <div class="e-divider-4"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="font-accident-two-normal e-uppercase">CARNAVALES</h4>
+                        <div class="e-divider-4"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="font-accident-two-normal e-uppercase">EVENTOS PRIVADOS</h4>
+                        <div class="e-divider-4"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="font-accident-two-normal e-uppercase">ANTROS</h4>
+                        <div class="e-divider-4"></div>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <section id="portfolio" class="e-block e-block-skin pt-section" style="margin-top:45px;">
+    <div class="light">
+       <div class="grid container-fluid ">
+          <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/malakings/3.jpg'%}" download>
+             <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/3.jpg'%}" class="img-responsive" alt="malakings"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/malakings/5.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/5.jpg'%}" class="img-responsive" alt="malakings"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/malakings/6.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/6.jpg'%}" class="img-responsive" alt="malakings"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/malakings/7.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/7.jpg'%}" class="img-responsive" alt="malakings"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/malakings/8.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/8.jpg'%}" class="img-responsive" alt="malakings"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/malakings/9.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/9.jpg'%}" class="img-responsive" alt="malakings"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/malakings/10.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath"></figure>
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/10.jpg'%}" class="img-responsive" alt="malakings"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/malakings/11.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/11.jpg'%}" class="img-responsive" alt="malakings"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/malakings/12.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/12.jpg'%}" class="img-responsive" alt="malakings"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/malakings/13.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/malakings/13.jpg'%}" class="img-responsive" alt="malakings"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+
+          </div>
+       </div>
+       <div class="e-divider-6"></div>
+    </div>
+ </section>
+ <!-- /Portfolio Block  -->
+{%endblock%}
+
+{%block js%}
+{%endblock%}
+
+{%block script%}
+{%endblock%}
+

@@ -1,0 +1,142 @@
+	{% extends "zaresapp/armorgym/base.html" %}
+
+{% load staticfiles i18n %}
+{% load humanize %}
+
+{% block title %}NOSOTROS | ARMOR-GYM{% endblock title %}
+
+{% block content %}  
+	<!--About-->
+	<style>
+	.box-left .content-about, .box-right .content-about {
+	    margin: 0 15px 0 0 !important;
+	}
+	.hps-title4, .man-girl, .box-left .icon .fa, .box-right .icon .fa, .about-bottom-title h4, .news-date, .parallax-background-overlay, .month, .our-pricing, .content-our-team.our-team-tabs .our-team-pane, .content-our-team.our-team-tabs .our-team-nav > span.our-team-current, .background-overlay, .classes-content .filter.is-checked, .price-table-content, .btn-submit, .shop .price-table-content a, .arrows .fa, .actions, .img-box-right, .event-month, .gallery .title-gallery, .icon-block .fa, .tab-history .our-team-nav span.our-team-current:before, .categories .filter.is-checked, .class-trainer-title, .class-info-title, .comments-title, .btn-submit, .img-trainers, .profile-title, .experience-spoiler-opened .experience-details-title, .progress-indicator .bg-red, .skill-percent, .parallax-col .parallax-row .thumb:after, .page-product .product-image-wrapper .new-label, .page-product .product-filter, .page-product .product-categories, .page-product .pages ol li.current a, .product-detail .product-collateral > ul li.ui-state-active a, .product-cart .cart .cart-collaterals .title, .product-check-out .checkout .checkout-row .title, .calendar-title, .mini-cart .check, .calendar-day > div, .menu-sidebar, .menu-wrap, #open-button, .quickview-box .quickview-close, .headding-content .icon-headding .fa, .ms-skin-default .ms-bullet-selected, .header-option .header-container-3 .shopping-cart i, .header-option .search i, .product-essential .add-to-box .link-wishlist, .ch-info .ch-info-back, .shopping-cart:hover i, .search:hover i, .timetable-top .timetable-cont:hover .table:before, .sevices-wapper:hover .content-our-team.our-team-tabs .our-team-nav > span:hover, .classes-content .filter:hover, .price-tb:hover .plan, .shop .price-table-content:hover, .product-content .info-products:hover, .our-trainers .info-products:hover, #copyright:hover, .menu-about ul li a:hover, .tab-history .our-team-nav span:hover:before, .banner-details .carousel-control span:hover, .course:hover, .product-content .info-products:hover, .our-trainers .info-products:hover, .load-more:focus, .page-product .pages ol li a:hover .product-detail .product-collateral > ul li a:hover, .calendar-date ul li:hover, .event-listing-grid .info-products:hover, .event-listing .news-item-inner:hover, .tags-blog a:hover, .icon-blog .icon a:hover, .social_icon a:hover, .product-list-row .actions-box ul li a:hover, .content-our-team.our-team-tabs .our-team-nav > span:hover, .content-our-team.our-team-tabs .our-team-nav > span.our-team-current, .pages .current a, .related-post-list a:before, .headding-content .icon-headding, .calendar-details .info-products, .page-product .pages ol li.current a, .page-product .pages ol li a:hover, .product-essential .add-to-box .link-wishlist:hover, .product-essential .tags-list ul li a:hover, .product-essential .social-icon ul a:hover, .product-detail .product-collateral > ul li a:hover, .product-detail .product-collateral > ul li.ui-state-active a, .categories .filter:hover, .categories .filter.is-checked, .class-trainer-content .profile:hover, .header-option .shopping-cart i, .header-option .search i, .sevices-wapper:hover, .boxing-page .header-container .logo, .panel-tools .panel-button, .panel-tools .layout-setting button.active, .reset-button button, .masonry-small, .icon-sport, .footer-store, #copyright.copyright-store, .btn-store a, .sub-title:hover, .icon-cart, .icon-wishlist, .product-image-wrapper:hover .product-content .info-products, .product-image-wrapper:hover .our-trainers .info-products, .my-cart, .my-wishlist, .bag-cart .check, .ms-thumb-frame-selected .sub-title, .title-match > h3, .league-top .number, .btn-store.shop-now a, .sport-club .logo a {
+	    background: none repeat scroll 0 0 rgba(36, 75, 212, 1);
+	}
+	.news-info {
+	    margin-left: 0px;
+	}
+		.news-title a, {
+	    color: #264ad4;
+	}
+	.news-item-inner {
+	    padding: 0px 10px;
+	}
+	.about-con .about-box {
+	    background: #2d2d2d;
+	    color: #5d5d5d;
+	}
+	.working-hours {
+	    color: #fff;
+	    padding: 8px 25px;
+	}
+	.news-content ul {
+	    background: none repeat scroll 0 0 #2d2d2d;
+	    color: #fff;
+	    list-style: outside none none;
+	    margin: 0;
+	    padding: 11px 13px;
+	}
+	.news-time p {
+	    color: #fff;
+	}
+	</style> 
+	<section class="about scroll-to">
+		<div class="about-top">
+			<div class="container">
+				<div class="row" style="margin-top:120px;">
+					<div class="col-md-12">
+						<div class="title-page title-about">
+							<img src="images/logo.png" alt=""/>
+							<img src="{%static 'zaresapp/armorgym/images/logo.png'%}" alt="" style="max-width:250px;"/>
+							{%comment%}
+							<p style="margin-top:40px;font-size: 16px;">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							{%endcomment%}
+						</div>
+					</div>
+					{%comment%}
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="box-left">
+							<div class="content-about">
+								<h4 class="about-title" style="color:rgba(255, 229, 22, 1)">Lorem ipsum dolor sit amet</h4>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							</div>
+						</div>
+						<div class="box-left">
+							<div class="content-about">
+								<h4 class="about-title" style="color:rgba(255, 229, 22, 1)">Lorem ipsum dolor sit amet</h4>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="box-right">
+							<div class="content-about">
+								<h4 class="about-title" style="color:rgba(255, 229, 22, 1)">Lorem ipsum dolor sit amet</h4>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							</div>
+						</div>
+						<div class="box-right">
+							<div class="content-about">
+								<h4 class="about-title" style="color:rgba(255, 229, 22, 1)">Lorem ipsum dolor sit amet</h4>
+								<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+							</div>
+						</div>
+					</div>	
+					{%endcomment%}	
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="news-cont">
+							<div class="title-page">
+								<h4 style="color:rgba(255, 229, 22, 1);">CONTAMOS CON 2 SUCURSALES</h4>
+								<h3 style="color:rgba(255, 255, 255, 1);">ARMOR BOX</h3>									
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="news-cont">
+							<div class="title-page">
+								<h3 style="color:rgba(255, 255, 255, 1);">CAUCEL </h3>									
+							</div>
+							<div class="news-wapper">
+								<p>DIRECCION: CALLE 80 # 522 POR 65 Y 65 A CENTRO MERIDA YUC</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="news-cont">
+							<div class="title-page">
+								<h3 style="color:rgba(255, 255, 255, 1);">CENTRO </h3>									
+							</div>
+							<div class="news-wapper">
+								<p>DIRECCION CALLE 70 # 605 AV. CIUDAD CAUCEL MERIDA YUC</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="news-page" >
+
+
+						<div class="container" style="padding-bottom:40px;">
+							<div class="row">							
+								
+								<div class="col-md-6 col-sm-6 col-xs-12">
+									<div class="news-cont">
+										<div class="title-page">
+											<h4>$409.00 / MENSUAL</h4>
+											<h4>INCLUYE NUTRIOLOGO Y ENTRENADOR PERSONALIZADO</h4>
+											<h5><i class="fa fa-instagram mr-3"></i> <small>@armor_box</small>  <i class="fa fa-facebook ml-3" style="margin-left:20px;"></i> <small>@armoboxoficial</small></h5>
+											<p><p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+	<!--End About-->
+{% endblock %}
+
+				

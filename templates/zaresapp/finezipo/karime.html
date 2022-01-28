@@ -1,0 +1,156 @@
+{% extends "zaresapp/finezipo/base.html" %}
+
+{% load i18n %} 
+{% load staticfiles i18n %}
+
+{%block title%}FZ | {{artista|upper}}{%endblock%}
+
+{%block styles%}
+{%endblock%}
+
+{%block css%}
+.navbar .navbar-nav > li > a {
+    color: #000;
+}
+@media (max-width: 768px){
+  .cbp-af-header {
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    background: rgba(255, 255, 255, .6);
+}
+navbar h1 a{
+    color: #000!important;
+}
+.navbar h1 small{
+    color: #000;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar h1 a {
+    color: #000;
+}
+{%endblock%}
+
+{%block content%}
+  <section id="port-item-details">
+    <div class="container-fluid padding-side-60">
+
+       <div class="e-divider-8"></div>
+       <div class="post-header">
+          <h2 class="e-uppercase" style="margin-top: 35px;">KARIME PINDTER</h2>
+          <div class="e-divider-2"></div>
+       </div>
+       <div class="e-divider-4"></div>
+       <div class="row">
+          <div class="col-md-4">
+             <img src="{%static 'zaresapp/finezipo/assets/custom/images/karime/karime.jpg'%}" class="img-responsive">
+             <div class="e-divider-2"></div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+             <h3 class="font-accident-two-normal e-uppercase">BIO</h3>
+             <div class="e-divider-2"></div>
+             <p>
+                En <strong>2013</strong> conducción de radioactivo (programa de radio) <br />
+                En <strong>2014</strong> su primera participación en el reality show de la cadena MTV Acapulco Shore (temporadas 1,2,3,4)<br />
+                En <strong>2015</strong> su primera participación en el reality show de la misma cadena, reality grabado en Europa Super Shore (temporadas 1,2,3) <br />
+                <strong>Locución radio</strong><br />
+                <strong>2015</strong> Wake up con Roger Gonzalez (EXA FM)<br />
+                <strong>2016</strong> Duro de domar con Roger Gonzalez (EXA FM)<br />
+                Conducción de la alfombra PREMIOS MTV MIAW Karime entrevista a celebrities que asisten a los premios en la alfombra previa alfombra MIAW <br />
+                Hagas lo que hagas (youtube)<br />
+                <strong>2016 - 2017</strong> Karime tiene un canal de youtube con mas de 700 mil suscriptores, en este canal hace entrevistas a celebrities y temas en general, Sketches y Parodias <br />
+                Hagas lo que hagas (MTV): Por el éxito del canal de karime (hagas lo que hagas) la cadena MTV decidió llevar el programa a su plataforma digital MTV PLAY y cuenta con dos temporadas de 13 capítulos cada una, capítulos que a escrito y producido KARIME PINDTER <br />
+                <strong>2014 - 2017</strong> Conducciones en eventos, de Djs importantes y eventos de música electrónica como el BPM <br />
+                En <strong>2017</strong> saco al mercado una marca de T-Shirts y accesorios con sus frases icónicas <br />
+             </p>
+             <h3 class="font-accident-two-normal e-uppercase">SERVICIOS</h3>
+             <div class="row">
+                <div class="col-md-12 padding-side-50 bg-color01">
+
+                   <div class="e-divider-4"></div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">SHOW CASE</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">PRESENCIA</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">CARNAVALES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+
+                </div>
+             </div>
+          </div>
+          <div class="e-divider-6"></div>
+       </div>
+    </div>
+ </section>
+ <section id="portfolio" class="e-block e-block-skin pt-section" style="margin-top:35px;">
+    <div class="light">
+       <div class="container-fluid text-center padding-side-60">
+          <h3 class="font-accident-two-normal e-uppercase">GALERÍA</h3>
+          <div class="e-divider-8"></div>
+       </div>
+       <div class="grid container-fluid ">
+          <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/karime/1.jpg'%}" download>
+             <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/karime/1.jpg'%}" class="img-responsive" alt="karime"/>
+                   </figure>
+                </div>
+             </div>
+             </a>
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/karime/2.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/karime/2.jpg'%}" class="img-responsive" alt="karime"/>
+                   </figure>
+                </div>
+             </div>
+             </a>
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/karime/3.jpg'%}" download>
+             <div class="grid-item posters col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/karime/3.jpg'%}" class="img-responsive" alt="karime"/>
+                   </figure>
+                </div>
+             </div>
+             </a>
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/karime/4.jpg'%}" download>
+             <div class="grid-item posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/karime/4.jpg'%}" class="img-responsive" alt="karime"/>
+                   </figure>
+                </div>
+             </div>
+             </a>
+          </div>
+       </div>
+       <div class="e-divider-6"></div>
+    </div>
+ </section>
+ <!-- /Portfolio Block  -->
+{%endblock%}
+
+{%block js%}
+{%endblock%}
+
+{%block script%}
+{%endblock%}
+

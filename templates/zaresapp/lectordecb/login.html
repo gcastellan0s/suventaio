@@ -1,0 +1,125 @@
+    {% load staticfiles i18n %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>{% block title %} LECTORDECB {% endblock title %} </title>
+        <link rel="stylesheet" href="{%static 'zaresapp/lectordecb/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css'%}">
+        <link rel="stylesheet" href="{%static 'zaresapp/lectordecb/vendors/bower_components/animate.css/animate.min.css'%}">
+        <link rel="stylesheet" href="{%static 'zaresapp/lectordecb/css/app.min.css'%}">
+        <link rel="shortcut icon" href="{% static 'zaresapp/lectordecb/img/favicon.png' %}">
+    </head>
+    <body data-ma-theme="blue">
+        <div class="login">
+            <div class="login__block active" id="l-login">
+                <p>LECTORDECB</p>
+                <img src="{%static 'zaresapp/lectordecb/img/iconapp.png'%}" style="max-width:90px; margin-right: auto; margin-left: auto; margin-bottom: 40px;">
+                <div class="login__block__header">
+                    <small>Ingresa tus datos de acceso</small>
+                    <div class="actions actions--inverse login__block__actions">
+                        <div class="dropdown">
+                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert actions__item"></i>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-register" href="">Crea una cuenta</a>
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-forget-password" href="">Recuperar contraseña</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login__block__body">
+                    <form method="post" enctype="multipart/form-data" class="m-t" style="margin-bottom:15px" id="login-form">
+                        {% csrf_token %}
+                        <p class="mt-4" id="error-login-text" style="color: #a10404;">{{message_username|upper}}</p>
+                        <div class="form-group form-group--float form-group--centered">
+                            <input type="text" class="form-control" name="username" id="username" value="{{username}}">
+                            <label>USUARIO</label>
+                            <i class="form-group__bar"></i>
+                        </div>
+                        <div class="form-group form-group--float form-group--centered">
+                            <input type="password" class="form-control" name="password" id="password">
+                            <label>CONTRASEÑA</label>
+                            <i class="form-group__bar"></i>
+                        </div>
+                        <button type="submit" name="login" id="login-btn" class="btn btn--icon login__block__btn"><i class="zmdi zmdi-long-arrow-right"></i></button>
+                    </form>
+                </div>
+                <p class=""><a href="/?privacidad=1" style="color: inherit;font-size:9px;">POLITICAS DE PRIVACIDAD</p>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="{%static 'zaresapp/lectordecb/img/android_.png'%}" style="max-width:90px; margin-right: auto; margin-left: auto;">
+                    </div>
+                    <div class="col-6">
+                        <img src="{%static 'zaresapp/lectordecb/img/ios_.png'%}" style="max-width:100px; margin-right: auto; margin-left: auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="login__block" id="l-register">
+                <img src="{%static 'zaresapp/lectordecb/img/iconapp.png'%}" style="max-width:90px; margin-right: auto; margin-left: auto; margin-bottom: 40px;">
+                <div class="login__block__header palette-Blue bg">
+                    Crea una cuenta
+                    <div class="actions actions--inverse login__block__actions">
+                        <div class="dropdown">
+                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert actions__item"></i>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-login" href="">Ya tienes una cuenta?</a>
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-forget-password" href="">Recuperar contraseña</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login__block__body">
+                    <form method="post" enctype="multipart/form-data" class="m-t" style="margin-bottom:15px" id="login-form">
+                        {% csrf_token %}
+                        <div class="form-group form-group--float form-group--centered">
+                            <input type="text" class="form-control">
+                            <label>Nombre</label>
+                            <i class="form-group__bar"></i>
+                        </div>
+                        <div class="form-group form-group--float form-group--centered">
+                            <input type="text" class="form-control">
+                            <label>Email</label>
+                            <i class="form-group__bar"></i>
+                        </div>
+                        <button type="submit" name="new" class="btn btn--icon login__block__btn"><i class="zmdi zmdi-long-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="login__block" id="l-forget-password">
+                <img src="{%static 'zaresapp/lectordecb/img/iconapp.png'%}" style="max-width:90px; margin-right: auto; margin-left: auto; margin-bottom: 40px;">
+                <div class="login__block__header palette-Purple bg">
+                    Reestablecer contraseña
+                    <div class="actions actions--inverse login__block__actions">
+                        <div class="dropdown">
+                            <i data-toggle="dropdown" class="zmdi zmdi-more-vert actions__item"></i>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-login" href="">Ya tienes una cuenta?</a>
+                                <a class="dropdown-item" data-ma-action="login-switch" data-ma-target="#l-register" href="">Crea una cuenta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login__block__body">
+                    <form method="post" enctype="multipart/form-data" class="m-t" style="margin-bottom:15px" id="login-form">
+                        {% csrf_token %}
+                        <div class="form-group form-group--float form-group--centered">
+                            <input type="text" class="form-control">
+                            <label>Dirección de correo</label>
+                            <i class="form-group__bar"></i>
+                        </div>
+                        <button type="submit" name="recover" class="btn btn--icon login__block__btn"><i class="zmdi zmdi-long-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="{%static 'zaresapp/lectordecb/vendors/bower_components/jquery/dist/jquery.min.js'%}"></script>
+        <script src="{%static 'zaresapp/lectordecb/vendors/bower_components/tether/dist/js/tether.min.js'%}"></script>
+        <script src="{%static 'zaresapp/lectordecb/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js'%}"></script>
+        <script src="{%static 'zaresapp/lectordecb/vendors/bower_components/Waves/dist/waves.min.js'%}"></script>
+        <script src="{%static 'zaresapp/lectordecb/js/app.min.js'%}"></script>
+        <script type="text/javascript" charset="utf-8" async defer>
+        </script>
+    </body>
+</html>

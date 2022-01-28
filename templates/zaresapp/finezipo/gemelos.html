@@ -1,0 +1,184 @@
+{% extends "zaresapp/finezipo/base.html" %}
+
+{% load i18n %} 
+{% load staticfiles i18n %}
+
+{%block title%}FZ | {{artista|upper}}{%endblock%}
+
+{%block styles%}
+{%endblock%}
+
+{%block css%}
+.navbar .navbar-nav > li > a {
+    color: #000;
+}
+@media (max-width: 768px){
+  .cbp-af-header {
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    background: rgba(255, 255, 255, .6);
+}
+navbar h1 a{
+    color: #000!important;
+}
+.navbar h1 small{
+    color: #000;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar h1 a {
+    color: #000;
+}
+{%endblock%}
+
+{%block content%}
+  <section id="port-item-details">
+    <div class="container-fluid padding-side-60">
+
+       <div class="e-divider-8"></div>
+       <div class="post-header">
+          <h2 class="e-uppercase" style="margin-top: 35px;">DJ GEMELOS D' LA ESPRIELLA #twinsdjs</h2>
+          
+          <div class="e-divider-2"></div>
+       </div>
+       <div class="e-divider-4"></div>
+       <div class="row">
+          <div class="col-md-4">
+             <img src="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/6.jpg'%}" class="img-responsive">
+             <div class="e-divider-2"></div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+             <h3 class="font-accident-two-normal e-uppercase">BIO</h3>
+             <div class="e-divider-2"></div>
+             <p>
+                Julián Andrés Castañeda D’ La Espriella Jonnier y Alexander Castañeda D’ La Espriella, nacidos en el Valle del Cauca el 20 de abril de 1990, son conocidos actualmente por su participación como invitados especiales en el programa Acapulco Shore del canal MTV.<br />
+                Durante 2 temporadas cautivaron al público, ahora con tan solo 27 años, este par de hermanos colombianos quieren llevar su gusto musical a otro nivel y han iniciado su carrera musical dejándose llevar por los sonidos que tienen muy marcados y que los caracterizan a la hora de una propuesta en el escenario, como lo son: el Tech House & Tribal House, Reggaeton. Radicados al día de hoy en el país de México, han tenido presentaciones en los países como: México (CDMX), Guatemala y Colombia. <br />
+                Los gemelos D’ La Espriella están trabajando en lo que será su primer lanzamiento musical para este 2017, junto a su amigo Steven Kass titulado “Monster Get Down”, el cual estará disponible en los próximos meses en las principales plataformas de venta de música a nivel global, tales como: Beatport, iTunes, Deezer, JunoDownload, etc., pueden oír un poco de esto en su perfil oficial de Soundcloud.
+             </p>
+             <p>
+                Con tan solo 27 años este par de hermanos Colombianos ha logrado posicionarse en la escena artística en tierras aztecas.<br />
+                Han tenido participación como invitados especiales en el programa acapulco  shore del canal MTV ,  durante 2 temporadas y  han logrado el posicionamiento de su imagen  y por lo tanto un aumento de fans en sus redes sociales.<br />
+
+                <p>
+                  <strong>Escucha sus últimos sets en sus redes sociales</strong>
+                </p>
+                <a href="http://www.soundcloud.com/gemelosdlaespriella" target="_blank"><i class="fa fa-soundcloud fa-4x" style="color:#ff7500;font-size: 60px;" ></i><br />soundcloud.com/gemelosdlaespriella</a>
+               
+             </p>
+             <div class="e-divider-6"></div>
+
+             <div class="row">
+                <div class="col-md-12 padding-side-50 bg-color01">
+
+                   <div class="e-divider-4"></div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">PRESENTACIONES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">CARNAVALES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">INAUGURACIONES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-12">
+                      <h4 class="font-accident-two-normal e-uppercase">DJ EN EVENTOS PRIVADOS O ANTROS</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <section id="portfolio" class="e-block e-block-skin pt-section" style="margin-top:45px;">
+    <div class="light">
+       <div class="grid container-fluid ">
+          <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/1.jpg'%}" download>
+             <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/1.jpg'%}" class="img-responsive" alt="gemelos"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/4.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/4.jpg'%}" class="img-responsive" alt="gemelos"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/5.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/5.jpg'%}" class="img-responsive" alt="gemelos"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/6.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/6.jpg'%}" class="img-responsive" alt="gemelos"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/7.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/7.jpg'%}" class="img-responsive" alt="gemelos"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/8.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/8.jpg'%}" class="img-responsive" alt="gemelos"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/9.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/gemelos/9.jpg'%}" class="img-responsive" alt="gemelos"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+          </div>
+       </div>
+       <div class="e-divider-6"></div>
+    </div>
+ </section>
+ <!-- /Portfolio Block  -->
+{%endblock%}
+
+{%block js%}
+{%endblock%}
+
+{%block script%}
+{%endblock%}
+

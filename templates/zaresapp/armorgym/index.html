@@ -1,0 +1,876 @@
+{% extends "zaresapp/armorgym/base.html" %}
+
+{% load staticfiles i18n %}
+{% load humanize %}
+
+{% block title %}ARMOR-GYM{% endblock title %}
+
+{% block content %}  
+	<section class="slide-container to-top">
+		<div class="ms-fullscreen-template" id="slider1-wrapper">
+			<div class="master-slider ms-skin-default" id="masterslider-index">
+				<div class="ms-slide slide-1" data-delay="0">
+					<div class="slide-pattern"></div>
+					<img src="images/blank.gif" data-src="{%static 'zaresapp/armorgym/images/bg_1.jpg'%}" alt=""/>
+					<h3 class="ms-layer hps-title3" style="left:95px;top: 204px;"
+						data-type="text"
+						data-delay="1900"
+						data-duration="0"
+						data-effect="rotate3dtop(-100,0,0,40,t)"
+						data-ease="easeOutExpo"
+					>
+						<span style="">YA</span> TIENES<br /> LA <span style="color:rgba(255, 229, 22, 1)">MOTIVACIÓN</span>
+					</h3>
+					<h3 class="ms-layer hps-title4" style="left:101px;transform-origin: center top 0px; text-transform: inherit; opacity: 1; margin: 20px 0px 10px; padding: 10px; font-size: 14px; line-height: 18px; left: 85px; top: 334px;font-weight: 100; background: none repeat scroll 0 0 rgba(210, 208, 208, 0);"
+						data-type="text"
+						data-delay="2500"
+						data-duration="0"
+						data-effect="rotate3dtop(-100,0,0,18,t)"
+						data-ease="easeOutExpo"
+					>
+						Ponte a prueba en ARMOR-GYM con una dosis diaria de ejercicio especializados de alta intensidad.<br /> Es hora de ir más allá de tus límites y descubrir tu potencial personal ahora mismo.
+					</h3>
+					<h3 class="ms-layer hps-title3" style="left:95px;top:420px;"
+						data-type="text"
+						data-delay="1900"
+						data-duration="0"
+						data-effect="rotate3dtop(-100,0,0,40,t)"
+						data-ease="easeOutExpo"
+						style="background: none repeat scroll 0 0 #ec3642;"
+					>
+						<img src="{%static 'zaresapp/armorgym/images/logo.png'%}" alt="" class="logo" style="max-width:310px;"/>
+					</h3>
+				</div>
+				<div class="ms-slide slide-2" data-delay="0">
+				   <div class="slide-pattern"></div>
+					<img src="images/blank.gif" data-src="{%static 'zaresapp/armorgym/images/bg_2.jpg'%}" alt=""/>
+					<h3 class="ms-layer hps-title3" style="left:95px;top: 204px;"
+						data-type="text"
+						data-delay="1900"
+						data-duration="0"
+						data-effect="rotate3dtop(-100,0,0,40,t)"
+						data-ease="easeOutExpo"
+					>
+						<span style="color:rgba(36, 75, 212, 1);">YA</span> TIENES<br /> LA <span style="color:rgba(255, 229, 22, 1)">MOTIVACIÓN</span>
+					</h3>
+					<h3 class="ms-layer hps-title4" style="left:101px;transform-origin: center top 0px; text-transform: inherit; opacity: 1; margin: 20px 0px 10px; padding: 10px; font-size: 14px; line-height: 18px; left: 85px; top: 334px;font-weight: 100; background: none repeat scroll 0 0 rgba(210, 208, 208, 0);"
+						data-type="text"
+						data-delay="2500"
+						data-duration="0"
+						data-effect="rotate3dtop(-100,0,0,18,t)"
+						data-ease="easeOutExpo"
+					>
+						Ponte a prueba en ARMOR-GYM con una dosis diaria de ejercicio especializados de alta intensidad.<br /> Es hora de ir más allá de tus límites y descubrir tu potencial personal ahora mismo.
+					</h3>
+					<h3 class="ms-layer hps-title3" style="left:95px;top:420px;"
+						data-type="text"
+						data-delay="1900"
+						data-duration="0"
+						data-effect="rotate3dtop(-100,0,0,40,t)"
+						data-ease="easeOutExpo"
+						style="background: none repeat scroll 0 0 #ec3642;"
+					>
+						<img src="{%static 'zaresapp/armorgym/images/logo.png'%}" alt="" class="logo" style="max-width:310px;"/>
+					</h3>
+				</div>	
+			</div>
+			<div class="to-bottom" id="to-bottom"><i class="fa fa-angle-down"></i></div>
+		</div>
+	</section>
+	<div class="contents-main" id="contents-main">					
+		<div id="class">
+			<section id="classes" class="classes" style="border-style: solid;border-width: 3px 0px 0px 0px;">
+				<div class="classes-content">
+					<div class="class-our">				
+						<div class="classes-athlete">
+							<div class="classes-inner">
+								<div id="filtering-demo">			
+									<section id="our-class-main" class="isotope" style="position: relative; height: 1118.62px;">
+											<div class="mix sport boxing element-item col-xs-12 col-sm-6 col-md-4" data-category="sport" style="position: absolute; left: 559px; top: 0px;padding-right: 0px;padding-left: 0px;">
+											<div class="box-inner">
+												<img src="{%static 'zaresapp/armorgym/images/onepage/classes-1.jpg'%}" alt="">
+												<div class="box-content">
+													<div class="table">
+														<div class="box-cell">
+															<div class="title">
+																<a href="our-class-details.html">
+																	<span>SIX PACK</span>
+																</a>
+															</div>
+															<div class="box-text">Consiste en realizar una combinación de ejercicios que activan todos los grupos musculares del abdomen permitiendo que se fortalezca esta zona del cuerpo conocida como “Core”. Cada sesión puede durar alrededor de 45 minutos y exige mucho esfuerzo por parte del que lo practica. El objetivo es tratar de cumplir con todos los ejercicios establecidos al ritmo de la música y con la guía del instructor. Quien dirige la clase no solo se encarga de explicar cada movimiento, sino que también debe alentar a los participantes a que no paren para poder cumplir con la rutina completa que puede llegar a tener entre 800 y 1200 abdominales..</div>
+														</div>
+													</div>	
+												</div>
+											</div>										
+										</div>												
+										<div class="mix fitness sport element-item col-xs-12 col-sm-6 col-md-4" data-category="sport" style="position: absolute; left: 1118px; top: 0px;padding-right: 0px;padding-left: 0px;">
+											<div class="box-inner">
+												<img src="{%static 'zaresapp/armorgym/images/onepage/classes-3.jpg'%}" alt="">
+												<div class="box-content">
+													<div class="table">
+														<div class="box-cell">
+															<div class="title">
+																<a href="our-class-details.html">
+																	<span>G.A.P. <small>(gluteo, abdomen y pierna)</small></span>
+																</a>
+															</div>
+															<div class="box-text">El GAP es otra disciplina más que puede practicarse tanto en casa como de forma grupal. Bajo las siglas de “Glúteos, Abdominales y Piernas” se encuentra una modalidad que podrás usar para tonificar aquellas partes del cuerpo más costosas de fortalecer debido su gran potencia muscular. Compuesta por sencillos ejercicios, combinarás el trabajo aeróbico y muscular en una misma sesión.</div>
+														</div>
+													</div>	
+												</div>
+											</div>										
+										</div>											
+										<div class="mix fsport boxing element-item col-xs-12 col-sm-6 col-md-4" data-category="boxing" style="position: absolute; left: 0px; top: 372px;padding-right: 0px;padding-left: 0px;">
+											<div class="box-inner">
+												<img src="{%static 'zaresapp/armorgym/images/onepage/classes-4.jpg'%}" alt="">
+												<div class="box-content">
+													<div class="table">
+														<div class="box-cell">
+															<div class="title">
+																<a href="#">
+																	<span>CIRCUITO</span>
+																</a>
+															</div>
+															<div class="box-text">Las rutinas de entrenamiento mediante circuitos se realizarán con cargas livianas y largas series con repeticiones que oscilarán entre las doce o quince. El motivo de realizar este entrenamiento de este modo es tocar cada parte de los grupos musculares y mantener los músculos tonificados, ya que las cargas que utilizaremos simplemente lo que consiguen es mantener el tono, pues la finalidad del entrenamiento con circuitos no es la hipertrofia muscular, sino la definición.</div>
+														</div>
+													</div>	
+												</div>
+											</div>										
+										</div>
+										<div class="mix aerobic fitness element-item col-xs-12 col-sm-6 col-md-4" data-category="aerobic" style="position: absolute; left: 559px; top: 372px;padding-right: 0px;padding-left: 0px;">
+											<div class="box-inner">
+												<img src="{%static 'zaresapp/armorgym/images/onepage/classes-5.jpg'%}" alt="">
+												<div class="box-content">
+													<div class="table">
+														<div class="box-cell">
+															<div class="title">
+																<a href="">
+																	<span>SIT STEP</span>
+																</a>
+															</div>
+															<div class="box-text">Realizar una sesión de step supone realizar un entrenamiento completo de fitness en el que, además del citado trabajo aeróbico, también desarrollaremos la fuerza, la flexibilidad y nuestra capacidad de coordinación, hechos que nos llevarán también a conseguir un efecto extremadamente positivo sobre nuestro bienestar psíquico.</div>
+														</div>
+													</div>	
+												</div>
+											</div>										
+										</div>												
+										<div class="mix fitness belly element-item col-xs-12 col-sm-6 col-md-4" data-category="belly" style="position: absolute; left: 1118px; top: 372px;padding-right: 0px;padding-left: 0px;">
+											<div class="box-inner">
+												<img src="{%static 'zaresapp/armorgym/images/onepage/classes-2.jpg'%}" alt="">
+												<div class="box-content">
+													<div class="table">
+														<div class="box-cell">
+															<div class="title">
+																<a href="our-class-details.html">
+																	<span>ACONDICIONAMIENTO FISICO</span>
+																</a>
+															</div>
+															<div class="box-text">Fortalece tu condición física.</div>
+														</div>
+													</div>	
+												</div>
+											</div>										
+										</div>
+										<div class="mix fitness sport element-item col-xs-12 col-sm-6 col-md-4" data-category="sport" style="position: absolute; left: 0px; top: 745px;padding-right: 0px;padding-left: 0px;">
+											<div class="box-inner">
+												<img src="{%static 'zaresapp/armorgym/images/onepage/classes-10.jpg'%}" alt="">
+												<div class="box-content">
+													<div class="table">
+														<div class="box-cell">
+															<div class="title">
+																<a href="#">
+																	<span>STEP <small>(bancos)</small></span>
+																</a>
+															</div>
+															<div class="box-text">El step es una actividad física variante del aeróbic que consiste en la realización de una secuencia de ejercicios sobre un escalón, denominado step. Principalmente se asocia con beneficios cardiovasculares y musculares, aunque gracias a las subidas y bajadas que se realizan sobre el step, también se le atribuye la mejora de la resistencia aeróbica, la fuerza física y la flexibilidad corporal. Además de otros efectos, como la mejora en la coordinación, el estímulo de la memoria y de la concentración.</div>
+														</div>
+													</div>	
+												</div>
+											</div>										
+										</div>													
+										
+										<div class="mix dance element-item col-xs-12 col-sm-6 col-md-4" data-category="dance" style="position: absolute; left: 0px; top: 0px;padding-right: 0px;padding-left: 0px;">
+											<div class="box-inner">
+												<img src="{%static 'zaresapp/armorgym/images/onepage/classes-6.jpg'%}" alt="">
+												<div class="box-content">
+													<div class="table">
+														<div class="box-cell">
+															<div class="title">
+																<a href="our-class-details.html">
+																	<span>CROSS UP</span>
+																</a>
+															</div>
+															<div class="box-text">Clase de alta intensidad con la que pondrás a prueba tu fuerza y resistencia</div>
+														</div>
+													</div>	
+												</div>
+											</div>										
+										</div>
+										<div class="mix aerobic fitness element-item col-xs-12 col-sm-6 col-md-4" data-category="aerobic" style="position: absolute; left: 1118px; top: 745px;padding-right: 0px;padding-left: 0px;">
+											<div class="box-inner">
+												<img src="{%static 'zaresapp/armorgym/images/onepage/classes-9.jpg'%}" alt="">
+												<div class="box-content">
+													<div class="table">
+														<div class="box-cell">
+															<div class="title">
+																<a href="">
+																	<span>KICK BOXING</span>
+																</a>
+															</div>
+															<div class="box-text" >El kickboxing combina los golpes de boxeo con las patadas de karate. Hay algunas variaciones de este deporte. Algunos kickboxers competitivos practican el deporte contra oponentes en el ring. Otros entusiastas del estado físico practican el kickboxing como un ejercicio aeróbico. Las técnicas de kickboxing también son prácticas para la autodefensa. Durante las últimas décadas, el kickboxing se ha convertido en un deporte emocionante de ver y practicar.</div>
+														</div>
+													</div>	
+												</div>
+											</div>										
+										</div>	
+										<div class="mix sport boxing element-item col-xs-12 col-sm-6 col-md-4" data-category="boxing" style="position: absolute; left: 559px; top: 745px;padding-right: 0px;padding-left: 0px;">
+											<div class="box-inner">
+												<img src="{%static 'zaresapp/armorgym/images/onepage/classes-8.jpg'%}" alt="">
+											</div>										
+										</div>								
+									</section>										
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>
+			<section class="man-girl" style="background-image: url('{%static 'zaresapp/armorgym/images/bg9.jpg'%}');background-repeat: repeat;background-position: center center;border-style: solid;border-width: 3px 0px 3px 0px;background-size: contain;">
+				<div class="container">
+					<div class="row">								
+						<div class="wpb_column vc_column_container vc_col-sm-6 col-sm-7" style="margin-top:120px">
+							<div class="vc_column-inner ">
+								<div class="wpb_wrapper">
+									
+									<p class="intro "  style="color:rgba(216, 194, 18, 1)!important;font-size: 35PX;">ESTEBAN MARTÍNEZ</p>
+									<h3 class="ttbase-heading ttbase-heading-single-line text-align-left " style="color: #fff;" >
+										EL <span style="color:rgba(36, 75, 212, 1);">COACH</span> DE ACERO
+									</h2>
+									<div class="vc_empty_space"  style="height: 32px" >
+										<span class="vc_empty_space_inner"></span>
+									</div>
+									<div class="wpb_text_column wpb_content_element ">
+										<div class="wpb_wrapper"  style="color: #fff;">
+											<p>Semifinalista con 20 años para la revista Men`s Health, te introducirá al mundo del fitness con clases dinámicas dependiendo de tus necesidades físicas. Cuenta con una gran trayectoria y experiencia para que obtengas los mejores resultados.</p>
+										</div>
+									</div>
+									<div class="vc_empty_space"  style="height: 32px" >
+										<span class="vc_empty_space_inner"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="wpb_column vc_column_container vc_col-sm-6 col-sm-5">
+							<div class="vc_column-inner ">
+								<div class="wpb_wrapper">
+									<div class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1485165243605">
+										<figure class="wpb_wrapper vc_figure">
+											<div class="vc_single_image-wrapper vc_box_border_grey"><img width="453" height="597" src="{%static 'zaresapp/armorgym/images/coach1.png'%}" class="vc_single_image-img attachment-full" alt="Coach"  sizes="(max-width: 453px) 100vw, 453px" /></div>
+										</figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about" class="about">
+				<div class="about-top">
+					<div class="container">
+						<div class="row" style="margin-top:60px;">
+							<div class="col-md-12">
+								<div class="title-page title-about">
+									<h2 class="ttbase-heading ttbase-heading-single-line text-align-left " style="color: #ffffff;text-transform:uppercase;">
+										<span style="color: rgba(216, 194, 18, 1.00);font-weight: 700;">Supera</span> tus limites
+									</h2>
+									<p style="font-size: 16px;">ARMOR GYM es considerado por los expertos entre los mejores 3 de todo Mérida</p>
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="price-contents">
+									<div class="col-md-4 col-sm-12 col-xs-12">
+										<div class="price-tb">
+											<div class="col-md-12 price-table-content">
+												<div class="price-table-img">
+													<img alt="" src="{%static 'zaresapp/armorgym/images/newproducts/images-3.png'%}">
+												</div>
+												<div class="price-table-text">
+													<h3>MEMBRESIA</h3>
+													<h2>PAQUETE 1</h2>
+													<div class="border-bottom"></div>
+													
+													<div class="price">
+														<span>$399</span>
+													</div>
+													<span style="font-size: 14px;">mes</span>
+												</div>
+											</div>
+											<div class="col-md-12 price-list">
+												<div class="price-table-1">
+													<ul>
+														<li>Acceso A Todas Las Suc</li>
+													</ul>
+													<ul>
+														<li>Instructor Capacitado</li>
+													</ul>
+													<ul>
+														<li>Plan Alimentacion Mensual (Nutriologo)</li>
+													</ul>
+													<ul>
+														<li>Acceso A Nuestras Clases Grupales</li>
+													</ul>
+													<ul>
+														<li>Regaderas Agua Fria Y Agua Caliente</li>
+													</ul>
+													<ul>
+														<li>Vestidores</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-12 col-xs-12">
+										<div class="price-tb">
+											<div class="col-md-12 price-table-content">
+												<div class="price-table-img">
+													<img alt="" src="{%static 'zaresapp/armorgym/images/newproducts/images-2.png'%}">
+												</div>
+												<div class="price-table-text">
+													<h3>MEMBRESIA</h3>
+													<h2>PAQUETE 2</h2>
+													<div class="border-bottom"></div>
+													<div class="price">
+														<span>$550</span>
+													</div>
+													<span style="font-size: 14px;">mes</span>
+												</div>
+											</div>
+											<div class="col-md-12  price-list">
+												<div class="price-table-1">
+													<ul>
+														<li>Acceso ilimitado al gimnasio</li>
+													</ul>
+													<ul>
+														<li>Instructor  personalizado</li>
+													</ul>
+													<ul>
+														<li>Clase o nutriólogo  a elegir</li>
+													</ul>	
+													<ul>
+														<li>Inscripción gratuita</li>
+													</ul>										
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-12 col-xs-12">
+										<div class="price-tb">
+											<div class="col-md-12 price-table-content">
+												<div class="price-table-img">
+													<img alt="" src="{%static 'zaresapp/armorgym/images/newproducts/images-1.png'%}">
+												</div>
+												<div class="price-table-text">
+													<h3>MEMBRESIA</h3>
+													<h2>PAQUETE 3</h2>
+													<div class="border-bottom"></div>
+													<div class="price">
+														<span>$600</span>
+													</div>
+													<span style="font-size: 14px;">mes</span>
+												</div>
+											</div>
+											<div class="col-md-12 price-list">
+												<div class="price-table-1">
+													<ul>
+														<li>Acceso ilimitado al gimnasio</li>
+													</ul>
+													<ul>
+														<li>Instructor personalizado</li>
+													</ul>
+													<ul>
+														<li>Nutriólogo personal</li>
+													</ul>
+													<ul>
+														<li>Clase a elegir</li>
+													</ul>
+													<ul>
+														<li>Inscripción gratuita</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-12 col-xs-12" style="padding-top:10px;">
+										<div class="price-tb">
+											<div class="col-md-12 price-table-content">
+												<div class="price-table-img">
+													<img alt="" src="{%static 'zaresapp/armorgym/images/newproducts/images-4.png'%}">
+												</div>
+												<div class="price-table-text">
+													<h3>MEMBRESIA PAREJAS</h3>
+													<h2>PAQUETE 4</h2>
+													<div class="border-bottom"></div>
+													<div class="price">
+														<span>$1000</span>
+													</div>
+													<span style="font-size: 14px;">mes</span>
+												</div>
+											</div>
+											<div class="col-md-12 price-list">
+												<div class="price-table-1">
+													<ul>
+														<li>Acceso ilimitado al gimnasio</li>
+													</ul>
+													<ul>
+														<li>Instructor personalizado</li>
+													</ul>
+													<ul>
+														<li>Nutriólogo personal</li>
+													</ul>
+													<ul>
+														<li>Clase a elegir</li>
+													</ul>
+													<ul>
+														<li>Inscripción gratuita</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-12 col-xs-12" style="padding-top:10px;">
+										<div class="price-tb">
+											<div class="col-md-12 price-table-content">
+												<div class="price-table-img">
+													<img alt="" src="{%static 'zaresapp/armorgym/images/newproducts/images-5.png'%}">
+												</div>
+												<div class="price-table-text">
+													<h3>MEMBRESIA</h3>
+													<h2>ESTUDIANTES</h2>
+													<div class="border-bottom"></div>
+													<div class="price">
+														<span>$359</span>
+													</div>
+													<span style="font-size: 14px;">mes</span>
+												</div>
+											</div>
+											<div class="col-md-12 price-list">
+												<div class="price-table-1">
+													<ul>
+														<li>Acceso a GYM</li>
+													</ul>
+													<ul>
+														<li>Claes grupales</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-sm-12 col-xs-12" style="padding-top:10px;">
+										<div class="price-tb">
+											<div class="col-md-12 price-table-content">
+												<div class="price-table-img">
+													<img alt="" src="{%static 'zaresapp/armorgym/images/newproducts/images-5.png'%}">
+												</div>
+												<div class="price-table-text">
+													<h3>MEMBRESIA</h3>
+													<h2>ESTUDIANTES UADY</h2>
+													<div class="border-bottom"></div>
+													<div class="price">
+														<span>$309</span>
+													</div>
+													<span style="font-size: 14px;">mes</span>
+												</div>
+											</div>
+											<div class="col-md-12 price-list">
+												<div class="price-table-1">
+													<ul>
+														<li>Acceso a GYM</li>
+													</ul>
+													<ul>
+														<li>Claes grupales</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<div class="container" style="padding-bottom:140px;padding-top:40px;">
+					<div class="row">							
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="news-cont">
+								<div class="title-page">
+									<h4>NUESTROS HORARIOS</h4>
+								</div>
+								<div class="news-content">
+									<ul style="background: none repeat scroll 0 0 #242424;">
+										<li class="latest-news-item">
+											<h3 style="color:rgba(36, 75, 212, 1);">CAUCEL</h3>	
+											<div class="news-item-inner">
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Matutino / MULTIFUNCIONAL</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes a Viernes 7am - 8am</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Matutino / ACONDICIONAMIENTO FÍSICO</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes a Viernes 8am - 9am</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / SPINNING</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes a Viernes 6pm a 7pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / ACONDICIONAMIENTO FÍSICO</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes a Viernes de 8pm a 9pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / COMBAT</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes a Viernes de 9pm a 10pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">SIX PACK</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes 6pm-7pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">SPINNING</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes y Miercoles 7pm-8pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">KICK BOXING</a>
+													</div>
+													<div class="news-time">
+														<p>Martes y jueves 7pm-8pm</p>				
+													</div>
+												</div>
+
+											</div>
+										</li>
+										<li class="latest-news-item">
+											<h3 style="color:rgba(36, 75, 212, 1);">CENTRO</h3>	
+											<div class="news-item-inner">
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Matutino / SPINNING</a>
+													</div>
+													<div class="news-time">
+														<p>Jueves y Viernes 8:00am a 9:30am</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / FitCardio</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes 7:15 a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / IPS</a>
+													</div>
+													<div class="news-time">
+														<p>Martes 7:15 a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / STREET CHING</a>
+													</div>
+													<div class="news-time">
+														<p>Miercoles 7:15 a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / HITABS</a>
+													</div>
+													<div class="news-time">
+														<p>Jueves 7:15 a 9:00pm</p>				
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="latest-news-item">
+											<h3 style="color:rgba(36, 75, 212, 1);">NORTE</h3>	
+											<div class="news-item-inner">
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">STEP</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes De 7:30 a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">CARDIO HIT</a>
+													</div>
+													<div class="news-time">
+														<p>Martes De 7:30 a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">RITMOS LATINOS</a>
+													</div>
+													<div class="news-time">
+														<p>Miércoles De 7:30 a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">IPS</a>
+													</div>
+													<div class="news-time">
+														<p>Jueves De 7:30 a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">JUMMPING</a>
+													</div>
+													<div class="news-time">
+														<p>Viernes De 7:30 a 9:00pm</p>				
+													</div>
+												</div>
+
+												
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-12">
+							<div class="news-cont">
+								<div class="title-page">
+									<h4>-</h4>
+								</div>
+								<div class="news-content">
+									<ul style="background: none repeat scroll 0 0 #242424;">
+										
+										<li class="latest-news-item">
+											<h3 style="color:rgba(36, 75, 212, 1);">TANLUM</h3>	
+											<div class="news-item-inner">
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Matutino / SPINNING</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes a Viernes 8am a 9:30am</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Matutino / CROSSDOWN</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes 7:30am a 9:00am</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Matutino / JUMPING</a>
+													</div>
+													<div class="news-time">
+														<p>Martes 7:30am a 9:00am</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Matutino / CROSSUP</a>
+													</div>
+													<div class="news-time">
+														<p>Miércoles 7:30am a 9:00am</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Matutino / KICKBOXING</a>
+													</div>
+													<div class="news-time">
+														<p>Jueves 7:30am a 9:00am</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Matutino / STEP</a>
+													</div>
+													<div class="news-time">
+														<p>Viernes 7:30am a 9:00am</p>				
+													</div>
+												</div>
+
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / SPINNING</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes a Viernes 6:30pm a 8:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / KICKBOXING</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes 6:00pm a 7:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / ACONDICIONAMIENTO FÍSICO</a>
+													</div>
+													<div class="news-time">
+														<p>Martes 6:00pm a 7:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / SIXPACK</a>
+													</div>
+													<div class="news-time">
+														<p>Miércoles 6:00pm a 7:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / STEP</a>
+													</div>
+													<div class="news-time">
+														<p>Jueves 6:00pm a 7:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / CROSSUP</a>
+													</div>
+													<div class="news-time">
+														<p>Viernes 6:00pm a 7:00pm</p>				
+													</div>
+												</div>
+
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / TONOMUSCULAR</a>
+													</div>
+													<div class="news-time">
+														<p>Lunes 7:30pm a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / STEP</a>
+													</div>
+													<div class="news-time">
+														<p>Martes 7:30pm a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / CIRCUITO</a>
+													</div>
+													<div class="news-time">
+														<p>Miércoles 7:30pm a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / INSANITY</a>
+													</div>
+													<div class="news-time">
+														<p>Jueves 7:30pm a 9:00pm</p>				
+													</div>
+												</div>
+												<div class="news-info">
+													<div class="news-title">
+														<a href="#">Vespertino / SIXPACK</a>
+													</div>
+													<div class="news-time">
+														<p>Viernes 7:30pm a 9:00pm</p>				
+													</div>
+												</div>
+											</div>
+										</li>										
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact-form" id="contacto">
+				<div class="contact-submit">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-12 col-xs-12">
+								<div class="contact">
+									<h4>CONTACTANOS</h4>
+									<div class="headding-bottom" style="border-bottom: 3px solid rgb(255, 229, 20);"></div>
+									<form id="main-contact-form" class="main-contact-form row" name="contact-form" method="post">
+										<div class="form-group col-md-12">
+											<input type="text" name="name" class="control" required="required" placeholder="TU NOMBRE">
+										</div>
+										<div class="form-group col-md-12">
+											<input type="email" name="email" class="control" required="required" placeholder="TU EMAIL">
+										</div>									
+										<div class="form-group col-md-12">
+											<textarea name="message" id="message" required="required" class="control" rows="3" placeholder="TU MENSAJE"></textarea>
+										</div>   
+										<div class="form-group form-submit col-md-12">
+											<button type="submit" name="submit" class="btn-submit"  style="background: none repeat scroll 0 0 #264ad4;">ENVIAR</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contact-map">
+					 <div class="map-frame-event">
+						<input type="hidden" class="map-zoom" value="15" />
+						<input type="hidden" class="map-lat" value="20.9656989" />
+						<input type="hidden" class="map-lng" value="-89.6391481" />
+						<input type="hidden" class="map-icon-title" value="" />
+						<input type="hidden" class="map-icon-img" value="{%static 'zaresapp/armorgym/images/mark.png'%}" />
+					</div>
+				</div>					
+			</section>
+		</div>
+	</div>
+
+{% endblock %}
+
+				

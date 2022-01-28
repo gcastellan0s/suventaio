@@ -1,0 +1,79 @@
+{% extends "zaresapp/sergiogarte/base.html" %}
+{% load i18n %} 
+{% load staticfiles i18n %}
+{% load suventatags %}
+
+{%block title%}SERGIO GARTE | ALTA MODA{%endblock title%}
+
+{%block style%}
+	<style>
+		.bg-dark {
+		    background-color: #1c2a1a;
+		    height: 100%;
+		    width: 100%;
+		}
+		.shop-item:hover .shop-item-image:after {
+		    background: rgba(22, 50, 30, 0.71);
+		}
+	</style>
+{%endblock%}
+
+{%block content%}
+	<section class="brick brick-md brick-parallax bg-dark" data-background="assets/images/about.jpg">
+			<div class="container">
+                <div class="row mt-50">
+                    <div class="col-md-8">
+                        <h1 class="bread-text text-white gold2" style="font-family: gartefont!important;" >
+                        		<img class="" src="{%static 'zaresapp/sergiogarte/images/deco7.png'%}" alt="" style="max-width:40px;padding-bottom:10px;">
+                        		{{title|upper}}
+                        </h1>
+                        <div class="text-white">
+                            DISEÑADOR MEXICANO
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-30">
+                        <div class="mod-breadcrumbs text-right">
+                            <a href="/">INICIO</a>&nbsp;/&nbsp;<span class="gold2">{{title|upper}}</span><br />
+                            <img class="" src="{%static 'zaresapp/sergiogarte/images/deco6.png'%}" alt="" style="max-width:50px;padding-top:0px;">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+	</section>
+	<section class="brick" style="padding-bottom: 10px;">
+		<div class="container">
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2 col-xs-12">
+					<img class="mb-20" src="{%static 'zaresapp/sergiogarte/images/deco2.png'%}" alt="" style="max-width:300px;">
+        			<h2 class="brick-title mb-10"><span style="font-weight: 100;font-family: gartefont!important;" class=""> {{title|upper}} </span></h2>
+        			<div class="divider title-divider"></div>
+      			</div>
+			</div>
+		</div>	
+	</section >
+	<section class="brick mb-60" style="padding-top: 40px;">  
+        <div class="container">
+        	<div class="row multi-columns-row">
+        		{%for object in mode%}
+        			{%if object.section == section%}
+						<div class="col-md-4 col-lg-4">
+							<div class="shop-item">
+								<div class="shop-item-image">
+									<img src="{%static 'zaresapp/sergiogarte/images/shop/'%}{{object.picture}}" alt="">
+									<div class="shop-item-detail">
+										{%if object.description%}
+											<p class="white fs-15">{{object.description|safe}}</p>
+											<div class="divider title-divider"></div>
+										{%endif%}
+										{%if object.price%}<p class="white fs-13">{{object.price}}</p>{%endif%}
+										<a class="action-btn btn-g" href="?p=producto&c={{object.index}}">LO NECESITO</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					{%endif%}
+				{%endfor%}
+			</div>
+        </div>
+    </section>
+{%endblock content%}

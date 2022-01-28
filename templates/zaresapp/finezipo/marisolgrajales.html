@@ -1,0 +1,295 @@
+{% extends "zaresapp/finezipo/base.html" %}
+
+{% load i18n %} 
+{% load staticfiles i18n %}
+
+{%block title%}FZ | {{artista|upper}}{%endblock%}
+
+{%block styles%}
+{%endblock%}
+
+{%block css%}
+.navbar .navbar-nav > li > a {
+    color: #000;
+}
+@media (max-width: 768px){
+  .cbp-af-header {
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    background: rgba(255, 255, 255, .6);
+}
+navbar h1 a{
+    color: #000!important;
+}
+.navbar h1 small{
+    color: #000;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar h1 a {
+    color: #000;
+}
+{%endblock%}
+
+{%block content%}
+<section id="port-item-details">
+   <div class="container-fluid padding-side-60">
+
+      <div class="e-divider-8"></div>
+      <div class="post-header">
+         <h2 class="e-uppercase" style="margin-top: 35px;">MARISOL GRAJALES</h2>
+
+         <div class="e-divider-2"></div>
+      </div>
+      <div class="e-divider-4"></div>
+      <div class="row">
+         <div class="col-md-4">
+            <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/2.jpg'%}" class="img-responsive">
+            <div class="e-divider-2"></div>
+         </div>
+         <div class="col-md-1"></div>
+         <div class="col-md-7">
+            <h3 class="font-accident-two-normal e-uppercase">BIO</h3>
+            <div class="e-divider-2"></div>
+            <p>
+               Marisol grajales la dj mas reconocida en méxico, su gran talento y habilidades en la música la han llevado a importantes escenarios nacionales e internacionales. 
+            </p>
+            <p>
+               Su belleza y talento la han llevado a participar dentro de la programación de cadenas internacionales como fox, televisa networks, tv azteca, así como en la programación de telehit.
+            </p>
+            <p>
+               Ha compartido escenario con roger sanchez, hernan cattaneo, felix da housecat, sharam, green velvet, technasia, popof, etc. <br />
+               <br />
+               Con presentaciones en ibiza, méxico, sri lanka, puerto rico, ecuador, honduras, madrid, brasil, berlin, houston, los angeles, las vegas y en eventos como, ultra festival, medusa festival ,soul tech méxico, cumbre tajín, electric playa, electric run y next top model.
+            </p>
+            <p>
+               <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/534535905&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            </p>
+
+            <div class="e-divider-6"></div>
+            <h3 class="font-accident-two-normal e-uppercase">SERVICIOS</h3>
+            <div class="row">
+               <div class="col-md-12 padding-side-50 bg-color01">
+
+                  <div class="e-divider-4"></div>
+                  <div class="col-md-4">
+                     <h4 class="font-accident-two-normal e-uppercase">FESTIVALES</h4>
+                     <div class="e-divider-4"></div>
+                  </div>
+                  <div class="col-md-4">
+                     <h4 class="font-accident-two-normal e-uppercase">PRESENTACIONES</h4>
+                     <div class="e-divider-4"></div>
+                  </div>
+                  <div class="col-md-4">
+                     <h4 class="font-accident-two-normal e-uppercase">CARNAVALES</h4>
+                     <div class="e-divider-4"></div>
+                  </div>
+                  <div class="col-md-4">
+                     <h4 class="font-accident-two-normal e-uppercase">EVENTOS PRIVADOS</h4>
+                     <div class="e-divider-4"></div>
+                  </div>
+                  <div class="col-md-4">
+                     <h4 class="font-accident-two-normal e-uppercase">ANTROS</h4>
+                     <div class="e-divider-4"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section id="portfolio" class="e-block e-block-skin pt-section" style="margin-top:45px;">
+   <div class="light">
+      <div class="grid container-fluid ">
+         <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/1.jpg'%}" download>
+               <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/1.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/2.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/2.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/3.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/3.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/4.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/4.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/5.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/5.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/6.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/6.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/7.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/7.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/8.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/8.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/9.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/9.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/10.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/10.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/11.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/11.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/12.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/12.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/13.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/13.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/14.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/14.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/15.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/15.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/16.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/16.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/17.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/17.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/18jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/18.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/19.jpg'%}" download>
+               <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/marisolgrajales/19.jpg'%}" class="img-responsive" />
+                     </figure>
+                  </div>
+               </div>
+            </a>
+         </div>
+      <div class="e-divider-6"></div>
+   </div>
+</section>
+<!-- /Portfolio Block  -->
+{%endblock%}
+
+{%block js%}
+{%endblock%}
+
+{%block script%}
+{%endblock%}
+

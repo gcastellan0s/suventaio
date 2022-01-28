@@ -1,0 +1,114 @@
+{% extends "zaresapp/sergiogarte/base.html" %}
+{% load i18n %} 
+{% load staticfiles i18n %}
+{% load suventatags %}
+
+{%block title%}SERGIO GARTE | CONTACTO{%endblock title%}
+
+{%block style%}
+	<style>
+		.bg-dark {
+		    background-color: #1c2a1a;
+		    height: 100%;
+		    width: 100%;
+		}
+		.form-control {
+    		border: 1px solid rgba(28, 42, 25, 1);
+		}
+		.form-control:focus {
+		    border-color:rgba(28, 42, 25, 1)!important;
+		}
+		.action-btn.btn-g {
+		    background: #1c2a1a;
+		    color: #FFF;
+		}
+		.action-btn.btn-g:hover, .btn.btn-g:focus {
+    		background: #2f472c;
+		    color: #FFF;
+		}
+	</style>
+{%endblock%}
+
+{%block content%}
+	<section class="brick brick-md brick-parallax bg-dark" data-background="assets/images/about.jpg">
+			<div class="container">
+                <div class="row mt-50">
+                    <div class="col-md-8">
+                        <h1 class="bread-text text-white gold2" style="font-family: gartefont!important;" >
+                        		<img class="" src="{%static 'zaresapp/sergiogarte/images/deco7.png'%}" alt="" style="max-width:40px;padding-bottom:10px;">
+                        		CONTACTO 
+                        </h1>
+                        <div class="text-white">
+                            DISEÑADOR MEXICANO
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-30">
+                        <div class="mod-breadcrumbs text-right">
+                            <a href="/">INICIO</a>&nbsp;/&nbsp;<span class="gold2">CONTACTO</span><br />
+                            <img class="" src="{%static 'zaresapp/sergiogarte/images/deco6.png'%}" alt="" style="max-width:50px;padding-top:0px;">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+	</section>
+	<section class="brick" style="padding-bottom: 10px;">
+		<div class="container">
+			<!-- brick title -->
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2 col-xs-12">
+					<img class="mb-20" src="{%static 'zaresapp/sergiogarte/images/deco2.png'%}" alt="" style="max-width:300px;">
+        			<h2 class="brick-title mb-10"><span style="font-weight: 100;font-family: gartefont!important;" class=""> CONTACTO </span></h2>
+        			<div class="divider title-divider"></div>
+      			</div>
+			</div>
+		</div>	
+	</section >
+	<section class="brick mb-60" style="padding-top: 40px;">  
+        <div class="container">
+			<div class="row mt-sm-70 mt-xs-20">
+				<div class="col-sm-7">
+					<form id="contact-form" novalidate="">
+						<div class="form-group">
+							<label class="sr-only" for="cname">Name</label>
+							<input type="text" id="cname" class="form-control" name="cname" placeholder="TU NOMBRE*" required="" data-validation-required-message="INGRESA TU NOMBRE.">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group">
+							<label class="sr-only" for="cemail">Your Email</label>
+							<input type="email" id="cemail" name="cemail" class="form-control" placeholder="SU EMAIL*" required="" data-validation-required-message="INGRESA TU EMAIL.">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" id="cmessage" name="cmessage" rows="7" placeholder="SU MENSAJE*" required="" data-validation-required-message="INGRESA TU MENSAJE."></textarea>
+							<p class="help-block text-danger"></p>
+						</div>
+						<button class="action-btn btn-g">
+							ENVIAR
+						</button>
+					</form>
+					<div id="contact-response" class="ajax-response"></div>
+				</div>
+				<div class="col-sm-4 col-sm-offset-1 mt-xs-50">
+
+                    <div class="info-horizontal">
+                        <div class="icon icon-primary">
+                            <i class="icon-map-pin"></i>
+                        </div>
+                        <div class="description">
+                            <h4>ATELIER</h4>
+                            <p> Avenida Thiers 196,<br>
+                                Anzures, CDMX<br>
+                                CP 11590, MEXICO<hr style="border-top: 1px solid #1c2b1a;">
+                                10:00 AM - 18:00 PM<hr style="border-top: 1px solid #1c2b1a;">
+                                CEL. 0445528831676<br />TEL. 55727785<br />EMAIL. sergiogarte@icloud.com<hr style="border-top: 1px solid #1c2b1a;">
+                            </p>
+                        </div>
+                    </div>
+				</div>
+			</div>
+        </div>
+    </section>
+    <section class="brick" style="padding-top: 40px; padding: 0px 0;">  
+        <div id="map" style="width: 100%; height: 500px"></div> 
+    </section>
+{%endblock content%}

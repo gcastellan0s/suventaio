@@ -1,0 +1,287 @@
+{% load staticfiles i18n %}
+<!doctype html>
+<html lang="es">
+<head>
+<title>{% block title %}ARMOR-GYM{% endblock title %}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="stylesheet" href="{%static 'zaresapp/armorgym/css/style.css'%}" type="text/css">
+<link rel="stylesheet" href="{%static 'zaresapp/armorgym/css/bootstrap.css'%}" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="{%static 'zaresapp/armorgym/css/effect.css'%}" type="text/css">
+<link rel="stylesheet" href="{%static 'zaresapp/armorgym/css/animation.css'%}" type="text/css">
+<link rel="stylesheet" href="{%static 'zaresapp/armorgym/css/masterslider.css'%}" type="text/css">
+<link rel="stylesheet" href="{%static 'zaresapp/armorgym/css/ms-fullscreen.css'%}" type="text/css">
+<link rel="stylesheet" href="{%static 'zaresapp/armorgym/css/color.css'%}" type="text/css">
+<link rel="stylesheet" type="text/css" media="all" href="{%static 'zaresapp/armorgym/css/owl.carousel.css'%}">
+<link rel="stylesheet" type="text/css" media="all" href="{%static 'zaresapp/armorgym/css/owl.transitions.css'%}">
+<link rel=icon href="{%static 'zaresapp/armorgym/images/favicon.png'%}" sizes="16x16" type="image/png">
+<style>
+.about-top {
+    background: url('{%static 'zaresapp/armorgym/images/bg-position-3.jpg'%}') repeat-x scroll center top transparent;
+    padding-bottom: 30px;
+    position: relative;
+    background-size: 100% auto;
+}
+.to-bottom:before {
+    border-color: transparent transparent rgba(130, 133, 140, 1)!important;
+}
+.ms-skin-default .ms-bullet-selected {
+    background: none repeat scroll 0 0 rgba(36, 75, 212, 1)!important;
+}
+.ms-fullscreen-template .slide-pattern {
+    background: url('{%static 'zaresapp/armorgym/images/pattern.png'%}') scroll;
+}
+.classes-content .title a span {
+    background: none;
+    border: 2px solid rgba(36, 75, 212, 1);
+}
+.classes-content .title a span {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.classes-content .title a span {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 229, 22, 1);
+}
+.title-page {
+    padding-bottom: 20px;
+    padding-top: 0px;
+    text-align: center;
+}
+.price-table, .our-team-page {
+    background: none repeat scroll 0 0 #ffffff;
+    padding-top: 35px;
+    position: relative;
+    z-index: 1;
+}
+.price-table-title h3 {
+    font-size: 14px;
+    text-transform: none;
+    text-align: left;
+    line-height: 18px;
+}
+.price-table-content{
+	background: none repeat scroll 0 0 rgba(36, 75, 212, 1);
+}
+.plan, .course, .shop .price-table-content a, .course:hover, .popular-title .next .icon-wrap:hover, .icon-next, .sport-content .read-more a .fa {
+    border: 2px solid rgba(255, 229, 22, 1);
+}
+.price-table-text .price {
+    width: auto;
+}
+.price-table-text span {
+    color: #fff;
+    line-height: 40px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+.price-table-text {
+    height: 100%;
+    padding-bottom: 20px;
+}
+.price-table-1 ul li {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+.megamenu ul.nav-menu > li :before, .megamenu ul.nav-menu > li:after {
+    border-bottom-color: rgba(255, 229, 22, 1);
+}
+.megamenu ul.nav-menu > li:before {
+    right: 50%;
+}
+.megamenu ul.nav-menu > li:after {
+    left: 50%;
+}
+.megamenu ul.nav-menu > li:hover a, .megamenu ul.nav-menu > li.active {
+    color: rgba(255, 229, 22, 1);
+}
+.megamenu ul.nav-menu > li:before, .megamenu ul.nav-menu > li:after {
+    border-bottom: 2px solid rgba(255, 229, 22, 1);
+    bottom: 28px;
+    content: "";
+    position: absolute;
+    width: 0;
+    transition: width 250ms ease-out 0s;
+    -o-transition: width 250ms ease-out 0s;
+    -ms-transition: width 250ms ease-out 0s;
+    -moz-transition: width 250ms ease-out 0s;
+    -webkit-transition: width 250ms ease-out 0s;
+}
+.contact-map, .map-frame-event {
+    min-height: 360px;
+}
+.contact {
+    background: none repeat scroll 0 0 #1b1b1b;
+    padding: 10px 16px 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 3;
+}
+.contact-form {
+    background: none repeat scroll 0 0 #1b1b1b;
+    padding-bottom: 0px;
+    position: relative;
+}
+.megamenu ul.nav-menu > li {
+    margin: 0px 15px;
+}
+.header-container-2, .header-container-3 {
+    background: none repeat scroll 0 0 #141414a6 !important;
+}
+.header-container-2, .header-container-3 {
+    border-bottom: 2px solid #ffe514;
+}
+.page-footer {
+    padding-bottom: 10px;
+    padding-top: 40px;
+    border-top: 2px solid rgba(255, 229, 22, 1);
+}
+</style>
+</head> 
+<body id="page-top" class="" data-offset="90" data-target=".navigation" data-spy="scroll">
+	<div class="wrapper hide-main-content"> 
+		<section  class="page one-page">
+			{%comment%}
+			<!--Menu Mobile-->
+			<div class="menu-wrap">
+				<div class="main-menu">
+					<h4 class="title-menu">Main menu</h4>
+					<button class="close-button" id="close-button"><i class="fa fa-times"></i></button>
+				</div>
+				<ul class="nav-menu">
+					<li><a href="/">INICIO</a></li>
+					<li><a href="/?page=nosotros">NOSOTROS</a></li>
+					<li><a href="/">ACTIVIDADES</a></li>
+					<li><a href="/">COACH</a></li>
+					<li><a href="/">NUTRIÓLOGOS</a></li>
+					<li><a href="/">CONTACTO</a></li>
+				</ul>
+			</div>
+			<!--Menu Mobile-->
+			{%endcomment%}
+			<div class="content-wrapper">
+				<!--Header-->
+				<header id="header" class="header header-container header-container-2 alt reveal">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-2 col-sm-3 col-xs-3 logo">
+								{%comment%}<a href="/"><img src="{%static 'zaresapp/armorgym/images/logo.png'%}" alt=""/></a>{%endcomment%}
+							</div>
+							<div class="col-md-10 nav-container">
+								<nav class="megamenu collapse navbar-collapse bs-navbar-collapse navbar-right mainnav col-md-10" role="navigation">
+									<ul class="nav-menu">
+										<li><a href="/">INICIO</a></li>
+										<li><a href="/?page=armorbox">ARMOR-BOX</a></li>
+										<li><a href="/?page=nosotros">NOSOTROS</a></li>
+										<li><a href="/?page=entrenadores">COACH</a></li>
+										<li><a href="/?page=nutriologos">NUTRIÓLOGOS</a></li>
+										<li><a href="/#contacto">CONTACTO</a></li>
+									</ul>
+								</nav>							
+							</div>							
+							<button class="menu-button" id="open-button"></button>
+						</div>
+					</div>
+				</header>
+				{%block content%}
+				{%endblock%}
+			</div>
+		</section>
+		<footer class="page-footer">
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-12 infomation">
+							<div class="footer-title">
+								<h4 style="color:rgba(255, 229, 22, 1);">CONTACTO</h4>		
+							</div>
+							<div class="info">Tel Centro: 6887842</div>
+							<div class="info">Tel Norte: 4695709</div>
+							<div class="info">Tel Pensiones: 9200149</div>
+							<div class="info">Email: contacto@armor-gym.com</div>
+							<div class="copy-right">
+								<div class="footer-right">
+									<div class="line1">ArmorGYM &copy; {{now.year}}</div>
+									<div class="line2">Redes Sociales</div>
+								</div>
+							</div>
+							<div class="social_icon">
+								<a href="https://www.facebook.com/GimnasioArmor/"><i class="fa fa-facebook"></i></a>
+								<a href="https://www.instagram.com/Armorgymoficial/"><i class="fa fa-instagram"></i></a>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12 location">							
+							<div class="footer-title">
+								<h4 style="color:rgba(255, 229, 22, 1);">HORARIOS</h4>			
+							</div>
+							<div class="address">
+								<p>
+									Lunes - Viernes 5:00 a 24:00<br />
+									Sábado 6:00 a 16:00<br />
+									Domingo (CAUCEL) 7:00 a 16:00<br />
+									Domingo (TULUM) 7:00 a 13:00<br />
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12 location">							
+							<div class="footer-title">
+								<h4 style="color:rgba(255, 229, 22, 1);">SUCURSALES</h4>			
+							</div>
+							<div class="address">
+								<p>
+									<strong style="color:rgba(255, 229, 22, 1);">Centro</strong><br />
+									<p>Calle 80 x 65 y 65a Col. Centro</p>
+									<strong style="color:rgba(255, 229, 22, 1);">Tanlum</strong><br />
+									<p>Calle 27 #315 x 28 col San Vicente Chuburna</p>
+									<strong style="color:rgba(255, 229, 22, 1);">Pensiones</strong><br />
+									<p>Calle 36 x 11 y 113 Col. Francisco Villa Poniente</p>
+									<strong style="color:rgba(255, 229, 22, 1);">Ciudad Caucel</strong><br />
+									<p>Calle 23#605 x 62 y 70 local 17 y 18 plaza gran santa fe</p>
+									<strong style="color:rgba(255, 229, 22, 1);">Norte</strong><br />
+									<p>Calle 20D x 1D y 1E Col. Mexico</p>
+									<strong style="color:rgba(255, 229, 22, 1);">Armor Box Caucel </strong><br />
+									<p>Cerca de Cd Caucel, Mérida, Yuc.</p>
+									<strong style="color:rgba(255, 229, 22, 1);">Armor Box Centro</strong><br />
+									<p>Calle 80 518, Centro, 97000 Mérida, Yuc.</p>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</footer>		
+	</div>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkthehObTcDFk_YuWTgXmy4QFtUIHsqUY&libraries=geometry,places"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/jquery-2.1.0.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/bootstrap.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/shortcode-frontend.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/jquery.mixitup.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/classie.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/jquery.easing.1.3.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/parallax/jquery.parallax-1.1.3.js'%}"></script>
+    <script type="text/javascript" src="{%static 'zaresapp/armorgym/js/parallax/jquery.transform2d.js'%}"></script>
+    <script type="text/javascript" src="{%static 'zaresapp/armorgym/js/parallax/script.js'%}"></script>
+    <script type="text/javascript" src="{%static 'zaresapp/armorgym/js/parallax/parallax.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/jquery.scrollTo.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/wow.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/waypoints.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/masterslider.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/banner.js'%}"></script>	
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/isotope.pkgd.min.js'%}"></script>	
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/filtering.js'%}"></script>		
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/home.map.js'%}"></script>			
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/template.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/dropdown.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/owl.carousel.min.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/theme.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/custom.js'%}"></script>
+	<script type="text/javascript" src="{%static 'zaresapp/armorgym/js/main.js'%}"></script>	
+</body>
+</html>

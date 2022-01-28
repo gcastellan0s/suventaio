@@ -1,0 +1,173 @@
+{% extends "zaresapp/finezipo/base.html" %}
+
+{% load i18n %} 
+{% load staticfiles i18n %}
+
+{%block title%}FZ | {{artista|upper}}{%endblock%}
+
+{%block styles%}
+{%endblock%}
+
+{%block css%}
+.navbar .navbar-nav > li > a {
+    color: #000;
+}
+@media (max-width: 768px){
+  .cbp-af-header {
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    background: rgba(255, 255, 255, .6);
+}
+navbar h1 a{
+    color: #000!important;
+}
+.navbar h1 small{
+    color: #000;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar h1 a {
+    color: #000;
+}
+{%endblock%}
+
+{%block content%}
+  <section id="port-item-details">
+    <div class="container-fluid padding-side-60">
+
+       <div class="e-divider-8"></div>
+       <div class="post-header">
+          <h2 class="e-uppercase" style="margin-top: 35px;">GABY RAMÍREZ</h2>
+          <p class="e-uppercase" style="">Lic. en Ciencias de la Comunicación con 20 años de carrera artística</p>
+          <div class="e-divider-2"></div>
+       </div>
+       <div class="e-divider-4"></div>
+       <div class="row">
+          <div class="col-md-4">
+             <img src="{%static 'zaresapp/finezipo/assets/custom/images/gabyramirez/1.jpg'%}" class="img-responsive">
+             <div class="e-divider-2"></div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+             <h3 class="font-accident-two-normal e-uppercase">IMAGEN DE MARCA</h3>
+             <div class="e-divider-2"></div>
+             <p>
+                Compañía telefónica  metro PCS <br />
+                Imagen de un abogado en Dallas Jim Adler <br />
+                Imagen de claycooley en Dallas <br />
+                Pistachios <br />
+                Go Daddy <br />
+             </p>
+             <h3 class="font-accident-two-normal e-uppercase">CV</h3>
+             <p>
+                Desde muy chica Gaby Ramírez inicio haciendo magia con su Papa que es Mago profesional  Inicio en A la cachi cachi porra canal 11 (programa de concursos)<br />
+             </p>
+             <p>
+                <strong>TELEVISIÓN:</strong> A la cachi cachi porra. Canal 11. <br />
+                <strong>TELEVISIÓN:</strong> Vida tv canal de las estrellas. Televisa <br />
+                <strong>TELEVISIÓN:</strong> Festival del humor, sábados musicales canal de las estrellas. Televisa<br />
+                <strong>TELEVISIÓN:</strong> Sábado Gigante. Univision<br />
+                <strong>TELEVISIÓN:</strong> Lo que no se vio de premios. Univision<br />
+                <strong>TELEVISIÓN:</strong> Lo que no se vio en premios OYE. Univision<br />
+                <strong>TELEVISIÓN:</strong> Primero Athenas Olimpiadas. Televisa<br />
+                <strong>TELEVISIÓN:</strong> El club canal de las estrella. Televisa<br />
+                <strong>TELEVISIÓN:</strong> La Parodia . Televisa <br />
+                <strong>TELEVISIÓN:</strong> CNoticiero Mundo Ejecutivo. Televisa<br />
+                <strong>TELEVISIÓN:</strong> Aque no puedes. Estrella TV<br />
+                <strong>TELEVISIÓN:</strong> Tengo talento mucho talento. Estrella TV<br />
+              </p>
+              <p>
+                <strong>TELENOVELAS:</strong> Maria la del Barrio <br />
+                <strong>TELENOVELAS:</strong> Mujer de Madera  Fuego en la Sangre <br />
+                <strong>TELENOVELAS:</strong> Hasta que el dinero nos separe<br />
+                <strong>TELENOVELAS:</strong> El mariachi con teleset -RCN -Sony <br />
+                <strong>TELENOVELAS:</strong> El vato NBC universo <br />
+              </p>
+              <p>
+                <strong>PELICULAS:</strong> El secreto<br />
+              </p>
+              <p>
+                 2 portadas de PlayBoy internacionales la de la mujer maravilla <br />
+                  Publicadas en: México, Venezuela, Rep. Checa, Filipinas, USA, la segunda portada sólo en México.
+              </p>
+             
+             <div class="e-divider-6"></div>
+
+             <div class="row">
+                <div class="col-md-12 padding-side-50 bg-color01">
+
+                   <div class="e-divider-4"></div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">PRESENTACIONES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">PALENQUES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">TEATROS DEL PUEBLO</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <section id="portfolio" class="e-block e-block-skin pt-section" style="margin-top:45px;">
+    <div class="light">
+       <div class="grid container-fluid ">
+          <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/gabyramirez/1.jpg'%}" download>
+             <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/gabyramirez/1.jpg'%}" class="img-responsive" alt="gabyramirez"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+          </div>
+          <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/gabyramirez/2.jpg'%}" download>
+             <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/gabyramirez/2.jpg'%}" class="img-responsive" alt="gabyramirez"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+          </div>
+          <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/gabyramirez/3.jpg'%}" download>
+             <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/gabyramirez/3.jpg'%}" class="img-responsive" alt="gabyramirez"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+          </div>
+       </div>
+       <div class="e-divider-6"></div>
+    </div>
+ </section>
+ <!-- /Portfolio Block  -->
+{%endblock%}
+
+{%block js%}
+{%endblock%}
+
+{%block script%}
+{%endblock%}
+

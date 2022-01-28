@@ -1,0 +1,63 @@
+{% extends "zaresapp/sergiogarte/base.html" %}
+{% load i18n %} 
+{% load staticfiles i18n %}
+
+
+{%block title%}SERGIO GARTE | PRIVACIDAD{%endblock title%}
+
+{%block style%}
+	<style>
+		.bg-dark {
+		    background-color: #1c2a1a;
+		    height: 100%;
+		    width: 100%;
+		}
+		
+	</style>
+{%endblock%}
+
+{%block content%}
+	<section class="brick brick-md brick-parallax bg-dark" data-background="assets/images/about.jpg">
+			<div class="container">
+                <div class="row mt-50">
+                    <div class="col-md-8">
+                        <h1 class="bread-text text-white gold2">PRIVACIDAD</h1>
+                        <div class="text-white">
+                            DISEÑADOR MEXICANO
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-30">
+                        <div class="mod-breadcrumbs text-right">
+                            <a href="/">INICIO</a>&nbsp;/&nbsp;<span class="gold2">PRIVACIDAD</span>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+	</section>
+	<section class="brick" style="padding-bottom: 10px;margin-bottom:100px;">
+		<div class="container">
+			<!-- brick title -->
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2 col-xs-12">
+        			<h2 class="brick-title mb-50"><span style="font-weight: 100;font-family: gartefont!important;" class="">POLÍTICAS DE PRIVACIDAD</h2>
+        			<img class="mb-30" src="{%static 'zaresapp/sergiogarte/images/logo.png'%}" alt="" style="max-width:60px;">
+      			</div>
+			</div>
+			<div class="row mt-50">
+				<div class="col-md-12">
+					<p style="text-align: justify;">
+						En SERGIOGARTE estamos conscientes de la importancia de la privacidad de nuestros usuarios y como consecuencia estamos comprometidos con proteger la misma. Por lo anterior, y en virtud de nuestras políticas de privacidad que aplicamos a todos nuestros servicios, mismas que podrán ser consultadas en la página en Internet https://www.sergiogarte.mx/privacidad/, en la que se incluye una descripción de cómo tratamos los datos personales y patrimoniales de nuestros usuarios (los “Datos Personales”), mismos que son utilizados para integrar su expediente como usuario, (ii) prestar los servicios que hayan sido contratados, (iii) ofrecerle servicios de SERGIOGARTE, de sus afiliadas, socios comerciales, comisionistas o empresas integrantes del mismo grupo al que llegase a pertenecer SERGIOGARTE, (iv) atender quejas y aclaraciones, y (v) realizar evaluaciones y estudios de mercado.
+
+						Tomaremos las medidas contenidas en la Ley Federal de Protección de Datos Personales en Posesión de Particulares y demás leyes aplicables para (i) que los terceros a los que les sean revelados los Datos Personales, proporcionen una adecuada protección de los mismos, e (ii) impedir el acceso no autorizado a los Datos Personales o cualquier modificación, divulgación o destrucción no autorizada de los mismos. Lo anterior, en el entendido que facilitaremos a los terceros a los que les sean revelados los Datos Personales, el presente aviso de privacidad proporcionado a nuestros clientes, por lo que el tratamiento de los Datos Personales por los terceros se hará conforme a lo establecido en este aviso de privacidad. De igual manera, el tercero receptor, asumirá las mismas obligaciones que correspondan a SERGIOGARTE en materia de confidencialidad y protección de los Datos Personales.
+
+						Este aviso de privacidad podrá ser modificado unilateralmente. No obstante lo anterior, SERGIOGARTE comunicará a sus clientes las modificaciones a través de (i) correo electrónico, publicación de dichas modificaciones en la página de Internet www.sergiogarte.mx/privacidad/. Le pedimos a nuestros clientes que revisen regularmente el presente Aviso de Privacidad publicado en dicha página de Internet.
+
+						Ponemos a disposición de nuestros clientes la dirección de correo electrónico contacto@sergiogarte.mx, en la cual, con gusto atenderemos (i) las dudas relativas al uso de sus Datos Personales, y/o (ii) las solicitudes para ejercer sus derechos al acceso, rectificación, cancelación y oposición relativos al uso y almacenamiento de sus Datos Personales en posesión de SERGIOGARTE.
+
+						Al proporcionar sus Datos Personales, el cliente confirma y acepta que ha leído y otorga su consentimiento para ajustarse a lo estipulado en el presente Aviso de Privacidad.
+					</p>
+				</div>
+			</div>
+		</div>	
+	</section >
+{%endblock content%}

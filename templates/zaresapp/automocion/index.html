@@ -1,0 +1,164 @@
+{% load staticfiles i18n %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Emoción por los autos">
+		<meta name="author" content="zaresdelweb">
+		<title>AUTOMOCIÓN</title>
+		<link href="{%static 'zaresapp/automocion/css/bootstrap.min.css'%}" rel="stylesheet">
+		<link href="{%static 'zaresapp/automocion/css/font-awesome.min.css'%}" rel="stylesheet">
+		<link href="{%static 'zaresapp/automocion/css/bootstrapValidator.min.css'%}" rel="stylesheet">
+		<link href="{%static 'zaresapp/automocion/css/ladda-themeless.min.css'%}" rel="stylesheet">
+		<link href="{%static 'zaresapp/automocion/css/animate.min.css'%}" rel="stylesheet">
+		<link href="{%static 'zaresapp/automocion/css/owl.carousel.css'%}" rel="stylesheet">
+		<link href="{%static 'zaresapp/automocion/css/owl.theme.css'%}" rel="stylesheet">
+		<link href="{%static 'zaresapp/automocion/css/app.css'%}" rel="stylesheet">
+		<link rel="shortcut icon" href="{%static 'zaresapp/automocion/img/favicon/logo.png'%}" type="image/x-icon">
+		<link rel="icon" href="{%static 'zaresapp/automocion/img/favicon/logo.png'%}" type="image/x-icon">
+
+		<meta property="og:image" content="{%static 'zaresapp/automocion/img/logo.png'%}"/>
+	    <meta property="og:url" content="automocion.mx" />
+	    <meta property="og:type" content="" />
+	    <meta property="og:title" content="AUTOMOCION" />
+	    <meta property="og:description" content="Emoción por los autos" />
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+		<style type="text/css" media="screen">
+			@font-face {
+				  font-family: "Megahertz";
+				  src: url({%static 'zaresapp/automocion/fonts/Megahertz.otf'%}) format("truetype");
+			}
+			h1 { font-family: "Megahertz", sans-serif }
+			#countdown {
+			    font-family: "Megahertz", sans-serif!important;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="preloader">
+			<div id="status" class="text-center">
+				<div class="spinner">
+				  <div class="rect1 boss"></div>
+				  <div class="rect2 boss"></div>
+				  <div class="rect3 boss"></div>
+				  <div class="rect4 boss"></div>
+				  <div class="rect5 boss"></div>
+				</div>
+			</div>
+		</div>
+		<section class="main text-center" id="home">
+			<div class="page">
+				<div class="wrapper">
+					<div class="container">
+						<img src="{%static 'zaresapp/automocion/img/logo.png'%}" alt="Logo" style="max-width: 250px;">
+						<h1 class="heading">muy pronto</h1>
+						<div class="row">
+							<div id="countdown"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="{%static 'zaresapp/automocion/js/jquery.min.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/bootstrap.min.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/jquery.backstretch.min.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/jquery.countdown.min.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/bootstrapValidator.min.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/validator/emailAddress.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/spin.min.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/ladda.min.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/retina.min.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/wow.min.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/owl.carousel.min.js'%}"></script>
+		<script src="{%static 'zaresapp/automocion/js/init.js'%}"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(window).load(function () {
+				"use strict";
+				$('#status').fadeOut();
+				$('#preloader').delay(350).fadeOut('slow');
+				$('body').delay(350).css({
+					'overflow': 'visible'
+				});
+			});
+			$(function () {
+				"use strict";
+
+				/* ---------------------------------------------------------
+				 * Background (Backstretch)
+				 */
+
+				$.backstretch([
+					"{%static 'zaresapp/automocion/img/bg.jpg'%}"
+				]);
+
+				/* ---------------------------------------------------------
+				 * WOW
+				 */
+
+				new WOW({
+					 mobile: false,
+				}).init();
+
+
+				/* ---------------------------------------------------------
+				 * Team carousel
+				 */
+
+				$("#teamCarousel").owlCarousel({
+					items: 4,
+					itemsTablet: [768,3],
+					itemsTabletSmall: [690,2],
+					itemsMobile : [480,1]
+				});
+
+				/* ---------------------------------------------------------
+				 * Scroll arrow
+				 */
+
+				$("#scroll").click(function () {
+				 	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+				 		var target = $(this.hash);
+				 		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				 		if (target.length) {
+				 			$('html,body').animate({
+				 				scrollTop: target.offset().top
+				 			}, 1200);
+				 			return false;
+				 		}
+				 	}
+				 });
+
+				/* ---------------------------------------------------------
+				 * Countdown
+				 */
+
+				var description = {
+					weeks: "semanas",
+					days: "dias",
+					hours: "horas",
+					minutes: "minutos",
+					seconds: "segundos"
+				};
+
+				// year/month/day
+				$('#countdown').countdown('2017/09/15', function (event) {
+					$(this).html(event.strftime(
+						'<div class="countdown-section"><b>%w</b> <span>' + description.weeks + '</span> </div>' +
+						'<div class="countdown-section"><b>%d</b> <span>' + description.days + '</span> </div>' +
+						'<div class="countdown-section"><b>%H</b> <span>' + description.hours + '</span> </div>' +
+						'<div class="countdown-section"><b>%M</b> <span>' + description.minutes + '</span> </div>' +
+						'<div class="countdown-section"><b>%S</b> <span>' + description.seconds + '</span> </div>'
+					));
+				});
+
+				
+			});
+
+		</script>
+	</body>
+</html>

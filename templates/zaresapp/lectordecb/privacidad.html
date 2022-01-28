@@ -1,0 +1,70 @@
+{% load staticfiles i18n %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+         <title>{% block title %} LECTORDECB {% endblock title %} </title>
+        <link rel="stylesheet" href="{% static 'zaresapp/lectordecb/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css' %}">
+        <link rel="stylesheet" href="{% static 'zaresapp/lectordecb/vendors/bower_components/animate.css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'zaresapp/lectordecb/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css' %}">
+        <link rel="shortcut icon" href="{% static 'zaresapp/lectordecb/img/favicon.png' %}">
+        <link rel="stylesheet" href="{% static 'zaresapp/lectordecb/css/app.min.css' %}">
+        <link rel="stylesheet" href="{% static 'zaresapp/lectordecb/css/font-awesome.min.css' %}">
+    </head>
+    <style>
+    </style>
+    <body data-ma-theme="blue">
+        <main class="main main--alt">
+            <div class="page-loader">
+                <div class="page-loader__spinner">
+                    <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+            </div>
+            <header class="header">
+                <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
+                    <div class="navigation-trigger__inner">
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                    </div>
+                </div>
+                <div class="header__logo hidden-sm-down">
+                    <h1><a href="/">REGRESAR</a></h1>
+                </div>
+            </header>
+            <div class="card" style="margin-top:60px;max-width: 800px;margin: auto;margin-top: 80px;">
+                <div class="card-header">
+                    <h2 class="card-title">POLITICAS DE PRIVACIDAD</h2>
+                </div>
+                <div class="card-block">
+                    <p>
+                    En lectordecb estamos conscientes de la importancia de la privacidad de nuestros usuarios y como consecuencia estamos comprometidos con proteger la misma. Por lo anterior, y en virtud de nuestras políticas de privacidad que aplicamos a todos nuestros servicios, mismas que podrán ser consultadas en la página en Internet https://www.lectordecb.mx/policy/, en la que se incluye una descripción de cómo tratamos los datos personales y patrimoniales de nuestros usuarios (los “Datos Personales”), mismos que son utilizados para integrar su expediente como usuario, (ii) prestar los servicios que hayan sido contratados, (iii) ofrecerle servicios de lectordecb, de sus afiliadas, socios comerciales, comisionistas o empresas integrantes del mismo grupo al que llegase a pertenecer lectordecb, (iv) atender quejas y aclaraciones, y (v) realizar evaluaciones y estudios de mercado.
+
+                    Tomaremos las medidas contenidas en la Ley Federal de Protección de Datos Personales en Posesión de Particulares y demás leyes aplicables para (i) que los terceros a los que les sean revelados los Datos Personales, proporcionen una adecuada protección de los mismos, e (ii) impedir el acceso no autorizado a los Datos Personales o cualquier modificación, divulgación o destrucción no autorizada de los mismos. Lo anterior, en el entendido que facilitaremos a los terceros a los que les sean revelados los Datos Personales, el presente aviso de privacidad proporcionado a nuestros clientes, por lo que el tratamiento de los Datos Personales por los terceros se hará conforme a lo establecido en este aviso de privacidad. De igual manera, el tercero receptor, asumirá las mismas obligaciones que correspondan a lectordecb en materia de confidencialidad y protección de los Datos Personales.
+
+                    Este aviso de privacidad podrá ser modificado unilateralmente. No obstante lo anterior, lectordecb comunicará a sus clientes las modificaciones a través de (i) correo electrónico, publicación de dichas modificaciones en la página de Internet http://lectordecb.zaresapp.com/?privacidad=1. Le pedimos a nuestros clientes que revisen regularmente el presente Aviso de Privacidad publicado en dicha página de Internet.
+
+                    Ponemos a disposición de nuestros clientes la dirección de correo electrónico contacto@lectordecb.zaresapp.com, en la cual, con gusto atenderemos (i) las dudas relativas al uso de sus Datos Personales, y/o (ii) las solicitudes para ejercer sus derechos al acceso, rectificación, cancelación y oposición relativos al uso y almacenamiento de sus Datos Personales en posesión de lectordecb.
+
+                    Al proporcionar sus Datos Personales, el cliente confirma y acepta que ha leído y otorga su consentimiento para ajustarse a lo estipulado en el presente Aviso de Privacidad.
+                    </p>
+                </div>
+            </div>
+            <section class="content content--full">
+                <footer class="footer">
+                    <p>© Powered by ZaresDelWeb.</p>
+                </footer>
+            </section>
+        </main>
+        <script src="{% static 'zaresapp/lectordecb/vendors/bower_components/jquery/dist/jquery.min.js' %}"></script>
+        <script src="{% static 'zaresapp/lectordecb/vendors/bower_components/tether/dist/js/tether.min.js' %}"></script>
+        <script src="{% static 'zaresapp/lectordecb/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'zaresapp/lectordecb/vendors/bower_components/Waves/dist/waves.min.js' %}"></script>
+        <script src="{% static 'zaresapp/lectordecb/js/app.min.js' %}"></script>
+    </body>
+</html>

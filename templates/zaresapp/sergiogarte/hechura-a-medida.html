@@ -1,0 +1,129 @@
+{% extends "zaresapp/sergiogarte/base.html" %}
+{% load i18n %} 
+{% load staticfiles i18n %}
+{% load suventatags %}
+
+{%block title%}SERGIO GARTE | HECHURA A MEDIDA{%endblock title%}
+
+{%block style%}
+	<style>
+		.bg-dark {
+		    background-color: #1c2a1a;
+		    height: 100%;
+		    width: 100%;
+		}
+		.parallax-bg {
+		    overflow: hidden;
+		    background-image: url('{%static 'zaresapp/sergiogarte/images/hero2.jpg'%}');
+		    background-attachment: fixed;
+		    position: relative;
+		    background-size: contain;
+		}
+		.parallax, .parallax-item {
+		    background: #fff;
+		}
+		.parallax-item {
+		    padding: 0px;
+		}
+		
+	</style>
+{%endblock%}
+
+{%block content%}
+	<section class="brick brick-md brick-parallax bg-dark" data-background="assets/images/about.jpg">
+			<div class="container">
+                <div class="row mt-50">
+                    <div class="col-md-8">
+                        <h1 class="bread-text text-white gold2" style="font-family: gartefont!important;" >
+                        		<img class="" src="{%static 'zaresapp/sergiogarte/images/deco7.png'%}" alt="" style="max-width:40px;padding-bottom:10px;">
+                        		HECHURA A MEDIDA 
+                        </h1>
+                        <div class="text-white">
+                            DISEÑADOR MEXICANO
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-30">
+                        <div class="mod-breadcrumbs text-right">
+                            <a href="/">INICIO</a>&nbsp;/&nbsp;<span class="gold2">HECHURA A MEDIDA</span><br />
+                            <img class="" src="{%static 'zaresapp/sergiogarte/images/deco6.png'%}" alt="" style="max-width:50px;padding-top:0px;">
+                        </div>
+
+                    </div>
+                </div>
+            </div> 
+	</section>
+	<section class="brick" style="padding-bottom: 10px;">
+		<div class="container">
+			<!-- brick title -->
+			<div class="row text-center">
+				<div class="col-md-8 col-md-offset-2 col-xs-12">
+        			<h2 class="brick-title mb-10"><span style="font-weight: 100;font-family: gartefont!important;" class="">HECHURA A MEDIDA</span></h2>
+        			<div class="divider title-divider"></div>
+      			</div>
+			</div>
+		</div>	
+	</section >
+	<section class="brick" style="padding-bottom:50px;padding-top:40px;">  
+        <div class="container">
+            <div class="col-sm-12 col-md-5">
+                <div class="text-center" style="background-position: 50% 50px;background-color: #fff;padding: 8px;">
+                    <div class="parallax-item light-bg">
+                        <img class="mb-20" src="{%static 'zaresapp/sergiogarte/images/blog/blog-8.jpg'%}" alt="" style="max-width:430px;">
+                        <img class="" src="{%static 'zaresapp/sergiogarte/images/blog/blog-9.jpg'%}" alt="" style="max-width:430px;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-md-push-1 col-sm-12 col-xs-12 mt-30">
+                <div class="row features-container" style="padding: 0px 10px;">
+                    <div class="col-md-12">
+                        <div class="icon-box text-center">
+                            <img class="mb-60" src="{%static 'zaresapp/sergiogarte/images/deco2.png'%}" alt="" style="max-width:350px;">
+                            <p class="fs-13" style="text-align: justify;">Es la confección de prendas personalizadas para enaltecer el cuerpo de quien lo lleva, son prendas únicas que solo podrán ser usadas por ti, te brindaran seguridad y comodidad ya que todo quedara perfectamente moldeado a tu cuerpo. Rara vez se ocupa el mismo material para el mismo diseño ya que también  los accesorios y detalles son a tu gusto.</p>
+                            <p class="fs-13" style="text-align: justify;">Se toman medidas de forma personal y especifica al cliente, para crear moldes únicos, que serviran para la confección de la prenda que enaltecera su silueta. no solo se trata de  pagar más o una simple vanalidad, se trata de comodidad, de  usar una prenda única hecha especialmente para ti.</p>
+                            <p class="fs-13" style="text-align: justify;">Estas prendas requieren para su elaboración un poco más de tiempo que lo usual ya que se cuida hasta el más mínimo detalle al momento del armado de la prenda, este servicio principalmente es requerido para: damas de honor, vestidos de graduación, fiestas de aniversario, reuniones empresariales, y momentos importantes en la vida del cliente, sin descartar también para su uso cotidiano.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+        	<div class="row text-center mt-40">
+				<div class="col-md-8 col-md-offset-2 col-xs-12">
+        			<div class="divider title-divider"></div>
+      			</div>
+			</div>
+
+            <div class="row mt-40 mb-80">
+                <!-- single member -->
+                <div class="team-member col-md-4 col-sm-4 text-center">
+                    <div class="member-thumb">
+                    	<div class="cover"><div class="cover-inner-left"></div></div>
+                        <img src="{%static 'zaresapp/sergiogarte/images/blog/blog-10.jpg'%}" alt="Team Member" class="img-responsive">
+                    </div>
+                </div>
+                <!-- end single member -->
+
+                <!-- single member -->
+                <div class="team-member col-md-4 col-sm-4 text-center">
+                    <div class="member-thumb">
+                    	<div class="cover"><div class="cover-inner-middle"></div></div>
+                        <img src="{%static 'zaresapp/sergiogarte/images/blog/blog-11.jpg'%}" alt="Team Member" class="img-responsive">
+                    </div>
+                </div>
+                <!-- end single member -->
+
+                <!-- single member -->
+                <div class="team-member col-md-4 col-sm-4 text-center ">
+                    <div class="member-thumb">
+                    	<div class="cover"><div class="cover-inner-right"></div></div>
+                        <img src="{%static 'zaresapp/sergiogarte/images/blog/blog-12.jpg'%}" alt="Team Member" class="img-responsive">
+                    </div>
+                </div>
+                <!-- end single member -->
+    		</div>
+
+
+        </div>
+    </section>
+{%endblock content%}

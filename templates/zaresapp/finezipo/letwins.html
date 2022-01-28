@@ -1,0 +1,196 @@
+{% extends "zaresapp/finezipo/base.html" %}
+
+{% load i18n %} 
+{% load staticfiles i18n %}
+
+{%block title%}FZ | {{artista|upper}}{%endblock%}
+
+{%block styles%}
+{%endblock%}
+
+{%block css%}
+.navbar .navbar-nav > li > a {
+    color: #000;
+}
+@media (max-width: 768px){
+  .cbp-af-header {
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    background: rgba(255, 255, 255, .6);
+}
+navbar h1 a{
+    color: #000!important;
+}
+.navbar h1 small{
+    color: #000;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar h1 a {
+    color: #000;
+}
+{%endblock%}
+
+{%block content%}
+  <section id="port-item-details">
+    <div class="container-fluid padding-side-60">
+
+       <div class="e-divider-8"></div>
+       <div class="post-header">
+          <h2 class="e-uppercase" style="margin-top: 35px;">LE TWINS</h2>
+          
+          <div class="e-divider-2"></div>
+       </div>
+       <div class="e-divider-4"></div>
+       <div class="row">
+          <div class="col-md-4">
+             <img src="{%static 'zaresapp/finezipo/assets/custom/images/letwins/1.jpg'%}" class="img-responsive">
+             <div class="e-divider-2"></div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+             <h3 class="font-accident-two-normal e-uppercase">BIO</h3>
+             <div class="e-divider-2"></div>
+             <p>
+                Son consideradas las únicas Gemelas / Djs / Cantantes y compositoras en México y Latino America, caracterizadas por tu energia en el escenario y su show único en el cual cantan en vivo sus propias producciones, Captando la atención e interés del público haciendo sold out en los lugares en los que presentan
+             </p>
+             <p>
+                Gracias a su estilo único, su voz y su manera de dominar las tornamesas y el escenario Le Twins se han presentado en distintos lugares alrededor de el mundo. Siendo parte de las giras y festivales importantes como lo son Gira por Asia "China Tour 2017, Whisg Outdoor, Holi Colours Festival, Intenational Beach festival e incluso en eventos internacionales en Perú, Miami, Los Angeles, Houston, Texas y toda la República Mexicana" incluyendo el <strong>Tour con Steve Aoki en 2017</strong>
+             </p>
+              
+                <p>
+                  <strong>Escucha sus últimos sets en sus redes sociales</strong>
+                </p>
+                <a href="https://soundcloud.com/djlafresa/" target="_blank">
+
+              <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/180422861&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+                </a>
+             </p>
+             <div class="e-divider-6"></div>
+
+             <div class="row">
+                <div class="col-md-12 padding-side-50 bg-color01">
+
+                   <div class="e-divider-4"></div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">FESTIVALES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">PRESENTACIONES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">CARNAVALES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">INAUGURACIONES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-12">
+                      <h4 class="font-accident-two-normal e-uppercase">EVENTOS PRIVADOS O ANTROS</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <section id="portfolio" class="e-block e-block-skin pt-section" style="margin-top:45px;">
+    <div class="light">
+       <div class="grid container-fluid ">
+          <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/letwins/1.jpg'%}" download>
+               <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/letwins/1.jpg'%}" class="img-responsive" alt="letwins"/>
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/letwins/2.jpg'%}" download>
+               <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/letwins/2.jpg'%}" class="img-responsive" alt="letwins"/>
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/letwins/3.jpg'%}" download>
+               <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/letwins/3.jpg'%}" class="img-responsive" alt="letwins"/>
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/letwins/4.jpg'%}" download>
+               <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/letwins/4.jpg'%}" class="img-responsive" alt="letwins"/>
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/letwins/5.jpg'%}" download>
+               <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/letwins/5.jpg'%}" class="img-responsive" alt="letwins"/>
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/letwins/6.jpg'%}" download>
+               <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/letwins/6.jpg'%}" class="img-responsive" alt="letwins"/>
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/letwins/7.jpg'%}" download>
+               <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/letwins/7.jpg'%}" class="img-responsive" alt="letwins"/>
+                     </figure>
+                  </div>
+               </div>
+            </a>
+            <a href="{%static 'zaresapp/finezipo/assets/custom/images/letwins/8.jpg'%}" download>
+               <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                  <div class="item-wrap">
+                     <figure class="effect-goliath">
+                        <img src="{%static 'zaresapp/finezipo/assets/custom/images/letwins/8.jpg'%}" class="img-responsive" alt="letwins"/>
+                     </figure>
+                  </div>
+               </div>
+            </a>
+       </div>
+       <div class="e-divider-6"></div>
+    </div>
+ </section>
+ <!-- /Portfolio Block  -->
+{%endblock%}
+
+{%block js%}
+{%endblock%}
+
+{%block script%}
+{%endblock%}
+

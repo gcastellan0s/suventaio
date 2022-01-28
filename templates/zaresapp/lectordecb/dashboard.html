@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="vendors/bower_components/animate.css/animate.min.css">
+        <link rel="stylesheet" href="vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="css/app.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+    </head>
+    <style>
+        .table-bordered th, .table-bordered td {
+            border: 1px solid #f2f2f2;
+            padding: 10px 1px;
+            line-height: 11px;
+        }
+        .table thead th {
+            border-bottom-width: 1px;
+            padding: 1rem 1.5rem;
+        }
+    </style>
+    <body data-ma-theme="blue">
+        <main class="main">
+            <div class="page-loader">
+                <div class="page-loader__spinner">
+                    <svg viewBox="25 25 50 50">
+                        <circle cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+            </div>
+            <header class="header">
+                <div class="navigation-trigger hidden-xl-up" data-ma-action="aside-open" data-ma-target=".sidebar">
+                    <div class="navigation-trigger__inner">
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                        <i class="navigation-trigger__line"></i>
+                    </div>
+                </div>
+                <div class="header__logo hidden-sm-down">
+                    <h1><a href="index.html">LectorDeCB</a></h1>
+                </div>
+                <ul class="top-nav">
+                    <li class="hidden-xl-up">
+                            <a href="" id="btn-logout"> SALIR <i class="zmdi zmdi-sign-in"></i> </a>
+                    </li>
+                </ul>
+            </header>
+            <aside class="sidebar">
+                <div class="scrollbar-inner">
+                    <div class="user">
+                        <div class="user__info" data-toggle="dropdown">
+                            <div>
+                                <div class="user__username">ID: <span id="usuario_id"></span> - <span id="usuario"></span></div>
+                                <div class="user__username" id="usuario_name" style="font-size:8px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navigation">
+                        <li><a href="dashboard.html"><i class="fa fa-barcode"></i>Captura</a></li>
+                        <!-- <li><a href="reports.html"><i class="fa fa-line-chart"></i>Reportes</a></li>-->
+                    </ul>
+                </div>
+            </aside>
+            <section class="content">
+                <div class="card">
+                    <div class="card-block">
+                        <button class="btn btn-primary btn--icon-text waves-effect btn-lg" id="capture-cb"><i class="fa fa-barcode"></i> CAPTURAR NUEVO CÓDIGO</button>
+                    </div>
+                </div>
+                <div class="card" id="confirm-card">
+                    <div class="card-header">
+                        <h2 class="card-title">CONFIRMACIÓN</h2>
+                    </div>
+                    <div class="card-block">
+                        <h3 id="last-cb"></h3>
+                        <small class="card-subtitle" id="last-cb-description">
+                            Información sobre los códigos registrados
+                        </small>
+                    </div>
+                </div>
+                
+                <h2 class="card-title"> REGISTROS </h2>
+                <small class="card-subtitle"><small>Solo se muestran los códigos de la última sesión.</small></small>
+                <div class="table-responsive">
+                    <table id="data-table" class="table table-bordered">
+                        <thead class="thead-default">
+                            <tr>
+                                <th>PRODUCTO</th>
+                                <th>INFO</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Producto</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                    
+                <footer class="footer">
+                    <p>© Powered by ZaresDelWeb.</p>
+                </footer>
+            </section>
+        </main>
+
+        <!-- Vendors -->
+        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="vendors/bower_components/tether/dist/js/tether.min.js"></script>
+        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="vendors/bower_components/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+
+        <!-- Vendors: Data tables -->
+        <script src="vendors/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="vendors/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+        <script src="vendors/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+        <script src="vendors/bower_components/jszip/dist/jszip.min.js"></script>
+        <script src="vendors/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+
+        <!-- App functions and actions -->
+        <script src="js/app.min.js"></script>
+
+        <!-- Cordova -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" charset="utf-8" async defer>
+            data_table = $("#data-table").DataTable({
+                autoWidth: !1,
+                responsive: !0,
+                lengthMenu: [
+                    [30, 50, 100],
+                    ["30 filas", "50 filas", "100 filas"]
+                ],
+                language: {
+                    "searchPlaceholder": "Buscar código...",
+                    "sProcessing":     "Procesando...",
+                    "sLengthMenu":     "Mostrar _MENU_ registros",
+                    "sZeroRecords":    "No se encontraron resultados",
+                    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+                    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+                    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+                    "sInfoPostFix":    "",
+                    "sSearch":         "Buscar:",
+                    "sUrl":            "",
+                    "sInfoThousands":  ",",
+                    "sLoadingRecords": "Cargando...",
+                    "oPaginate": {
+                        "sFirst":    "Primero",
+                        "sLast":     "Último",
+                        "sNext":     "Siguiente",
+                        "sPrevious": "Anterior"
+                    },
+                    "oAria": {
+                        "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                    }
+                },
+                dom: "Blfrtip",
+                buttons: [{ extend: "excelHtml5", title: "Export Data" }, { extend: "csvHtml5", title: "Export Data" }, { extend: "print", title: "Material Admin" }],
+                initComplete: function(a, b) { $(this).closest(".dataTables_wrapper").prepend(
+                    '<div class="dataTables_buttons hidden-sm-down actions"><span class="actions__item zmdi zmdi-print" data-table-action="print" /><span class="actions__item zmdi zmdi-fullscreen" data-table-action="fullscreen" /><div class="dropdown actions__item"><i data-toggle="dropdown" class="zmdi zmdi-download" /><ul class="dropdown-menu dropdown-menu-right"><a href="" class="dropdown-item" data-table-action="excel">Excel (.xlsx)</a><a href="" class="dropdown-item" data-table-action="csv">CSV (.csv)</a></ul></div></div>'
+                    )}
+                }), $(".dataTables_filter input[type=search]").focus(function() { $(this).closest(".dataTables_filter").addClass("dataTables_filter--toggled") }), $(".dataTables_filter input[type=search]").blur(function() { $(this).closest(".dataTables_filter").removeClass("dataTables_filter--toggled") }), $("body").on("click", "[data-table-action]", function(a) {
+                a.preventDefault();
+                var b = $(this).data("table-action");
+                if ("excel" === b && $(this).closest(".dataTables_wrapper").find(".buttons-excel").trigger("click"), "csv" === b && $(this).closest(".dataTables_wrapper").find(".buttons-csv").trigger("click"), "print" === b && $(this).closest(".dataTables_wrapper").find(".buttons-print").trigger("click"), "fullscreen" === b) {
+                    var c = $(this).closest(".card");
+                    c.hasClass("card--fullscreen") ? (c.removeClass("card--fullscreen"), $("body").removeClass("data-table-toggled")) : (c.addClass("card--fullscreen"), $("body").addClass("data-table-toggled"))
+                }
+            })
+
+            $( "#capture-cb" ).click(function() { 
+                cordova.plugins.barcodeScanner.scan(
+                    function (result) {
+                        $( "#capture-cb" ).attr('disabled','disabled')
+                        $( "#confirm-card" ).css('background-color','rgba(255,255,255, 0.65)')
+                        $( "#last-cb" ).text(result.text)
+                        $( "#last-cb-description" ).text('Procesando....')
+                        var data = {
+                            'usuario': window.request.usuario_id,
+                            'usuario_par1': window.request.usuario_par1,
+                            'usuario_par2': window.request.usuario_par2,
+                            'codebar': result.text,
+                            'api': 'capture',
+                        };
+                        $.ajax({
+                            url : "http://lectordecb.zaresapp.com/lectordecb/", 
+                            type : "POST", 
+                            dataType: "json",
+                            data : data,
+                            success : function(json) {
+                                $( "#last-cb" ).text(json.codebar)
+                                $( "#last-cb-description" ).text(json.message)
+                                $( "#capture-cb" ).removeAttr('disabled')
+                                if(json.flagapi == 1){
+                                    $( "#confirm-card" ).css('background-color','rgba(150, 230, 162, 0.12)')
+                                    date = new Date()
+                                    raw1 = json.codebar + '<br /><small style="font-size:9px">' + date.getDate() + '-' + date.getMonth() + '-' + date.getFullYear() + ' ' + date.getHours() + ":" + date.getMinutes() + '</small>'
+                                    raw2 = '<small style="font-size:11px">'+ json.message +'</small>' 
+                                    data_table.row.add( [
+                                        raw1,
+                                        raw2,
+                                    ] ).draw( false );
+                                }
+                                else{
+                                    $( "#confirm-card" ).css('background-color','rgba(175, 0, 0, 0.03)')
+                                }
+                            },
+                            error : function(xhr,errmsg,err) {
+                                $( "#capture-cb" ).removeAttr('disabled')
+                                console.log(xhr.status + ": " + xhr.responseText);
+                                alert('Ocurrio un error')
+                            }
+                        });
+                        
+                    },
+                    function (error) {
+                        $( "#confirm-card" ).css('background-color','rgba(175, 0, 0, 0.03)')
+                        $( "#last-cb" ).text("Intenta de nuevo")
+                        $( "#last-cb-description" ).text("")
+                    },
+                    {
+                        preferFrontCamera : true, // iOS and Android
+                        showFlipCameraButton : true, // iOS and Android
+                        showTorchButton : true, // iOS and Android
+                        torchOn: true, // Android, launch with the torch switched on (if available)
+                        saveHistory: false, // Android, save scan history (default false)
+                        prompt : "Acerca el código al área de scaneo", // Android
+                        resultDisplayDuration: 500, // Android, display scanned text for X ms. 0 suppresses it entirely, default 1500
+                        formats : "CODE_39", // default: all but PDF_417 and RSS_EXPANDED
+                        orientation : "landscape", // Android only (portrait|landscape), default unset so it rotates with the device
+                        disableAnimations : false, // iOS
+                        disableSuccessBeep: false // iOS and Android
+                    }
+                );
+            });
+        </script>
+    </body>
+</html>

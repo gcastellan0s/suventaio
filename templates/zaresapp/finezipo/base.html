@@ -1,0 +1,307 @@
+{% load staticfiles i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<!--[if IE 9]>
+<html class="ie9" lang="en">    <![endif]-->
+<!--[if IE 8]>
+<html class="ie8" lang="en">    <![endif]-->
+<head>
+
+   <title>{%block title%}FZ | Fine&Zipo{%endblock%}</title>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name=viewport content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+
+   <link rel=icon href={%static 'zaresapp/finezipo/assets/custom/images/favicon.png'%} sizes="16x16" type="image/png">
+
+   <!-- JS -->
+   <script src="{%static 'zaresapp/finezipo/assets/vendor/animatedheader/js/modernizr.custom.js'%}"></script>
+
+   <!-- CSS -->
+   <link href="{%static 'zaresapp/finezipo/assets/vendor/bootstrap/css/bootstrap.min.css'%}" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+   <link href="{%static 'zaresapp/finezipo/assets/vendor/pe-icon-7-stroke/css/pe-icon-7-stroke.css'%}" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+   <link href="{%static 'zaresapp/finezipo/assets/vendor/mfp/css/magnific-popup.min.css'%}" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+
+   <link href="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/css/settings.css'%}" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+   <link href="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/css/layers.css'%}" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+   <link href="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/css/navigation.css'%}" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+   <link href="{%static 'zaresapp/finezipo/assets/vendor/owl-carousel/assets/owl.carousel.css'%}" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+
+   <link href="{%static 'zaresapp/finezipo/assets/custom/css/style.css'%}" property='stylesheet' rel="stylesheet" type="text/css" media="screen"/>
+
+   {%block styles%}
+   {%endblock%}
+
+<style>
+.cbp-af-header h1 a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+.cbp-af-header h1, .cbp-af-header nav {
+    line-height: 22px;
+    margin-top: 25px;
+}
+.navbar h1 a{
+    color: #ffffff;
+}
+.navbar h1 small{
+    color: #ffffff;
+}
+.cbp-af-header.cbp-af-header-shrink h1 a small{
+    color: #303030;
+    font-size:15px!important;
+}
+.cbp-af-header.cbp-af-header-shrink h1 {
+    font-size: 2.0em;
+    margin-top: 25px;
+}
+.cbp-af-header.cbp-af-header-shrink h1, .cbp-af-header.cbp-af-header-shrink nav > a {
+    line-height: 18px;
+}
+.sidebar-left .bottom-widget {
+    background: #1e1e1e;
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    padding: 60px;
+    color: #fff;
+}
+.navbar .navbar-nav > li > a {
+    color: #fff;
+}
+@media (max-width: 768px){
+  .cbp-af-header {
+    background: #fff;
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    background: rgba(255, 255, 255, .6);
+}
+.img-models {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.img-models:hover {
+    -webkit-filter: initial;
+    filter: initial;
+}
+.dropdown-menu .divider {
+    height: 1px;
+    margin: 3px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+.dropdown-menu > li > a {
+    padding: 5px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #dadada;
+}
+.sidebar-left .bottom-widget {
+    background: #1e1e1e;
+    position: absolute;
+    width: 300px;
+    bottom: 0;
+    padding: 30px;
+    color: #fff;
+}
+  {%block css%}
+  {%endblock%}
+
+</style>
+
+</head>
+<body class="">
+
+<!--Pre-Loader
+<div id="preloader"><img src="assets/custom/images/preloader.gif" alt="01"></div>
+-->
+<div id="wrapper" class="sidebar-left">
+
+   <a href="#menu-toggle" class="" id="menu-toggle"><span class="" aria-hidden="true"></span></a>
+
+   <!-- Sidebar -->
+   <div id="sidebar-wrapper" class="sidebar-left">
+      <ul class="sidebar-nav">
+         <li class="e-divider-4"></li>
+         <li class="sidebar-brand">
+            <a href="/"><img src="{%static 'zaresapp/finezipo/assets/custom/images/logo02.png'%}" width="180" alt="logo"></a>
+            <span style="color:#fff;font-size:21px;margin-left: -5px;">MANAGEMENT & PR</span>
+         </li>
+         <li class="e-divider-4"></li>
+         <li><a href="{%url 'finezipo_nosotros'%}">Nosotros</a></li>
+         <li><a href="{%url 'finezipo_que_hacemos'%}">Que hacemos?</a></li>
+         <li><a href="{%url 'finezipo_shows'%}">Shows</a></li>
+         <li><a href="{%url 'finezipo_contacto'%}">Contacto</a></li>
+      </ul>
+      <div class="bottom-widget">
+         <p class="small">
+          CONTACTO:
+          <br /><small style="font-size:15px;">fine.zipo@gmail.com</small>
+          <br /><small style="font-size:20px;">5534142088</small>
+         </p>
+         <p class="small">
+            Siguenos en nuestras redes
+         </p>
+         <div>
+            <a href="http://facebook.com/fine.zipo/"><i class="fa fa-facebook-square" aria-hidden="true"></i> <small style="color: #fff;"></small></a>
+            <a href="http://instagram.com/joeles6/"><i class="fa fa-instagram" aria-hidden="true"></i> <small style="color: #fff;"></small></a>
+            <a href="https://www.youtube.com/channel/UCRLwMdyVNIseeNv48O93k9Q "><i class="fa fa-youtube" aria-hidden="true"></i> <small style="color: #fff;"></small></a>
+         </div>
+         <p class="small">
+            <a href="http://zaresdelweb.com" style="color: #474545;">powered by zaresdelweb</a>
+         </p>
+      </div>
+   </div>
+   <!-- /#sidebar-wrapper -->
+   <!-- Content -->
+   <div id="page-content-wrapper" class="content-wrap">
+
+      <!-- Header -->
+      <header class="cbp-af-header toggled">
+         <div class="cbp-af-inner">
+            <div class="navbar navbar-default" role="navigation">
+               <div class="container-fluid padding-side-50">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                     <h1>
+                      <a href="/" style="">FINE&ZIPO<br /><small style="font-size:17px;font-weight: 100;">MANAGEMENT & PR</small></a>
+                      </h1>
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                     </button>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <nav class="collapse navbar-collapse navbar-ex1-collapse">
+                     <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{%url 'finezipo_nosotros'%}">Nosotros</a></li>
+                        <li class="dropdown">
+                           <a class="dropdown-toggle" data-toggle="dropdown">EXCLUSIVOS <b class="caret"></b></a>
+                           <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                                <li><a style="color: #b9b874;">MANAGEMENT</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="{%url 'finezipo_artistas' 'manelyk'%}">MANELYK GONZÁLEZ</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'vanessa'%}">VANESSA CLAUDIO</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'malakings'%}">MALAKINGS</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'aleidanunez'%}">ALEIDA NUÑEZ</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'lisvega'%}">LIS VEGA</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'eleazargomez'%}">ELEAZAR GÓMEZ</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'ernestocazares'%}">ERNESTO CAZARES</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'mhoni'%}">MHONI VIDENTE</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'wanderslover'%}">WANDERS LOVER</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'aristeocazares'%}">ARISTEO CAZARES</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'ianyeley'%}">IAN Y ELEY</a></li>
+                                <li role="separator" class="divider"></li>
+                           </ul>
+                        </li>
+                        <li class="dropdown">
+                           <a class="dropdown-toggle" data-toggle="dropdown">MANAGEMENT <b class="caret"></b></a>
+                           <ul class="dropdown-menu">
+                                <li role="separator" class="divider"></li>
+                                <li><a style="color: #b9b874;">BOOKING</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="{%url 'finezipo_artistas' 'lorena'%}">LORENA HERRERA</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'marlene'%}">MARLENE FAVELA</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'veronicamontes'%}">VERONICA MONTES</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'anaespinola'%}">ANA ESPINOLA</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'jawi'%}">JAWI MENDEZ</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'damaris'%}">DAMARIS ROJAS</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'karenka'%}">KARENKA</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'fernandocorona'%}">FERNANDO CORONA</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'jeremy'%}">JEREMY</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'yessicamonsalve'%}">DJ LA FRESA</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'marisolgrajales'%}">MARISOL GRAJALES</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'karime'%}">KARIME PINDTER</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'letwins'%}">LETWINS</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'victorortiz'%}">VICTOR ORTIZ</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'vanessahuppenkothen'%}">VANESSA HUPPENKOTHEN</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'sabrinasabrok'%}">SABRINA SABROK</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'tracy'%}">TRACY SÁENZ</a></li>
+                                <li><a href="{%url 'finezipo_artistas' 'jenny'%}">JENNY GARCIA</a></li>
+                                <li role="separator" class="divider"></li>
+                           </ul>
+                        </li>
+                        <li><a href="{%url 'finezipo_contacto'%}">Contacto</a></li>
+                     </ul>
+                  </nav><!-- /.navbar-collapse -->
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- / Header -->
+      <!-- Content Sections -->
+      <div id="content">
+
+        {%block content%}
+        {%endblock%}
+
+      </div>
+      <!-- /Content Sections -->
+   </div>
+   <!-- /Content -->
+</div>
+
+<div id="frames">
+</div>
+
+<!-- JS -->
+<script src="{%static 'zaresapp/finezipo/assets/vendor/jquery/js/jquery-2.2.0.min.js'%}" type="text/javascript"></script>
+<script src="{%static 'zaresapp/finezipo/assets/vendor/bootstrap/js/bootstrap.min.js'%}" type="text/javascript"></script>
+<script src="{%static 'zaresapp/finezipo/assets/vendor/animatedheader/js/classie.js'%}"></script>
+<script src="{%static 'zaresapp/finezipo/assets/vendor/animatedheader/js/cbpAnimatedHeader.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/imagesloaded/js/imagesloaded.pkgd.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/isotope/js/isotope.pkgd.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/jquery-parallax/js/jquery.parallax-1.1.3.js'%}"></script>
+<script src="{%static 'zaresapp/finezipo/assets/vendor/mfp/js/jquery.magnific-popup.min.js'%}" type="text/javascript"></script>
+<script src="{%static 'zaresapp/finezipo/assets/vendor/anicounter/jquery.counterup.min.js'%}" type="text/javascript"></script>
+<script src="{%static 'zaresapp/finezipo/assets/vendor/circle-progress/circle-progress.min.js'%}" type="text/javascript"></script>
+<script src="{%static 'zaresapp/finezipo/assets/vendor/waypoints/waypoints.min.js'%}" type="text/javascript"></script>
+<script src="{%static 'zaresapp/finezipo/assets/vendor/goalprogress/goalProgress.min.js'%}" type="text/javascript"></script>
+<script src="{%static 'zaresapp/finezipo/assets/vendor/owl-carousel/owl.carousel.min.js'%}" type="text/javascript"></script>
+
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/js/jquery.themepunch.tools.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/js/extensions/revolution.extension.slideanims.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/js/extensions/revolution.extension.navigation.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/js/extensions/revolution.extension.navigation.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/js/extensions/revolution.extension.parallax.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/js/extensions/revolution.extension.actions.min.js'%}"></script>
+<script type="text/javascript" src="{%static 'zaresapp/finezipo/assets/vendor/rs-plugin/js/extensions/revolution.extension.video.min.js'%}"></script>
+
+<!-- Custom scripts -->
+<script src="{%static 'zaresapp/finezipo/assets/custom/js/script.js'%}" type="text/javascript"></script>
+
+{%block js%}{%endblock%}
+
+{%block script%}{%endblock%}
+
+<script>
+
+  $( ".downloadimg" ).click(function() {
+    image = $(this).attr('src')
+    console.log(image)
+    downloadimg(image)
+  });
+  
+  function downloadimg(image){
+    $('body').append('<iframe src="http://localhost:8000'+ image +'" style="display: none;" ></iframe>');
+  }
+ 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+{% extends "zaresapp/finezipo/base.html" %}
+
+{% load i18n %} 
+{% load staticfiles i18n %}
+
+{%block title%}FZ | {{artista|upper}}{%endblock%}
+
+{%block styles%}
+{%endblock%}
+
+{%block css%}
+.navbar .navbar-nav > li > a {
+    color: #000;
+}
+@media (max-width: 768px){
+  .cbp-af-header {
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    background: rgba(255, 255, 255, .6);
+}
+navbar h1 a{
+    color: #000!important;
+}
+.navbar h1 small{
+    color: #000;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar h1 a {
+    color: #000;
+}
+{%endblock%}
+
+{%block content%}
+  <section id="port-item-details">
+    <div class="container-fluid padding-side-60">
+
+       <div class="e-divider-8"></div>
+       <div class="post-header">
+          <h2 class="e-uppercase" style="margin-top: 35px;">DJ LA FRESA</h2>
+          
+          <div class="e-divider-2"></div>
+       </div>
+       <div class="e-divider-4"></div>
+       <div class="row">
+          <div class="col-md-4">
+             <img src="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/01.jpg'%}" class="img-responsive">
+             <div class="e-divider-2"></div>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+             <h3 class="font-accident-two-normal e-uppercase">BIO</h3>
+             <div class="e-divider-2"></div>
+             <p>
+                Yessica Monsalve mejor conocida como “DJ La Fresa”, nacida en Medellin, Colombia con tan solo 26 años edad radicada al día de hoy en la Ciudad de Mexico, ha recorrido gran parte de la republica mexicana tocando en diversos eventos privados, así como clubbes nocturnos, pool partys, pasarelas de moda, etc, teniendo una aceptación increíble por el publico mexicano por su gran energía, belleza y carisma a la hora de tocar.
+             </p>
+              <p>
+                Sus influencias musicales van desde el reggeaton, house, tech house, techno, deep house,electro pop, circuit, house progresivo y tribal, siendo así una de las djs femeninas mas versátiles del mercado.
+              </p>
+              <p>
+                Su trabajo tiene bastante reconocimiento en el centro de Mexico, pues se ha presentado en diversos clubbes importantes de la escena electrónica. Actualmente Yessica se encuentra preparandose en el ámbito de la producción musical, pues su principal objetivo es tocar su propia música.
+              </p>
+                <p>
+                  <strong>Escucha sus últimos sets en sus redes sociales</strong>
+                </p>
+                <a href="https://soundcloud.com/djlafresa/" target="_blank"><i class="fa fa-soundcloud fa-4x" style="color:#ff7500;font-size: 60px;" ></i><br />soundcloud.com/djlafresa</a>
+             </p>
+             <div class="e-divider-6"></div>
+
+             <div class="row">
+                <div class="col-md-12 padding-side-50 bg-color01">
+
+                   <div class="e-divider-4"></div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">PRESENTACIONES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">CARNAVALES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-4">
+                      <h4 class="font-accident-two-normal e-uppercase">INAUGURACIONES</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                   <div class="col-md-12">
+                      <h4 class="font-accident-two-normal e-uppercase">DJ EN EVENTOS PRIVADOS O ANTROS</h4>
+                      <div class="e-divider-4"></div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <section id="portfolio" class="e-block e-block-skin pt-section" style="margin-top:45px;">
+    <div class="light">
+       <div class="grid container-fluid ">
+          <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/01.jpg'%}" download>
+             <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/01.jpg'%}" class="img-responsive" alt="yessicamonsalve"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/02.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/02.jpg'%}" class="img-responsive" alt="yessicamonsalve"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/03.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/03.jpg'%}" class="img-responsive" alt="yessicamonsalve"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/05.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/05.jpg'%}" class="img-responsive" alt="yessicamonsalve"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/06.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/06.jpg'%}" class="img-responsive" alt="yessicamonsalve"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/07.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/07.jpg'%}" class="img-responsive" alt="yessicamonsalve"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/08.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/08.jpg'%}" class="img-responsive" alt="yessicamonsalve"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/09.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/yessicamonsalve/09.jpg'%}" class="img-responsive" alt="yessicamonsalve"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+          </div>
+       </div>
+       <div class="e-divider-6"></div>
+    </div>
+ </section>
+ <!-- /Portfolio Block  -->
+{%endblock%}
+
+{%block js%}
+{%endblock%}
+
+{%block script%}
+{%endblock%}
+

@@ -1,0 +1,214 @@
+{% extends "zaresapp/finezipo/base.html" %}
+
+{% load i18n %} 
+{% load staticfiles i18n %}
+
+{%block title%}FZ | {{artista|upper}}{%endblock%}
+
+{%block styles%}
+{%endblock%}
+
+{%block css%}
+.navbar .navbar-nav > li > a {
+    color: #000;
+}
+@media (max-width: 768px){
+  .cbp-af-header {
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.cbp-af-header.cbp-af-header-shrink {
+    background: rgba(255, 255, 255, .6);
+}
+navbar h1 a{
+    color: #000!important;
+}
+.navbar h1 small{
+    color: #000;
+}
+.navbar .navbar-toggle .icon-bar {
+    background-color: #000;
+}
+.navbar h1 a {
+    color: #000;
+}
+{%endblock%}
+
+{%block content%}
+<section id="port-item-details">
+   <div class="container-fluid padding-side-60">
+
+      <div class="e-divider-8"></div>
+      <div class="post-header">
+         <h2 class="e-uppercase" style="margin-top: 35px;">NATALIA ONTIVEROS</h2>
+
+         <div class="e-divider-2"></div>
+      </div>
+      <div class="e-divider-4"></div>
+      <div class="row">
+         <div class="col-md-4">
+            <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/2.jpg'%}" class="img-responsive">
+            <div class="e-divider-2"></div>
+         </div>
+         <div class="col-md-1"></div>
+         <div class="col-md-7">
+            <h3 class="font-accident-two-normal e-uppercase">BIO</h3>
+            <div class="e-divider-2"></div>
+            <p>
+               Teniendo su más gratificante y maravillosa experiencia al compartir el estudio con grandes personas, así como extraordinarios músicos de Argentina, Natalia grabo las primeras 4 canciones de un disco de 12. Esta primera entrega es sólo un abrebocas de la magnífica producción que se está trabajando con nuestro gran equipo. 
+            </p>
+            <p>
+               Natalia Ontiveros: una artista multifacética. Oriunda de Argentina radicada en México y con influencia chilena. Una mujer del mundo, llena de inquietudes y un talento innato para la música.
+            </p>
+            <p>
+               Nace en Córdoba, Argentina en el encantador pueblo de Salsipuedes. Creció entre las influencias artísticas a raíz de los genes de sus abuelos maternos, siendo su abuelo conocido guitarrista “El Sapo Molina” y su abuela Marta Arias cantante de tangos y boleros y de su madre de quien también heredó sus dotes artísticos siendo ésta ganadora del premio a la voz joven del tango Cosquín e invitada al programa Grandes Valores del Tango, donde obtiene un contrato que la hace migrar al país vecino Chile. <br />
+               <br />
+               Y es aquí donde empieza Natalia siendo una adolescente a dar sus primeros pasos en el mundo artístico, primero en las pasarelas siendo invitada por las más destacadas agencias de modelos y posteriormente invitada al Cachantun Fashion en el que compartió pasarela con la reconocida modelo Naomi Campbell. Con el nacimiento de su primer hijo, Luciano, llegan también nuevas bendiciones, con ellas la invitación a posar para el lente del reconocido fotógrafo de la revista Rolling Stone, David Eisenberg dando así el gran paso a posar para Playboy México siendo la única latina…
+            </p>
+            <p>
+               <iframe width="100%" height="300" src="https://www.youtube.com/embed/gZiHsa4S1iw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+
+            <div class="e-divider-6"></div>
+            <h3 class="font-accident-two-normal e-uppercase">SERVICIOS</h3>
+            <div class="row">
+               <div class="col-md-12 padding-side-50 bg-color01">
+
+                  <div class="e-divider-4"></div>
+                  <div class="col-md-4">
+                     <h4 class="font-accident-two-normal e-uppercase">FESTIVALES</h4>
+                     <div class="e-divider-4"></div>
+                  </div>
+                  <div class="col-md-4">
+                     <h4 class="font-accident-two-normal e-uppercase">PRESENTACIONES</h4>
+                     <div class="e-divider-4"></div>
+                  </div>
+                  <div class="col-md-4">
+                     <h4 class="font-accident-two-normal e-uppercase">CARNAVALES</h4>
+                     <div class="e-divider-4"></div>
+                  </div>
+                  <div class="col-md-4">
+                     <h4 class="font-accident-two-normal e-uppercase">EVENTOS PRIVADOS</h4>
+                     <div class="e-divider-4"></div>
+                  </div>
+                  <div class="col-md-4">
+                     <h4 class="font-accident-two-normal e-uppercase">ANTROS</h4>
+                     <div class="e-divider-4"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+ <section id="portfolio" class="e-block e-block-skin pt-section" style="margin-top:45px;">
+    <div class="light">
+       <div class="grid container-fluid ">
+          <div id="posts" class="row popup-container">
+             <a href="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/1.jpg'%}" download>
+             <div class="grid-item grid-sizer posters media-objects col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/1.jpg'%}" class="img-responsive" alt="nataliaontiveros"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/2.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/2.jpg'%}" class="img-responsive" alt="nataliaontiveros"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/3.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/3.jpg'%}" class="img-responsive" alt="nataliaontiveros"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/4.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/4.jpg'%}" class="img-responsive" alt="nataliaontiveros"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/5.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/5.jpg'%}" class="img-responsive" alt="nataliaontiveros"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/6.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/6.jpg'%}" class="img-responsive" alt="nataliaontiveros"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/7.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/7.jpg'%}" class="img-responsive" alt="nataliaontiveros"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/8.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/8.jpg'%}" class="img-responsive" alt="nataliaontiveros"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/9.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/9.jpg'%}" class="img-responsive" alt="nataliaontiveros"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+           <a href="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/10.jpg'%}" download>
+             <div class="grid-item media-objects misc col-lg-3 col-md-4 col-sm-6 nopadding">
+                <div class="item-wrap">
+                   <figure class="effect-goliath">
+                      <img src="{%static 'zaresapp/finezipo/assets/custom/images/nataliaontiveros/10.jpg'%}" class="img-responsive" alt="nataliaontiveros"/>
+                   </figure>
+                </div>
+             </div>
+           </a>
+          </div>
+       <div class="e-divider-6"></div>
+    </div>
+ </section>
+ <!-- /Portfolio Block  -->
+{%endblock%}
+
+{%block js%}
+{%endblock%}
+
+{%block script%}
+{%endblock%}
+
