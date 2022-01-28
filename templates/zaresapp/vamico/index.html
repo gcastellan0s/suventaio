@@ -148,11 +148,10 @@
                             <li><a href="#mariposas" style="font-size:10px;">VÁLVULAS DE MARIPOSA</a></li>
                             <li><a href="#submarinas" style="font-size:9px;">VÁLVULAS SUBMARINAS API 6DSS</a></li>
                             <li><a href="#automaticas" style="font-size:10px;">VÁLVULAS AUTOMÁTICAS</a></li>
-                            <li><a href="#valvulas_control" style="font-size:10px;">VÁLVULAS DE CONTROL</a></li>
+                            <!--<li><a href="#valvulas_control" style="font-size:10px;">VÁLVULAS DE CONTROL</a></li>-->
                             <li><a href="#tornilleria" style="font-size:10px;">TORNILLERIA</a></li>
                             <li><a href="#bridas" style="font-size:10px;">BRIDAS Y CONEXIONES</a></li>
                             <li><a href="#tuberia" style="font-size:10px;">TUBERÍA ESPECIAL</a></li>
-                            
                          </ul>
                       </li>
                       <li class="menu-item"><a href="#nosotros">Nosotros</a></li>
@@ -171,7 +170,7 @@
         <div class="row">
           <div class="col-sm-8">
             <div class="header-caption">
-              <h2 class="caption-title">SERVICIO SUPERIOR EN EL ABASTECIMIENTO, DE VÁLVULAS, BRIDAS, CONEXIONES, TORNILLERÍA Y TUBERÍA ESPECIAL.</h2>
+              <h2 class="caption-title">SERVICIO SUPERIOR EN EL ABASTECIMIENTO DE VÁLVULAS, SOPORTES PARA TUBERÍA, TORNILLERÍA, BRIDAS Y CONEXIONES.</h2>
               <p>Somos una empresa formada en 1990 por un grupo de ingenieros de alto nivel y experiencia en las industrias del petróleo, gas, agua, eléctrica, con presencia principalmente en la industria Off-Shore, la Petroquímica y Refinación en general.</p>
               <div class="header-action-button">
                 <a class="btn btn-warning btn-md" href="#contacto" style="margin-top:20px;">Contactanos <i class="fa fa-envelope"></i></a>
@@ -492,17 +491,15 @@
       </div><!-- .container -->
     </div><!-- #testimonial -->
     <!-- end:testimonial -->
-
-
-    <!-- begin:about -->
+    <!-- 
     <div id="valvulas_control" class="block-section image-block">
       <div class="container-fluid">
         <div class="row">
           <div class="image-block-item col-md-6 col-sm-5 col-xs-12">
             <div class="image-block-item-background" style="background-image: url('{%static 'zaresapp/vamico/assets/img/img-content-09.jpg'%}');"></div>
-          </div><!-- .image-block-item -->
-        </div><!-- .row -->
-      </div><!-- .container-fluid -->
+          </div>
+        </div>
+      </div>
       <div class="container clear">
         <div class="row">
           <div class="col-md-5 col-md-offset-7 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
@@ -516,19 +513,17 @@
             <p>
              Las válvulas son calculadas y diseñadas para que el nivel de ruido no exceda de 85 dB, sin embargo si el cliente requiere un nivel por debajo de los 85 dB los cálculos son ajustados 
             <p>
-            <hr />
+            <hr/>
             <ul class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
               <li role="presentation" class="">
                 <a href="#who" id="who-tab" role="tab" data-toggle="modal" data-target="#control1">Válvulas de Control</a>
               </li>
             </ul>
-          </div><!-- .col-## -->
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </div><!-- #about -->
-    <!-- end:about -->
-
-
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
     <!-- begin:testimonial -->
     <div id="tornilleria" class="block-section image-block bg-white">
       <div class="container-fluid container-no-padding">
@@ -769,34 +764,12 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-10 col-xs-offset-1 padd-20-top padd-60-btm">
             <h2>CONTACTO</h2>
-            {%if mensaje%}
-              <p>{{mensaje}}</p>
-            {%else%}
-            <p>Ingresa tus datos y solicita información o una cotización, nos pondremos en contacto contigo a la brevedad</p>
-            <form id="form" method="post" enctype="multipart/form-data" class="m-t">{% csrf_token %}
-              <div class="form-group">
-                <label for="contact_name">Empresa</label>
-                <input type="text" class="form-control form-bordered" name="empresa" required>
-              </div>
-              <div class="form-group">
-                <label for="contact_name">Nombre</label>
-                <input type="text" class="form-control form-bordered" name="nombre" required>
-              </div>
-              <div class="form-group" id="oculto">
-                <label for="contact_name">Oculto</label>
-                <input type="text" class="form-control form-bordered" name="oculto">
-              </div>
-              <div class="form-group">
-                <label for="contact_email" class="form-label">Email</label>
-                <input type="email" class="form-control form-bordered" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="contact_message" class="form-label">Mensaje</label>
-                <textarea class="form-control form-bordered" rows="6" name="mensaje" required></textarea>
-              </div>
-              <button type="submit" class="button btn-squar btn-roundede">Enviar Mensaje</button>
+            <p>
+              Envianos tus datos y solicita información o una cotización, nos pondremos en contacto contigo a la brevedad
+            </p>
+            <form id="form" method="post" enctype="multipart/form-data" class="m-t">
+              <button type="button" class="button btn-squar btn-roundede">Enviar Mensaje de Contacto</button>
             </form><!-- .contact-form -->
-            {%endif%}
           </div><!-- .col-## -->
         </div><!-- .row -->
       </div><!-- .container -->
@@ -811,7 +784,7 @@
             <div class="col-md-4 col-sm-6">
               <div class="fact-item">
                 <span class="fact-item-number">
-                  <span class="number number-alt">+26</span>
+                  <span class="number number-alt">+30</span>
                 </span>
                 <h5 class="fact-item-info">AÑOS DE EXPERIENCIA</h5>
               </div><!-- .fact-item -->
@@ -820,7 +793,7 @@
             <div class="col-md-4 col-sm-6">
               <div class="fact-item">
                 <span class="fact-item-number">
-                  <span class="number">+40</span>
+                  <span class="number">+50</span>
                 </span>
                 <h5 class="fact-item-info">CONTRATISTAS SATISFECHOS</h5>
               </div><!-- .fact-item -->
@@ -829,7 +802,7 @@
             <div class="col-md-4 col-sm-6">
               <div class="fact-item">
                 <span class="fact-item-number">
-                  <span class="number">+70</span>
+                  <span class="number">+80</span>
                 </span>
                 <h5 class="fact-item-info">PROYECTOS SUMINISTRADOS</h5>
               </div><!-- .fact-item -->
@@ -2949,7 +2922,7 @@
     <script src="{%static 'zaresapp/vamico/assets/plugins/isotope.pkgd.min.js'%}"></script>
     <script src="{%static 'zaresapp/vamico/assets/plugins/owl.carousel.min.js'%}"></script>
     <script src="{%static 'zaresapp/vamico/assets/plugins/gmap3.min.js'%}"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtR223ih2ZwVJX2SGBixD3p87Aa8RV2Is"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDaG95yE-nSPHbCohWwJDLkyEf9X16SaM"></script>
     <script src="{%static 'zaresapp/vamico/assets/js/script.min.js'%}"></script>
 
     <script type="text/javascript" charset="utf-8" async defer>
@@ -2963,10 +2936,6 @@
     var d = { lat: +b, lng: +c };
     $(".map, .image-block-item-map").gmap3({ center: d, zoom: 12, zoomControl: !0, zoomControlOptions: { style: google.maps.ZoomControlStyle.SMALL }, zoomControlOptions: { position: google.maps.ControlPosition.RIGHT_CENTER }, scrollwheel: !1, mapTypeControl: !1, streetViewControl: !1, draggable: !0, styles: [{ elementType: "geometry", stylers: [{ color: "#f5f5f5" }] }, { elementType: "labels.icon", stylers: [{ visibility: "off" }] }, { elementType: "labels.text.fill", stylers: [{ color: "#616161" }] }, { elementType: "labels.text.stroke", stylers: [{ color: "#f5f5f5" }] }, { featureType: "administrative.land_parcel", elementType: "labels.text.fill", stylers: [{ color: "#bdbdbd" }] }, { featureType: "poi", elementType: "geometry", stylers: [{ color: "#eeeeee" }] }, { featureType: "poi", elementType: "labels.text.fill", stylers: [{ color: "#757575" }] }, { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#e5e5e5" }] }, { featureType: "poi.park", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] }, { featureType: "road", elementType: "geometry", stylers: [{ color: "#ffffff" }] }, { featureType: "road.arterial", elementType: "labels.text.fill", stylers: [{ color: "#757575" }] }, { featureType: "road.highway", elementType: "geometry", stylers: [{ color: "#dadada" }] }, { featureType: "road.highway", elementType: "labels.text.fill", stylers: [{ color: "#616161" }] }, { featureType: "road.local", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] }, { featureType: "transit.line", elementType: "geometry", stylers: [{ color: "#e5e5e5" }] }, { featureType: "transit.station", elementType: "geometry", stylers: [{ color: "#eeeeee" }] }, { featureType: "water", elementType: "geometry", stylers: [{ color: "#c9c9c9" }] }, { featureType: "water", elementType: "labels.text.fill", stylers: [{ color: "#9e9e9e" }] }] }).marker({ position: d, options: { icon: "{%static 'zaresapp/vamico/assets/img/map-marker.png'%}" } }) }
     $("#oculto").hide()
-
-
-
-
     </script>
   </body>
 </html>
